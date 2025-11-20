@@ -859,37 +859,37 @@ function App() {
         <div className="relative z-10 max-w-full  px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Left Section - Logo and Info */}
-            <div className="space-y-6 mt-10 ml-12">
+            <div className="space-y-6 mt-6 ml-12">
              
-              <p className="text-white text-sm leading-relaxed mt-10 mb-6">
+              <p className="text-white text-[12px] leading-relaxed mt-10 mb-6" style={{ color: '#FFF', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 400 }}>
               The All In One Solution To Build Back Loyalty <br />and Maximize Margins
               </p>
-              <p className="text-white text-xs">
+              <p className="text-white text-xs" style={{ color: '#FFF', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 400 }}>
                 © Eatro Tech 2025 — All Rights Reserved
               </p>
             </div>
 
             {/* Quick Links */}
             <div className='ml-40'>
-              <h3 className="text-white font-semibold underline text-lg mb-4">Quick Links</h3>
+              <h3 className="text-white font-semibold underline text-md mb-4" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#features" className="text-white text-[16px] font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  <a href="#features" className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Features
                   </a>
                 </li>
                 <li>
-                  <a href="#how-it-works" className="text-white text-[16px] font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  <a href="#how-it-works" className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     How It Work
                   </a>
                 </li>
                 <li>
-                  <a href="#about" className="text-orange-500 text-[16px] font-normal hover:text-orange-400 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  <a href="#about" className="text-orange-500 text-[14px] font-weight-400 font-normal hover:text-orange-400 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="text-white text-[16px] font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  <a href="#contact" className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Contact
                   </a>
                 </li>
@@ -898,20 +898,20 @@ function App() {
 
             {/* Legal */}
             <div className='ml-20'>
-              <h3 className="text-white font-semibold underline text-lg mb-4">Legal</h3>
+              <h3 className="text-white font-semibold underline text-md mb-4" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Legal</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#privacy" className="text-white text-[16px] font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  <a href="#privacy" className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#terms" className="text-white text-[16px] font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  <a href="#terms" className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Terms of Service
                   </a>
                 </li>
                 <li>
-                  <a href="#cookie" className="text-white text-[16px] font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  <a href="#cookie" className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Cookie Policy
                   </a>
                 </li>
@@ -920,7 +920,7 @@ function App() {
 
             {/* Get in Touch */}
             <div className='ml-8'>
-              <h3 className="text-white font-semibold text-lg mb-4">Get in Touch</h3>
+              <h3 className="text-white font-normal font-weight-400 text-lg mb-4" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>Get in Touch</h3>
               <div className="flex gap-4">
                 {/* LinkedIn */}
                 <a href="#" className="text-white hover:text-orange-500 transition-colors">
