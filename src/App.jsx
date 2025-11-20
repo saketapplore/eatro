@@ -1,8 +1,63 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function App() {
+  // Form state
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    companyName: '',
+    numberOfLocations: ''
+  })
+
+  // Modal state
+  const [showSuccessModal, setShowSuccessModal] = useState(false)
+
+  // FAQ state - track which items are open
+  const [openFAQs, setOpenFAQs] = useState({})
+
+  // Handle form input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }))
+  }
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    // Here you would typically send the data to a server
+    // For now, we'll just show the success modal
+    setShowSuccessModal(true)
+  }
+
+  // Close modal
+  const closeModal = () => {
+    setShowSuccessModal(false)
+  }
+
+  // Scroll to contact form
+  const scrollToContactForm = (e) => {
+    e.preventDefault()
+    const contactForm = document.getElementById('contact-form')
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
+  // Toggle FAQ item
+  const toggleFAQ = (index) => {
+    setOpenFAQs(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }))
+  }
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#fff8f2]">
       {/* Header Section */}
       {/* Header Section */}
 <header className="relative">
@@ -12,24 +67,22 @@ function App() {
         
         {/* Logo */}
         <div className="flex items-center py-2 space-x-2">
-          <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center font-bold text-xl text-white">
-            E
-          </div>
-          <span className="text-2xl font-bold">Eatro</span>
+          <img src="/images/group1.svg" alt="Eatro Logo" className="h-6" />
+          {/* <span className="text-2xl font-bold">Eatro</span> */}
         </div>
 
         {/* Navigation - Centered */}
         <nav className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
-          <a href="#features" className="hover:text-orange-500 transition-colors">Features</a>
-          <a href="#how-it-works" className="hover:text-orange-500 transition-colors">How It Work</a>
-          <a href="#about" className="bg-orange-600 text-white px-4 py-2 transition-colors">About</a>
-          <a href="#contact" className="hover:text-orange-500 transition-colors">Contact</a>
+          <a href="#features" className="text-white text-[14px] font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Features</a>
+          <a href="#how-it-works" className="text-white text-[14px] font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>How It Work</a>
+          <a href="#about" className="text-[14px] font-medium leading-[94%] capitalize bg-orange-700 px-1 text-orange-400 hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>About</a>
+          <a href="#contact" className="text-white text-[14px] font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Contact</a>
         </nav>
 
         {/* Action Buttons */}
         <div className="flex items-center space-x-4 ml-auto">
           <button className="hover:text-orange-500 transition-colors">Login</button>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors">
+          <button onClick={scrollToContactForm} className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors">
             Book a Demo
           </button>
         </div>
@@ -41,51 +94,46 @@ function App() {
 
 
       {/* Hero Section */}
-      <section className="bg-white max-w-7xl mx-auto">
+      <section className="max-w-7xl mx-auto">
         <div className="container mx-auto px-4 py-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-8">
-              <h1 className="text-5xl md:text-6xl font-bold text-orange-500 leading-tight">
-                Own Your Growth.
-              </h1>
-              
-              <p className="text-xl text-gray-800 leading-relaxed">
-                Manage Orders, Power Direct Sales, Ensure Seamless Delivery, Build Loyalty.
-              </p>
+              <div className="relative">
+                <img src="/images/own.png" alt="Own Your Growth" className="w-auto h-16 md:h-20 -ml-6 relative z-10 inline-block" />
+                <p className="text-[#000] text-[30px] font-medium leading-[36px] -mt-4 relative z-0" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+                  Manage Orders, Power Direct Sales, 
+                </p>
+                <br />
+                <p className="text-[#000] text-[30px] font-medium leading-[36px] -mt-8 relative z-0" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Ensure Seamless Delivery, Build Loyalty.</p>
+              </div>
 
               {/* Feature List */}
               <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-bold text-orange-500 mb-2">
-                    Reduced Delivery Fees
-                  </h3>
-                  <p className="text-gray-700">
-                    Own your Sales Channel with your branded online store and application to accept direct orders
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-[10px] flex-shrink-0"></div>
+                  <p className="text-base leading-relaxed">
+                    <span className="font-bold text-orange-500">Reduced Delivery Fees:</span> <span className="text-black" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '14px', fontStyle: 'normal', fontWeight: 500 }}>Own your Sales Channel with your branded online store and application to accept direct orders</span>
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="text-lg font-bold text-orange-500 mb-2">
-                    Operational Peace of Mind
-                  </h3>
-                  <p className="text-gray-700">
-                    Stop juggling screens. Consolidate every order channel from direct site, app, and all aggregators for a single, seamless flow, optimizing your kitchen and courier efficiency.
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-[10px] flex-shrink-0"></div>
+                  <p className="text-base leading-relaxed">
+                    <span className="font-bold text-orange-500">Operational Peace of Mind:</span> <span className="text-black" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '14px', fontStyle: 'normal', fontWeight: 500 }}>Stop juggling screens. Consolidate every order channel from direct site, app, and all aggregators for a single, seamless flow, optimizing your kitchen and courier efficiency.</span>
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="text-lg font-bold text-orange-500 mb-2">
-                    The Blind Spot is Gone. Welcome to Full Customer Insights
-                  </h3>
-                  <p className="text-gray-700">
-                    For the first time, know the names and order history of your best customers. Track which campaigns drive specific orders and measure the real cost of acquiring and retaining a customer, moving beyond guesswork.
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-[10px] flex-shrink-0"></div>
+                  <p className="text-base leading-relaxed">
+                    <span className="font-bold text-orange-500">The Blind Spot is Gone. Welcome to Full Customer Insights:</span> <span className="text-black" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '14px', fontStyle: 'normal', fontWeight: 500 }}>For the first time, know the names and order history of your best customers. Track which campaigns drive specific orders and measure the real cost of acquiring and retaining a customer, moving beyond guesswork.</span>
                   </p>
                 </div>
               </div>
 
               {/* CTA Button */}
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+              <button onClick={scrollToContactForm} className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
                 Book A Demo
               </button>
             </div>
@@ -93,14 +141,866 @@ function App() {
             {/* Right Image */}
             <div className="flex justify-center items-center">
               <img 
-                src="/images/eatro1.png" 
+                src="/images/ii.png" 
                 alt="Eatro Dashboard" 
-                className="w-full h-auto rounded-lg shadow-2xl"
+                className="w-full h-auto rounded-lg"
               />
             </div>
           </div>
         </div>
       </section> 
+
+      {/* Benefits Cards Section */}
+      <section className="max-w-7xl mx-auto">
+        <div className="container mx-auto px-4 py-16">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Card 1 - Save Delivery Fees */}
+            <div className="relative">
+              <img 
+                src="/images/box1.png" 
+                alt="Save Delivery Fees" 
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+
+            {/* Card 2 - Increase Order Frequency */}
+            <div className="relative">
+              <img 
+                src="/images/box2.png" 
+                alt="Increase Order Frequency" 
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+
+            {/* Card 3 - Increase Staff Productivity */}
+            <div className="relative">
+              <img 
+                src="/images/box3.png" 
+                alt="Increase Staff Productivity" 
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* One Platform Five Seamless Experiences Section */}
+      <section className="relative min-h-[500px] md:min-h-[600px] overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/bger.png" 
+            alt="Background" 
+            className="max-w-8xl mx-auto h-full object-fill"
+          />
+        </div>
+
+        {/* Content Container */}
+        <div className="relative z-10 max-w-7xl mx-auto py-20">
+          <div className="flex justify-start ml-28">
+            {/* Left Content */}
+            <div className="space-y-6">
+              <h2 className="text-[#fff] text-[40px] font-normal font-weight-600 leading-[105%]" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+                <span>One Platform,</span>
+                <br />
+                <span>Five Seamless</span>
+                <br />
+                <span>Experiences</span>
+              </h2>
+
+              {/* CTA Button */}
+              <button onClick={scrollToContactForm} className="bg-white hover:bg-gray-100 text-black px-8 py-4 rounded-lg font-semibold text-base transition-colors">
+                Book A Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        {/* Integrated Partners Section */}
+        <section className="max-w-7xl mx-auto">
+        <div className="container mx-auto px-4 py-16">
+          <div className="flex flex-col items-center space-y-8">
+            {/* Heading */}
+            <h2 className="text-[40px] font-bold leading-[105%] text-center" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+              <span className="text-black">Our</span>{' '}
+              <span className="text-orange-500">Integrated Partners</span>
+            </h2>
+
+            {/* Careem Logo Box */}
+            <div className="rounded-lg ">
+              <img 
+                src="/images/careem.png" 
+                alt="Careem" 
+                className="h-12 md:h-16 w-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Seamless Integrations Section */}
+      <section className="relative py-12 overflow-hidden" style={{ backgroundColor: '' }}>
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/desk.png" 
+            alt="Background" 
+            className="w-full h-full object-fill"
+          />
+        </div>
+
+        {/* Content Container */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4">
+          {/* Title and Subtitle - Centered at Top */}
+          <div className="text-center mb-20">
+            <h2 className="text-[40px] font-bold leading-[105%] mb-4" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+              <span className="text-black">Seamless</span>{' '}
+              <span className="text-orange-500">Integrations for Restaurants</span>
+            </h2>
+            
+            <p className="text-[#282828] text-center font-weight-400 text-[16px] font-normal max-w-4xl mx-auto" style={{ fontFamily: 'Poppins', fontStyle: 'normal', leadingTrim: 'both', textEdge: 'cap' }}>
+              Achieve instant operational efficiency. Choose a top-tier POS integration or deploy the Eatro Tablet to ensure your menus, orders, and inventory are automatically synchronized in real-time.
+            </p>
+          </div>
+
+          {/* Two Column Layout */}
+          <div className="grid md:grid-cols-2 mb-20 gap-12 items-center">
+            {/* Left Content - Features List */}
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+                <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  Connect easily with POS providers
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+                <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  Keep menus & prices synced automatically
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+                <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  Track inventory and update in real time
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+                <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  Post orders and print receipts ensuring a unified and <br /> efficient workflow
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+                <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  Single Source of Truth For all Aggregator orders
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+                <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  Live Tracking for Deliveries
+                </p>
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+      </section>
+
+      {/* Burger Image Section
+      <section className="max-w-7xl mx-auto">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center items-center">
+            <img 
+              src="/images/burger.png" 
+              alt="Burger" 
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section> */}
+
+    
+
+      {/* Restro Image Section */}
+      {/* <section className="max-w-full">
+        <div className=" py-16">
+          <div className="">
+            <img 
+              src="/images/restro.png" 
+              alt="Restro" 
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section> */}
+
+      {/* Restro Image Section 2 */}
+      <section className="max-w-7xl mx-auto">
+        <div className="py-16">
+          <div>
+            <img 
+              src="/images/works.png" 
+              alt="Restro" 
+              className="w-full h-[600px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* One Platform Total Control Section */}
+      <section className="relative py-20 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/dd.png" 
+            alt="Background" 
+            className="w-full h-full object-fill"
+          />
+        </div>
+
+        {/* Content Container */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="space-y-8">
+              <h2 className="text-[50px] leading-tight" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+                <span className="text-white font-weight-500 font-normal">One Platform,</span>
+                <br />
+                <span className="text-orange-500 font-bold">Total Control</span>
+              </h2>
+              
+              <p className="text-[#ffffff] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                Reclaim control by running all operations from one place. Our platform delivers the centralized visibility you need to manage your business effectively.
+              </p>
+
+              {/* Feature Icons Grid */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {/* Feature 1 */}
+                <div className="flex flex-col items-center text-center space-y-3">
+                  <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
+                    <img 
+                      src="/images/gr1.png" 
+                      alt="Manage menus" 
+                      className="w-16 h-16 object-contain"
+                    />
+                  </div>
+                  <p className="text-white text-[14px] font-normal font-weight-400" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Manage menus & inventory
+                  </p>
+            </div>
+
+                {/* Feature 2 */}
+                <div className="flex flex-col items-center text-center space-y-3">
+                  <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
+                    <img 
+                      src="/images/gr2.png" 
+                      alt="Track incoming orders" 
+                      className="w-16 h-16 object-contain"
+                    />
+                  </div>
+                  <p className="text-white text-[14px] font-normal font-weight-400" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Track incoming orders in real-time
+                  </p>
+                </div>
+
+                {/* Feature 3 */}
+                <div className="flex flex-col items-center text-center space-y-3">
+                  <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
+                    <img 
+                      src="/images/gr3.png" 
+                      alt="Analyze revenue" 
+                      className="w-16 h-16 object-contain"
+                    />
+                  </div>
+                  <p className="text-white text-[14px] font-normal font-weight-400" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Analyze revenue & payouts
+                  </p>
+                </div>
+
+                {/* Feature 4 */}
+                <div className="flex flex-col items-center text-center space-y-3">
+                  <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
+                    <img 
+                      src="/images/gr4.png" 
+                      alt="Offer discounts" 
+                      className="w-16 h-16 object-contain"
+                    />
+                  </div>
+                  <p className="text-white text-[14px] font-normal font-weight-400" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Offer discounts & promotions
+                  </p>
+                </div>
+              </div>
+
+              {/* CTA Button */}
+              <button onClick={scrollToContactForm} className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-base transition-colors">
+                Book A Demo
+              </button>
+            </div>
+
+            {/* Right Image - Dashboard Mockup */}
+            {/* <div className="relative flex justify-center items-center">
+              <div className="relative">
+                <img 
+                  src="/images/ii.png" 
+                  alt="Dashboard Preview" 
+                  className="w-full h-auto rounded-2xl shadow-2xl"
+                />
+              </div>
+            </div> */}
+          </div>
+        </div>
+      </section>
+
+      {/* Loyalty Tastes Better Direct Section */}
+      <section className="max-w-7xl mx-auto">
+        <div className="container mx-auto px-4 py-16">
+          <div className="grid md:grid-cols-2 gap-36 items-center">
+            {/* Left Image */}
+            <div className="flex justify-center items-center">
+              <img 
+                src="/images/boyimage.png" 
+                alt="Loyalty Tastes Better Direct" 
+                className="w-full h-[500px] rounded-lg"
+              />
+            </div>
+
+            {/* Right Content */}
+            <div className="space-y-6">
+              <h2 className="text-4xl md:text-5xl font-normal font-weight-500 leading-tight" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+                <span className="text-black font-weight-500 font-normal">Loyalty Tastes</span>
+                <br />
+                <span className="text-orange-500 font-bold">Better Direct</span>
+                <br />
+                
+              </h2>
+              
+              <p className="text-[#282828] max-w-lg font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                A seamless experience that makes food ordering <br />effortless
+              </p>
+
+              {/* Feature List */}
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+                  <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Order favourites directly with the restaurant
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+                  <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Track orders live with real-time GPS tracking
+                  </p>
+            </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+                  <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Secure checkout with Apple pay and Google pay
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+                  <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Reorder and accumulate loyalty points
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+                  <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Rate and review your experience
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ready To Chat Contact Form Section */}
+      <section id="contact-form" className="relative py-16">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/orangebg.png" 
+            alt="Background" 
+            className="w-full h-full object-fill"
+          />
+        </div>
+
+        {/* Form Container */}
+        <div className="relative z-10 max-w-5xl mx-auto mt-16 px-4" style={{ perspective: '1500px' }}>
+          <div className="bg-[#faf8f5] rounded-2xl p-8 md:p-10 shadow-lg" style={{ transform: 'rotateY(-16deg)' }}>
+            {/* Title */}
+            <div className="text-center mb-3">
+              <h2 className="text-3xl md:text-4xl" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+                <span className="text-black font-weight-700 font-normal">Ready To</span>{' '}
+                <span className="text-orange-500 font-bold">Chat</span>
+              </h2>
+            </div>
+
+            {/* Subtitle */}
+            <p className="text-center text-gray-600 text-sm mb-6">
+              Drop your details and let's make things happen.
+            </p>
+
+            {/* Form */}
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              <div className="grid md:grid-cols-2 gap-4">
+                {/* Left Column */}
+                <div className="space-y-4">
+                  <div>
+                    <input
+                      type="text"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      placeholder="First Name"
+                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 placeholder-gray-500 text-sm"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      placeholder="Phone Number"
+                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 placeholder-gray-500 text-sm"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      name="companyName"
+                      value={formData.companyName}
+                      onChange={handleInputChange}
+                      placeholder="Company Name"
+                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 placeholder-gray-500 text-sm"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      name="numberOfLocations"
+                      value={formData.numberOfLocations}
+                      onChange={handleInputChange}
+                      placeholder="Number of Locations"
+                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 placeholder-gray-500 text-sm"
+                    />
+                  </div>
+                </div>
+
+                {/* Right Column */}
+                <div className="space-y-4">
+                  <div>
+                    <input
+                      type="text"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      placeholder="Last Name"
+                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 placeholder-gray-500 text-sm"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      placeholder="Email Address"
+                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 placeholder-gray-500 text-sm"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Submit Button */}
+              <div className="flex justify-end mt-6">
+                <button
+                  type="submit"
+                  className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-2.5 rounded-lg font-semibold transition-colors text-sm"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="max-w-7xl mx-auto">
+        <div className="container mx-auto px-4 py-16">
+          {/* Heading */}
+          <div className="text-center mb-12">
+            <h2 className="text-[45px] font-semibold mb-3" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+              <span className="text-black">Frequently</span>{' '}
+              <span className="text-orange-500">Asked Questions</span>
+            </h2>
+            <p className="text-gray-600 text-base">
+              Everything you need to know about our platform
+            </p>
+          </div>
+
+          {/* FAQ Items */}
+          <div className="max-w-4xl mx-auto space-y-4">
+            {/* FAQ Item 1 */}
+            <div className="relative bg-[#faf8f5] rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="p-5 flex items-center justify-between">
+                <p className="text-[#282828] text-[20px] font-normal font-weight-400 pr-4 flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  How does Eatro help me maximize the value of my customer data?
+                </p>
+                <button 
+                  onClick={() => toggleFAQ(0)}
+                  className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl hover:bg-orange-600 transition-colors" 
+                  style={{ lineHeight: '16' }}
+                >
+                  <span className="block" style={{ marginTop: '-2px' }}>{openFAQs[0] ? '−' : '+'}</span>
+                </button>
+              </div>
+              {openFAQs[0] && (
+                <div className="px-5 pb-5">
+                  <p className="text-[#282828] font-weight-400 text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Eatro provides comprehensive customer insights by tracking all orders across your direct channels and aggregators. You can see customer names, order history, preferences, and lifetime value. Our analytics help you identify your best customers, understand which campaigns drive specific orders, and measure the real cost of customer acquisition and retention.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* FAQ Item 2 */}
+            <div className="bg-[#faf8f5] rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="p-5 flex items-center justify-between">
+                <p className="text-[#282828] font-weight-400 text-[20px] font-normal pr-4 flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  How does Eatro integrate with my existing restaurant technology?
+                </p>
+                <button 
+                  onClick={() => toggleFAQ(1)}
+                  className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl hover:bg-orange-600 transition-colors" 
+                  style={{ lineHeight: '16' }}
+                >
+                  <span className="block" style={{ marginTop: '-2px' }}>{openFAQs[1] ? '−' : '+'}</span>
+                </button>
+              </div>
+              {openFAQs[1] && (
+                <div className="px-5 pb-5">
+                  <p className="text-[#282828] font-weight-400 text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Eatro offers seamless integration with popular POS systems and can also deploy the Eatro Tablet for real-time synchronization. Our platform automatically syncs menus, prices, inventory, and orders, ensuring your operations run smoothly without manual data entry. We support integrations with major POS providers and can work with custom systems.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* FAQ Item 3 */}
+            <div className="bg-[#faf8f5] rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="p-5 flex items-center justify-between">
+                <p className="text-[#282828] font-weight-400 text-[20px] font-normal pr-4 flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  What payment methods are supported, and how does Eatro manage the transactions?
+                </p>
+                <button 
+                  onClick={() => toggleFAQ(2)}
+                  className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl hover:bg-orange-600 transition-colors" 
+                  style={{ lineHeight: '16' }}
+                >
+                  <span className="block" style={{ marginTop: '-2px' }}>{openFAQs[2] ? '−' : '+'}</span>
+                </button>
+              </div>
+              {openFAQs[2] && (
+                <div className="px-5 pb-5">
+                  <p className="text-[#282828] font-weight-400 text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Eatro supports multiple payment methods including credit cards, debit cards, Apple Pay, Google Pay, and other digital wallets. All transactions are processed securely through our integrated payment gateway. You receive payouts according to your configured schedule, and all transaction data is tracked in your dashboard for easy reconciliation and reporting.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* FAQ Item 4 */}
+            <div className="bg-[#faf8f5] rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="p-5 flex items-center justify-between">
+                <p className="text-[#282828] font-weight-400 text-[20px] font-normal pr-4 flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  What is the onboarding process and how quickly can I launch my branded ordering channels?
+                </p>
+                <button 
+                  onClick={() => toggleFAQ(3)}
+                  className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl hover:bg-orange-600 transition-colors" 
+                  style={{ lineHeight: '16' }}
+                >
+                  <span className="block" style={{ marginTop: '-2px' }}>{openFAQs[3] ? '−' : '+'}</span>
+                </button>
+              </div>
+              {openFAQs[3] && (
+                <div className="px-5 pb-5">
+                  <p className="text-[#282828] font-weight-400 text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Our onboarding process is streamlined and typically takes 1-2 weeks. We'll help you set up your branded online store and mobile app, integrate with your POS system, configure your menu and pricing, and set up payment processing. Our team provides dedicated support throughout the process to ensure a smooth launch. Most restaurants are live and accepting orders within 10-14 days.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* FAQ Item 5 */}
+            <div className="bg-[#faf8f5] rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="p-5 flex items-center justify-between">
+                <p className="text-[#282828] font-weight-400 text-[20px] font-normal pr-4 flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  How are deliveries fulfilled for orders placed on my Eatro channels?
+                </p>
+                <button 
+                  onClick={() => toggleFAQ(4)}
+                  className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl hover:bg-orange-600 transition-colors" 
+                  style={{ lineHeight: '16' }}
+                >
+                  <span className="block" style={{ marginTop: '-2px' }}>{openFAQs[4] ? '−' : '+'}</span>
+                </button>
+              </div>
+              {openFAQs[4] && (
+                <div className="px-5 pb-5">
+                  <p className="text-[#282828] font-weight-400 text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Eatro integrates with delivery partners like Careem and other courier services to handle deliveries. You can also use your own delivery fleet if preferred. The platform provides real-time tracking for all deliveries, so both you and your customers can monitor order status. All delivery options and fees are configurable in your dashboard.
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ready To Launch Section */}
+      <section className="relative max-w-7xl mx-auto py-8 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/blackbg.png" 
+            alt="Background" 
+            className="w-full h-full object-fill"
+          />
+        </div>
+
+        {/* Content Container */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            {/* Left Content */}
+            <div className="flex-1 ml-8">
+              <h2 className="text-white text-[35px] font-semibold leading-tight mb-3 capitalize" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+                <span>Ready To Launch Your</span>
+                <br />
+                <span className="text-orange-500">Direct Ordering Sales </span>
+                <br />
+                <span className="text-orange-500">Channels?</span>
+              </h2>
+              <p className="text-white text-base">
+                Let's Talk! Book a Demo with us!
+              </p>
+            </div>
+
+            {/* Right Orange Section with Buttons */}
+            <div className="relative mr-36">
+              <div className=" rounded-3xl px-12 py-8 flex flex-col items-center justify-center space-y-4">
+                {/* App Store Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                  {/* App Store Button */}
+                  <button className="bg-white rounded-full px-6 py-3 flex items-center gap-3 hover:bg-gray-100 transition-colors">
+                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    <div className="text-left">
+                      <p className="text-xs text-gray-600">Download on the</p>
+                      <p className="text-base font-semibold text-black">App Store</p>
+                    </div>
+                  </button>
+
+                  {/* Google Play Button */}
+                  <button className="bg-white rounded-full px-6 py-3 flex items-center gap-3 hover:bg-gray-100 transition-colors">
+                    <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                    </svg>
+                    <div className="text-left">
+                      <p className="text-xs text-gray-600">GET IT ON</p>
+                      <p className="text-base font-semibold text-black">Google Play</p>
+                    </div>
+                  </button>
+                </div>
+
+                {/* One Platform Text */}
+                <p className="text-white text-sm font-medium">
+                  One Platform, Total Control
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer Section */}
+      <footer className="relative py-12 mt-10 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/foots.png" 
+            alt="Footer Background" 
+            className="w-full h-full object-fill"
+          />
+        </div>
+
+        {/* Footer Content */}
+        <div className="relative z-10 max-w-full  px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Left Section - Logo and Info */}
+            <div className="space-y-6 mt-10 ml-12">
+             
+              <p className="text-white text-sm leading-relaxed mt-10 mb-6">
+              The All In One Solution To Build Back Loyalty <br />and Maximize Margins
+              </p>
+              <p className="text-white text-xs">
+                © Eatro Tech 2025 — All Rights Reserved
+              </p>
+            </div>
+
+            {/* Quick Links */}
+            <div className='ml-40'>
+              <h3 className="text-white font-semibold underline text-lg mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#features" className="text-white text-[16px] font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a href="#how-it-works" className="text-white text-[16px] font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    How It Work
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" className="text-orange-500 text-[16px] font-normal hover:text-orange-400 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="text-white text-[16px] font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div className='ml-20'>
+              <h3 className="text-white font-semibold underline text-lg mb-4">Legal</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#privacy" className="text-white text-[16px] font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#terms" className="text-white text-[16px] font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a href="#cookie" className="text-white text-[16px] font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                    Cookie Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Get in Touch */}
+            <div className='ml-8'>
+              <h3 className="text-white font-semibold text-lg mb-4">Get in Touch</h3>
+              <div className="flex gap-4">
+                {/* LinkedIn */}
+                <a href="#" className="text-white hover:text-orange-500 transition-colors">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                
+                {/* Instagram */}
+                <a href="#" className="text-white hover:text-orange-500 transition-colors">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+                
+                {/* Facebook */}
+                <a href="#" className="text-white hover:text-orange-500 transition-colors">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      {/* Success Modal */}
+      {showSuccessModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-4 relative shadow-2xl">
+            {/* Close Button */}
+            <button
+              onClick={closeModal}
+              className="absolute -top-3 -right-3 w-8 h-8 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center text-white font-bold transition-colors z-10"
+            >
+              <span className="text-xl leading-none">×</span>
+            </button>
+
+            {/* Success Icon */}
+            <div className="flex justify-center mb-6 mt-4">
+              <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center">
+                <svg
+                  className="w-12 h-12 text-orange-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={3}
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            {/* Heading */}
+            <h2 className="text-2xl font-bold text-orange-500 text-center mb-4 whitespace-nowrap">
+              Form Submitted Successfully!
+            </h2>
+
+            {/* Body Text */}
+            <p className="text-gray-600 text-center mb-8 text-sm leading-relaxed">
+              Thank you! The form has been submitted successfully. We will reply to you soon!
+            </p>
+
+            {/* Go Back Button */}
+            <div className="flex justify-center">
+              <button
+                onClick={closeModal}
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+              >
+                Go Back
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
    </div>
 
