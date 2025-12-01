@@ -13,7 +13,7 @@ function CookiePolicy() {
       <Header scrollToContactForm={scrollToContactForm} />
 
       {/* Cookie Policy Content */}
-      <section className="max-w-7xl mx-auto pb-16 pt-2">
+      <section className="max-w-7xl mx-auto pt-2">
         <div className="bg-[#faf8f5] rounded-lg py-8 md:py-12 max-w-7xl">
           {/* Title */}
           <div className="mb-12">
