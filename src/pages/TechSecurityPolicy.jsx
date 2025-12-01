@@ -14,7 +14,7 @@ function TechSecurityPolicy() {
 
       {/* Tech Security Policy Content */}
       <section className="max-w-7xl mx-auto pt-2">
-        <div className="bg-[#faf8f5] rounded-lg py-8 md:py-12 max-w-7xl">
+        <div className="bg-[#faf8f5] rounded-lg py-8 md:py-2 max-w-7xl">
           {/* Title */}
           <div className="mb-12">
             <img 

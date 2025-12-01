@@ -14,7 +14,7 @@ function CookiePolicy() {
 
       {/* Cookie Policy Content */}
       <section className="max-w-7xl mx-auto pt-2">
-        <div className="bg-[#faf8f5] rounded-lg py-8 md:py-12 max-w-7xl">
+        <div className="bg-[#faf8f5] rounded-lg py-8 md:py-2 max-w-7xl">
           {/* Title */}
           <div className="mb-12">
             <img 
@@ -143,8 +143,8 @@ function CookiePolicy() {
               </p>
             </div>
 
-            <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>7. Contact Us</h2>
+            <div className=''>
+              <h2 className="mb-4 " style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>7. Contact Us</h2>
               <p className="mb-4">
                 If you have any questions about our use of cookies, please contact us:
               </p>
