@@ -3,7 +3,7 @@ import React from 'react'
 function Header({ scrollToContactForm }) {
   return (
     <header className="relative">
-      <div className="bg-black max-w-7xl mx-auto text-white rounded-b-3xl overflow-hidden clip-custom">
+      <div className="bg-black max-w-full text-white rounded-b-3xl overflow-hidden clip-custom">
         <div className="container mx-auto px-4 py-4 relative">
           <div className="flex items-center justify-between">
             
@@ -38,5 +38,6 @@ function Header({ scrollToContactForm }) {
 }
 
 export default Header
+
 
 
