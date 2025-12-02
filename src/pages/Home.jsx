@@ -111,7 +111,7 @@ function Home() {
             {/* Right Image */}
             <div className="flex justify-center items-center">
               <img 
-                src="/images/eat2.png" 
+                src="/images/heros.png" 
                 alt="Eatro Dashboard" 
                 className="w-full h-auto rounded-lg"
               />
@@ -159,7 +159,7 @@ function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/burg1.png" 
+            src="/images/bburger.png" 
             alt="Background" 
             className="max-w-8xl mx-auto h-full object-fill"
           />
@@ -170,7 +170,7 @@ function Home() {
           <div className="flex justify-start ml-28">
             {/* Left Content */}
             <div className="space-y-6">
-              <h2 className="text-[#fff] text-[40px] font-normal font-weight-600 leading-[105%]" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+              <h2 className="text-[#fff] ml-10 text-[40px] font-normal font-weight-600 leading-[105%]" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
                 <span>One Platform,</span>
                 <br />
                 <span>Five Seamless</span>
@@ -179,7 +179,7 @@ function Home() {
               </h2>
 
               {/* CTA Button */}
-              <button onClick={scrollToContactForm} className="bg-white hover:bg-gray-100 text-black px-8 py-4 rounded-lg font-semibold text-base transition-colors">
+              <button onClick={scrollToContactForm} className="bg-white ml-10 hover:bg-gray-100 text-black px-8 py-4 rounded-lg font-semibold text-base transition-colors">
                 Book A Demo
               </button>
             </div>
@@ -210,11 +210,11 @@ function Home() {
       </section>
 
       {/* Seamless Integrations Section */}
-      <section className="relative py-12 overflow-hidden" style={{ backgroundColor: '' }}>
+      <section className="relative py-16 overflow-hidden" style={{ backgroundColor: '' }}>
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/images/desk1.png" 
+            src="/images/ddesk.png" 
             alt="Background" 
             className="w-full h-full object-fill"
           />
@@ -286,6 +286,41 @@ function Home() {
         </div>
       </section>
 
+      {/* Row Images Section */}
+      <section className="max-w-7xl mx-auto py-20">
+        {/* Title and Subtitle - Centered at Top */}
+        <div className="text-center mb-12 px-4">
+          <h2 className="text-[40px] font-bold leading-[105%] mb-4" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+            <span className="text-black">How</span>{' '}
+            <span className="text-orange-500">It Works</span>
+          </h2>
+          
+          <p className="text-[#282828] text-center font-weight-400 text-[16px] font-normal max-w-4xl mx-auto" style={{ fontFamily: 'Poppins', fontStyle: 'normal', leadingTrim: 'both', textEdge: 'cap' }}>
+            Seamless order flow from start to finish
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 px-4">
+          {/* Left Image */}
+          <div>
+            <img 
+              src="/images/row1.png" 
+              alt="Row 1" 
+              className="w-[600px] h-[500px]"
+            />
+          </div>
+          
+          {/* Right Image */}
+          <div>
+            <img 
+              src="/images/row2.png" 
+              alt="Row 2" 
+              className="w-[600px] h-[500px]"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Burger Image Section
       <section className="max-w-7xl mx-auto">
         <div className="container mx-auto px-4">
@@ -315,7 +350,7 @@ function Home() {
       </section> */}
 
       {/* Restro Image Section 2 */}
-      <section className="max-w-7xl mx-auto">
+      {/* <section className="max-w-7xl mx-auto">
         <div className="py-16">
           <div>
             <img 
@@ -325,7 +360,7 @@ function Home() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* One Platform Total Control Section */}
       <section className="relative py-20 overflow-hidden">
@@ -524,9 +559,20 @@ function Home() {
             </div>
 
             {/* Subtitle */}
-            <p className="text-center text-gray-600 text-sm mb-6">
+            <p className="text-center text-black font-normal font-weight-700 text-sm mb-6" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
               Drop your details and let's make things happen.
             </p>
+
+            {/* Placeholder Styling */}
+            <style>{`
+              form input::placeholder {
+                color: #282828 !important;
+                font-family: Poppins !important;
+                font-size: 10px !important;
+                font-style: normal !important;
+                font-weight: 300 !important;
+              }
+            `}</style>
 
             {/* Form */}
             <form className="space-y-4" onSubmit={handleSubmit}>
@@ -540,7 +586,7 @@ function Home() {
                       value={formData.firstName}
                       onChange={handleInputChange}
                       placeholder="First Name"
-                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 placeholder-gray-500 text-sm"
+                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm"
                     />
                   </div>
                   <div>
@@ -550,7 +596,7 @@ function Home() {
                       value={formData.phone}
                       onChange={handleInputChange}
                       placeholder="Phone Number"
-                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 placeholder-gray-500 text-sm"
+                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm"
                     />
                   </div>
                   <div>
@@ -560,7 +606,7 @@ function Home() {
                       value={formData.companyName}
                       onChange={handleInputChange}
                       placeholder="Company Name"
-                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 placeholder-gray-500 text-sm"
+                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm"
                     />
                   </div>
                   <div>
@@ -570,7 +616,7 @@ function Home() {
                       value={formData.numberOfLocations}
                       onChange={handleInputChange}
                       placeholder="Number of Locations"
-                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 placeholder-gray-500 text-sm"
+                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm"
                     />
                   </div>
                 </div>
@@ -584,7 +630,7 @@ function Home() {
                       value={formData.lastName}
                       onChange={handleInputChange}
                       placeholder="Last Name"
-                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 placeholder-gray-500 text-sm"
+                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm"
                     />
                   </div>
                   <div>
@@ -594,7 +640,7 @@ function Home() {
                       value={formData.email}
                       onChange={handleInputChange}
                       placeholder="Email Address"
-                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 placeholder-gray-500 text-sm"
+                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm"
                     />
                   </div>
                 </div>

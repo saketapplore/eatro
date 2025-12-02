@@ -16,10 +16,10 @@ function Header({ scrollToContactForm }) {
 
             {/* Navigation - Centered */}
             <nav className="hidden md:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
-              <a href="/#about" className="text-[14px] font-medium leading-[94%] capitalize bg-orange-700 px-1 text-orange-400 hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>About</a>
-              <a href="/#how-it-works" className="text-white text-[14px] font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>How It Works</a>
-              <a href="/#features" className="text-white text-[14px] font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Features</a>
-              <a href="/#contact" className="text-white text-[14px] font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Contact</a>
+              <a href="/#about" className="text-[14px] font-medium leading-[94%] capitalize hover:bg-orange-900 px-1  hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>About</a>
+              <a href="/#how-it-works" className="text-white hover:bg-orange-900 text-[14px] font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>How It Works</a>
+              <a href="/#features" className="text-white text-[14px] hover:bg-orange-900 font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Features</a>
+              <a href="/#contact" className="text-white text-[14px] hover:bg-orange-900 font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Contact</a>
             </nav>
 
             {/* Action Buttons */}
@@ -38,4 +38,5 @@ function Header({ scrollToContactForm }) {
 }
 
 export default Header
+
 

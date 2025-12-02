@@ -42,7 +42,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/#about" className="text-orange-500 text-[14px] font-weight-400 font-normal hover:text-orange-400 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <a href="/#about" className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-400 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   About
                 </a>
               </li>
