@@ -170,7 +170,7 @@ function Home() {
           <div className="flex justify-start ml-28">
             {/* Left Content */}
             <div className="space-y-6">
-              <h2 className="text-[#fff] md:ml-20 ml-10 text-[40px] font-normal font-weight-600 leading-[105%]" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+              <h2 className="text-[#fff] md:ml-24 ml-10 text-[40px] font-normal font-weight-600 leading-[105%]" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
                 <span>One Platform,</span>
                 <br />
                 <span>Five Seamless</span>
@@ -179,7 +179,7 @@ function Home() {
               </h2>
 
               {/* CTA Button */}
-              <button onClick={scrollToContactForm} className="bg-white md:ml-20 ml-10 hover:bg-gray-100 text-black px-8 py-4 rounded-lg font-semibold text-base transition-colors">
+              <button onClick={scrollToContactForm} className="bg-white md:ml-24 ml-10 hover:bg-gray-100 text-black px-8 py-4 rounded-lg font-semibold text-base transition-colors">
                 Book A Demo
               </button>
             </div>
