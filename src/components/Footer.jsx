@@ -59,17 +59,17 @@ function Footer() {
             <h3 className="text-white font-semibold underline text-md mb-4" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/privacy-policy" className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <Link to="/privacy-policy" onClick={() => window.scrollTo(0, 0)} className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/tech-security-policy" className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <Link to="/tech-security-policy" onClick={() => window.scrollTo(0, 0)} className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   Tech Security Policy
                 </Link>
               </li>
               <li>
-                <Link to="/cookie-policy" className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <Link to="/cookie-policy" onClick={() => window.scrollTo(0, 0)} className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   Cookie Policy
                 </Link>
               </li>

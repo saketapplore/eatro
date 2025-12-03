@@ -155,7 +155,7 @@ function Home() {
       </section>
 
     {/* One Platform Five Seamless Experiences Section */}
-<section className="relative  md:max-w-[1400px] md:mr-14 sm:w-full sm:mx-auto overflow-hidden">
+<section className="relative w-[1400px] md:max-w-[1400px] md:mr-14 sm:w-full sm:mx-auto overflow-hidden">
 
 {/* Background Image */}
 <div className="relative w-full sm:mr-10 h-[520px] md:h-[720px]">
