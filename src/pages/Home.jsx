@@ -65,51 +65,51 @@ function Home() {
 
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto">
-        <div className="container mx-auto px-4 py-16">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto px-4 py-8 md:py-16">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               <div className="relative">
-                <img src="/images/own.png" alt="Own Your Growth" className="w-auto h-16 md:h-20 -ml-6 relative z-10 inline-block" />
-                <p className="text-[#000] text-[30px] font-medium leading-[36px] -mt-4 relative z-0" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+                <img src="/images/own.png" alt="Own Your Growth" className="w-auto h-12 sm:h-14 md:h-16 lg:h-20 -ml-3 sm:-ml-4 md:-ml-6 relative z-10 inline-block" />
+                <p className="text-[#000] text-[20px] sm:text-[24px] md:text-[28px] lg:text-[30px] font-medium leading-tight -mt-3 md:-mt-4 relative z-0" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
                   Manage Orders, Power Direct Sales, 
                 </p>
                 <br />
-                <p className="text-[#000] text-[30px] font-medium leading-[36px] -mt-8 relative z-0" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Ensure Seamless Delivery, Build Loyalty.</p>
+                <p className="text-[#000] text-[20px] sm:text-[24px] md:text-[28px] lg:text-[30px] font-medium leading-tight -mt-6 md:-mt-8 relative z-0" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Ensure Seamless Delivery, Build Loyalty.</p>
               </div>
 
               {/* Feature List */}
-              <div className="space-y-6">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-[10px] flex-shrink-0"></div>
-                  <p className="text-base leading-relaxed">
-                    <span className="font-bold text-orange-500">Reduced Delivery Fees:</span> <span className="text-black" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '14px', fontStyle: 'normal', fontWeight: 500 }}>Own your Sales Channel with your branded online store and application to accept direct orders</span>
+              <div className="space-y-4 md:space-y-6">
+                <div className="flex items-start gap-2 md:gap-3">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-[8px] md:mt-[10px] flex-shrink-0"></div>
+                  <p className="text-sm md:text-base leading-relaxed">
+                    <span className="font-bold text-orange-500">Reduced Delivery Fees:</span> <span className="text-black text-[13px] md:text-[14px]" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 500 }}>Own your Sales Channel with your branded online store and application to accept direct orders</span>
                   </p>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-[10px] flex-shrink-0"></div>
-                  <p className="text-base leading-relaxed">
-                    <span className="font-bold text-orange-500">Operational Peace of Mind:</span> <span className="text-black" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '14px', fontStyle: 'normal', fontWeight: 500 }}>Stop juggling screens. Consolidate every order channel from direct site, app, and all aggregators for a single, seamless flow, optimizing your kitchen and courier efficiency.</span>
+                <div className="flex items-start gap-2 md:gap-3">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-[8px] md:mt-[10px] flex-shrink-0"></div>
+                  <p className="text-sm md:text-base leading-relaxed">
+                    <span className="font-bold text-orange-500">Operational Peace of Mind:</span> <span className="text-black text-[13px] md:text-[14px]" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 500 }}>Stop juggling screens. Consolidate every order channel from direct site, app, and all aggregators for a single, seamless flow, optimizing your kitchen and courier efficiency.</span>
                   </p>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-[10px] flex-shrink-0"></div>
-                  <p className="text-base leading-relaxed">
-                    <span className="font-bold text-orange-500">The Blind Spot is Gone. Welcome to Full Customer Insights:</span> <span className="text-black" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '14px', fontStyle: 'normal', fontWeight: 500 }}>For the first time, know the names and order history of your best customers. Track which campaigns drive specific orders and measure the real cost of acquiring and retaining a customer, moving beyond guesswork.</span>
+                <div className="flex items-start gap-2 md:gap-3">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full mt-[8px] md:mt-[10px] flex-shrink-0"></div>
+                  <p className="text-sm md:text-base leading-relaxed">
+                    <span className="font-bold text-orange-500">The Blind Spot is Gone. Welcome to Full Customer Insights:</span> <span className="text-black text-[13px] md:text-[14px]" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 500 }}>For the first time, know the names and order history of your best customers. Track which campaigns drive specific orders and measure the real cost of acquiring and retaining a customer, moving beyond guesswork.</span>
                   </p>
                 </div>
               </div>
 
               {/* CTA Button */}
-              <button onClick={scrollToContactForm} className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+              <button onClick={scrollToContactForm} className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-7 md:px-8 py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-colors w-full sm:w-auto">
                 Book A Demo
               </button>
             </div>
 
             {/* Right Image */}
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center mt-8 md:mt-0">
               <img 
                 src="/images/heros.png" 
                 alt="Eatro Dashboard" 
@@ -122,8 +122,8 @@ function Home() {
 
       {/* Benefits Cards Section */}
       <section className="max-w-7xl mx-auto">
-        <div className="container mx-auto px-4 py-16">
-          <div className="grid md:grid-cols-3 gap-8">
+        <div className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {/* Card 1 - Save Delivery Fees */}
             <div className="relative">
               <img 
@@ -143,7 +143,7 @@ function Home() {
             </div>
 
             {/* Card 3 - Increase Staff Productivity */}
-            <div className="relative">
+            <div className="relative sm:col-span-2 md:col-span-1">
               <img 
                 src="/images/box3.png" 
                 alt="Increase Staff Productivity" 
@@ -154,41 +154,64 @@ function Home() {
         </div>
       </section>
 
-      {/* One Platform Five Seamless Experiences Section */}
-      <section className="relative min-h-[500px] md:min-h-[800px] mx-auto max-w-8xl mr-28 overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/bburger.png" 
-            alt="Background" 
-            className="max-w-8xl md:max-w-7xl md:mx-auto mx-auto h-full object-fill"
-          />
-        </div>
+    {/* One Platform Five Seamless Experiences Section */}
+<section className="relative  md:max-w-[1400px] md:mr-14 sm:w-full sm:mx-auto overflow-hidden">
 
-        {/* Content Container */}
-        <div className="relative z-10 max-w-7xl mx-auto pt-20">
-          <div className="flex justify-start ml-28">
-            {/* Left Content */}
-            <div className="space-y-6">
-              <h2 className="text-[#fff] md:ml-24 ml-10 text-[40px] font-normal font-weight-600 leading-[105%]" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
-                <span>One Platform,</span>
-                <br />
-                <span>Five Seamless</span>
-                <br />
-                <span>Experiences</span>
-              </h2>
+{/* Background Image */}
+<div className="relative w-full sm:mr-10 h-[520px] md:h-[720px]">
+  <img 
+    src="/images/qq.png" 
+    alt="Background"
+    className="
+      absolute inset-0 w-full h-full 
+      object-fill md:object-fill
+    "
+  />
 
-              {/* CTA Button */}
-              <button onClick={scrollToContactForm} className="bg-white md:ml-24 ml-10 hover:bg-gray-100 text-black px-8 py-4 rounded-lg font-semibold text-base transition-colors">
-                Book A Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+  {/* TEXT & BUTTON INSIDE IMAGE */}
+  <div className="absolute top-[20%] md:top-[20%] left-[14%] md:left-[12%] z-10">
+
+    {/* Title */}
+    <h2 
+      className="
+        text-white 
+        text-[10px] sm:ml-28 md:ml-0 leading-[110%]
+        md:text-[40px] md:leading-[100%]
+        font-semibold
+      "
+      style={{ fontFamily: 'Chillax' }}
+    >
+      One Platform,<br />
+      Five Seamless<br />
+      Experiences
+    </h2>
+
+    {/* Button */}
+    <button 
+      onClick={scrollToContactForm}
+      className="
+        mt-8
+        bg-white text-black
+        px-4 md:px-8 
+        py-2 md:py-4 
+        rounded-lg 
+        font-semibold 
+        text-[8px] sm:text-[10px] md:text-base
+        shadow-lg
+        hover:bg-gray-100
+      "
+    >
+      Book A Demo
+    </button>
+
+  </div>
+</div>
+
+</section>
+
 
         {/* Integrated Partners Section */}
-        <section className="max-w-7xl mx-auto -mt-24">
+        <section className="max-w-7xl mx-auto">
         <div className="container mx-auto px-4 mb-16">
           <div className="flex flex-col items-center space-y-8">
             {/* Heading */}
@@ -210,72 +233,72 @@ function Home() {
       </section>
 
       {/* Seamless Integrations Section */}
-      <section className="relative py-16 overflow-hidden" style={{ backgroundColor: '' }}>
+      <section className="relative py-8 md:py-12 lg:py-16 overflow-hidden min-h-[500px] sm:min-h-[600px] md:min-h-[700px]" style={{ backgroundColor: '#fff8f2' }}>
         {/* Background Image */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 flex items-center justify-center">
           <img 
             src="/images/ddesk.png" 
             alt="Background" 
-            className="w-full h-full object-fill"
+            className="w-full h-full object-contain sm:object-cover md:object-fill"
           />
         </div>
 
         {/* Content Container */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           {/* Title and Subtitle - Centered at Top */}
-          <div className="text-center mb-20">
-            <h2 className="text-[40px] font-bold leading-[105%] mb-4" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+          <div className="text-center mb-8 md:mb-12 lg:mb-16 xl:mb-20">
+            <h2 className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-bold leading-[105%] mb-3 md:mb-4 px-2" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
               <span className="text-black">Seamless</span>{' '}
               <span className="text-orange-500">Integrations for Restaurants</span>
             </h2>
             
-            <p className="text-[#282828] text-center font-weight-400 text-[16px] font-normal max-w-4xl mx-auto" style={{ fontFamily: 'Poppins', fontStyle: 'normal', leadingTrim: 'both', textEdge: 'cap' }}>
+            <p className="text-[#282828] text-center font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal max-w-4xl mx-auto px-2" style={{ fontFamily: 'Poppins', fontStyle: 'normal', leadingTrim: 'both', textEdge: 'cap' }}>
               Achieve instant operational efficiency. Choose a top-tier POS integration or deploy the Eatro Tablet to ensure your menus, orders, and inventory are automatically synchronized in real-time.
             </p>
           </div>
 
           {/* Two Column Layout */}
-          <div className="grid md:grid-cols-2 mb-20 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 mb-8 md:mb-12 lg:mb-16 xl:mb-20 gap-6 md:gap-8 lg:gap-12 items-center">
             {/* Left Content - Features List */}
-            <div className="space-y-3">
-              <div className="flex items-start gap-3">
+            <div className="space-y-3 md:space-y-4">
+              <div className="flex items-start gap-2 md:gap-3">
                 <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <p className="text-[#282828] font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   Connect easily with POS providers
                 </p>
               </div>
 
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-2 md:gap-3">
                 <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <p className="text-[#282828] font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   Keep menus & prices synced automatically
                 </p>
               </div>
 
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-2 md:gap-3">
                 <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <p className="text-[#282828] font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   Track inventory and update in real time
                 </p>
               </div>
 
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-2 md:gap-3">
                 <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                  Post orders and print receipts ensuring a unified and <br /> efficient workflow
+                <p className="text-[#282828] font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  Post orders and print receipts ensuring a unified and efficient workflow
                 </p>
               </div>
 
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-2 md:gap-3">
                 <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <p className="text-[#282828] font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   Single Source of Truth For all Aggregator orders
                 </p>
               </div>
 
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-2 md:gap-3">
                 <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <p className="text-[#282828] font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   Live Tracking for Deliveries
                 </p>
               </div>
@@ -469,64 +492,62 @@ function Home() {
 
       {/* Loyalty Tastes Better Direct Section */}
       <section className="max-w-7xl mx-auto">
-        <div className="container mx-auto px-4 py-16">
-          <div className="grid md:grid-cols-2 gap-36 items-center">
+        <div className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-24 xl:gap-36 items-center">
             {/* Left Image */}
-            <div className="flex justify-center mt-24 items-center">
+            <div className="flex justify-center mt-0 md:mt-12 lg:mt-24 items-center order-2 md:order-1">
               <img 
                 src="/images/scooty.png" 
                 alt="Loyalty Tastes Better Direct" 
-                className="w-full h-[500px] rounded-lg"
+                className="w-full h-auto md:h-[400px] lg:h-[450px] xl:h-[500px] rounded-lg object-cover"
               />
             </div>
 
             {/* Right Content */}
-            <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl font-normal font-weight-500 leading-tight" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+            <div className="space-y-4 md:space-y-6 order-1 md:order-2">
+              <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-normal font-weight-500 leading-tight" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
                 <span className="text-black font-weight-500 font-normal">Loyalty Tastes</span>
                 <br />
                 <span className="text-orange-500 font-bold">Better Direct</span>
-                <br />
-                
               </h2>
               
-              <p className="text-[#282828] max-w-lg font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                A seamless experience that makes food ordering <br />effortless
+              <p className="text-[#282828] max-w-lg font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                A seamless experience that makes food ordering effortless
               </p>
 
               {/* Feature List */}
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
+              <div className="space-y-3 md:space-y-4">
+                <div className="flex items-start gap-2 md:gap-3">
                   <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                  <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Order favourites directly with the restaurant
                   </p>
                 </div>
 
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-2 md:gap-3">
                   <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                  <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Track orders live with real-time GPS tracking
                   </p>
-            </div>
+                </div>
 
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-2 md:gap-3">
                   <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                  <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Secure checkout with Apple pay and Google pay
                   </p>
                 </div>
 
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-2 md:gap-3">
                   <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                  <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Reorder and accumulate loyalty points
                   </p>
                 </div>
 
-                <div className="flex items-start gap-3">
+                <div className="flex items-start gap-2 md:gap-3">
                   <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                  <p className="text-[#282828] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Rate and review your experience
                   </p>
                 </div>
@@ -662,37 +683,38 @@ function Home() {
 
       {/* FAQ Section */}
       <section className="max-w-7xl mx-auto">
-        <div className="container mx-auto px-4 py-16">
+        <div className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
           {/* Heading */}
-          <div className="text-center mb-12">
-            <h2 className="text-[45px] font-semibold mb-3" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+          <div className="text-center mb-8 md:mb-10 lg:mb-12">
+            <h2 className="text-[28px] sm:text-[32px] md:text-[38px] lg:text-[45px] font-semibold mb-2 md:mb-3" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
               <span className="text-black">Frequently</span>{' '}
               <span className="text-orange-500">Asked Questions</span>
             </h2>
-            <p className="text-gray-600 text-base">
+            <p className="text-gray-600 text-sm md:text-base">
               Everything you need to know about our platform
             </p>
           </div>
 
           {/* FAQ Items */}
-          <div className="max-w-4xl mx-auto space-y-4">
+          <div className="max-w-4xl mx-auto space-y-3 md:space-y-4">
             {/* FAQ Item 1 */}
-            <div className="relative bg-[#faf8f5] rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-              <div className="p-5 flex items-center justify-between">
-                <p className="text-[#282828] text-[20px] font-normal font-weight-400 pr-4 flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+            <div className="relative bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="p-4 md:p-5 flex items-center justify-between gap-3">
+                <p className="text-[#282828] text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-normal font-weight-400 flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   How does Eatro help me maximize the value of my customer data?
                 </p>
                 <button 
                   onClick={() => toggleFAQ(0)}
-                  className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl hover:bg-orange-600 transition-colors" 
+                  className="flex-shrink-0 w-7 h-7 md:w-8 md:h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg md:text-xl hover:bg-orange-600 transition-colors" 
                   style={{ lineHeight: '16' }}
+                  aria-label="Toggle FAQ 1"
                 >
                   <span className="block" style={{ marginTop: '-2px' }}>{openFAQs[0] ? '−' : '+'}</span>
                 </button>
               </div>
               {openFAQs[0] && (
-                <div className="px-5 pb-5">
-                  <p className="text-[#282828] font-weight-400 text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <div className="px-4 md:px-5 pb-4 md:pb-5">
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[17px] lg:text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Eatro provides comprehensive customer insights by tracking all orders across your direct channels and aggregators. You can see customer names, order history, preferences, and lifetime value. Our analytics help you identify your best customers, understand which campaigns drive specific orders, and measure the real cost of customer acquisition and retention.
                   </p>
                 </div>
@@ -700,22 +722,23 @@ function Home() {
             </div>
 
             {/* FAQ Item 2 */}
-            <div className="bg-[#faf8f5] rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-              <div className="p-5 flex items-center justify-between">
-                <p className="text-[#282828] font-weight-400 text-[20px] font-normal pr-4 flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+            <div className="bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="p-4 md:p-5 flex items-center justify-between gap-3">
+                <p className="text-[#282828] font-weight-400 text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-normal flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   How does Eatro integrate with my existing restaurant technology?
                 </p>
                 <button 
                   onClick={() => toggleFAQ(1)}
-                  className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl hover:bg-orange-600 transition-colors" 
+                  className="flex-shrink-0 w-7 h-7 md:w-8 md:h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg md:text-xl hover:bg-orange-600 transition-colors" 
                   style={{ lineHeight: '16' }}
+                  aria-label="Toggle FAQ 2"
                 >
                   <span className="block" style={{ marginTop: '-2px' }}>{openFAQs[1] ? '−' : '+'}</span>
                 </button>
               </div>
               {openFAQs[1] && (
-                <div className="px-5 pb-5">
-                  <p className="text-[#282828] font-weight-400 text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <div className="px-4 md:px-5 pb-4 md:pb-5">
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[17px] lg:text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Eatro offers seamless integration with popular POS systems and can also deploy the Eatro Tablet for real-time synchronization. Our platform automatically syncs menus, prices, inventory, and orders, ensuring your operations run smoothly without manual data entry. We support integrations with major POS providers and can work with custom systems.
                   </p>
                 </div>
@@ -723,22 +746,23 @@ function Home() {
             </div>
 
             {/* FAQ Item 3 */}
-            <div className="bg-[#faf8f5] rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-              <div className="p-5 flex items-center justify-between">
-                <p className="text-[#282828] font-weight-400 text-[20px] font-normal pr-4 flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+            <div className="bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="p-4 md:p-5 flex items-center justify-between gap-3">
+                <p className="text-[#282828] font-weight-400 text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-normal flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   What payment methods are supported, and how does Eatro manage the transactions?
                 </p>
                 <button 
                   onClick={() => toggleFAQ(2)}
-                  className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl hover:bg-orange-600 transition-colors" 
+                  className="flex-shrink-0 w-7 h-7 md:w-8 md:h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg md:text-xl hover:bg-orange-600 transition-colors" 
                   style={{ lineHeight: '16' }}
+                  aria-label="Toggle FAQ 3"
                 >
                   <span className="block" style={{ marginTop: '-2px' }}>{openFAQs[2] ? '−' : '+'}</span>
                 </button>
               </div>
               {openFAQs[2] && (
-                <div className="px-5 pb-5">
-                  <p className="text-[#282828] font-weight-400 text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <div className="px-4 md:px-5 pb-4 md:pb-5">
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[17px] lg:text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Eatro supports multiple payment methods including credit cards, debit cards, Apple Pay, Google Pay, and other digital wallets. All transactions are processed securely through our integrated payment gateway. You receive payouts according to your configured schedule, and all transaction data is tracked in your dashboard for easy reconciliation and reporting.
                   </p>
                 </div>
@@ -746,22 +770,23 @@ function Home() {
             </div>
 
             {/* FAQ Item 4 */}
-            <div className="bg-[#faf8f5] rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-              <div className="p-5 flex items-center justify-between">
-                <p className="text-[#282828] font-weight-400 text-[20px] font-normal pr-4 flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+            <div className="bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="p-4 md:p-5 flex items-center justify-between gap-3">
+                <p className="text-[#282828] font-weight-400 text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-normal flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   What is the onboarding process and how quickly can I launch my branded ordering channels?
                 </p>
                 <button 
                   onClick={() => toggleFAQ(3)}
-                  className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl hover:bg-orange-600 transition-colors" 
+                  className="flex-shrink-0 w-7 h-7 md:w-8 md:h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg md:text-xl hover:bg-orange-600 transition-colors" 
                   style={{ lineHeight: '16' }}
+                  aria-label="Toggle FAQ 4"
                 >
                   <span className="block" style={{ marginTop: '-2px' }}>{openFAQs[3] ? '−' : '+'}</span>
                 </button>
               </div>
               {openFAQs[3] && (
-                <div className="px-5 pb-5">
-                  <p className="text-[#282828] font-weight-400 text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <div className="px-4 md:px-5 pb-4 md:pb-5">
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[17px] lg:text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Our onboarding process is streamlined and typically takes 1-2 weeks. We'll help you set up your branded online store and mobile app, integrate with your POS system, configure your menu and pricing, and set up payment processing. Our team provides dedicated support throughout the process to ensure a smooth launch. Most restaurants are live and accepting orders within 10-14 days.
                   </p>
                 </div>
@@ -769,22 +794,23 @@ function Home() {
             </div>
 
             {/* FAQ Item 5 */}
-            <div className="bg-[#faf8f5] rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-              <div className="p-5 flex items-center justify-between">
-                <p className="text-[#282828] font-weight-400 text-[20px] font-normal pr-4 flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+            <div className="bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="p-4 md:p-5 flex items-center justify-between gap-3">
+                <p className="text-[#282828] font-weight-400 text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-normal flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   How are deliveries fulfilled for orders placed on my Eatro channels?
                 </p>
                 <button 
                   onClick={() => toggleFAQ(4)}
-                  className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-xl hover:bg-orange-600 transition-colors" 
+                  className="flex-shrink-0 w-7 h-7 md:w-8 md:h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg md:text-xl hover:bg-orange-600 transition-colors" 
                   style={{ lineHeight: '16' }}
+                  aria-label="Toggle FAQ 5"
                 >
                   <span className="block" style={{ marginTop: '-2px' }}>{openFAQs[4] ? '−' : '+'}</span>
                 </button>
               </div>
               {openFAQs[4] && (
-                <div className="px-5 pb-5">
-                  <p className="text-[#282828] font-weight-400 text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <div className="px-4 md:px-5 pb-4 md:pb-5">
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[17px] lg:text-[20px] font-normal leading-relaxed" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Eatro integrates with delivery partners like Careem and other courier services to handle deliveries. You can also use your own delivery fleet if preferred. The platform provides real-time tracking for all deliveries, so both you and your customers can monitor order status. All delivery options and fees are configurable in your dashboard.
                   </p>
                 </div>
