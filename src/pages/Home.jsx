@@ -169,7 +169,7 @@ function Home() {
   />
 
   {/* TEXT & BUTTON INSIDE IMAGE */}
-  <div className="absolute top-[20%] md:top-[20%] left-[14%] md:left-[12%] z-10">
+  <div className="absolute top-[20%] md:top-[20%] left-[14%] md:left-[10%] z-10">
 
     {/* Title */}
     <h2 
