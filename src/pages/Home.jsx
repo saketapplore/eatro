@@ -155,10 +155,10 @@ function Home() {
       </section>
 
     {/* One Platform Five Seamless Experiences Section */}
-<section className="relative w-[1400px] md:max-w-[1400px] md:mr-14 sm:w-full sm:mx-auto overflow-hidden">
+<section className="relative w-[1400px] md:max-w-[1300px] sm:w-full sm:mx-auto overflow-hidden">
 
 {/* Background Image */}
-<div className="relative w-full sm:mr-10 h-[520px] md:h-[720px]">
+<div className="relative w-full sm:mr-10 h-[520px] md:h-[620px]">
   <img 
     src="/images/qq.png" 
     alt="Background"
@@ -190,7 +190,7 @@ function Home() {
     <button 
       onClick={scrollToContactForm}
       className="
-        mt-8
+        mt-4
         bg-white text-black
         px-4 md:px-8 
         py-2 md:py-4 
@@ -310,7 +310,7 @@ function Home() {
       </section>
 
       {/* Row Images Section */}
-      <section className="max-w-7xl mx-auto py-20">
+      <section id="how-it-works" className="max-w-7xl mx-auto py-20">
         {/* Title and Subtitle - Centered at Top */}
         <div className="text-center mb-12 px-4">
           <h2 className="text-[40px] font-bold leading-[105%] mb-4" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
@@ -386,7 +386,7 @@ function Home() {
       </section> */}
 
       {/* One Platform Total Control Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section id="features" className="relative py-20 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 

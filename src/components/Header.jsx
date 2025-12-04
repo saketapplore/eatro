@@ -20,7 +20,7 @@ function Header({ scrollToContactForm }) {
             {/* Logo */}
             <div className="flex items-center py-2 space-x-2">
               <a href="/">
-                <img src="/images/group1.svg" alt="Eatro Logo" className="h-5 md:h-6" />
+                <img src="/images/group1.svg" alt="Eatro Logo" className="h-5 md:h-6 ml-20" />
               </a>
             </div>
 
@@ -29,7 +29,7 @@ function Header({ scrollToContactForm }) {
               <a href="/#about" className="text-[14px] font-medium leading-[94%] capitalize hover:bg-orange-900 px-1 hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>About</a>
               <a href="/#how-it-works" className="text-white hover:bg-orange-900 text-[14px] font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>How It Works</a>
               <a href="/#features" className="text-white text-[14px] hover:bg-orange-900 font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Features</a>
-              <a href="/#contact" className="text-white text-[14px] hover:bg-orange-900 font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Contact</a>
+              <a href="/#contact-form" className="text-white text-[14px] hover:bg-orange-900 font-medium leading-[94%] capitalize hover:text-orange-500 transition-colors" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Contact</a>
             </nav>
 
             {/* Action Buttons (Desktop) */}
