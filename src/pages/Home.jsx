@@ -156,7 +156,7 @@ function Home() {
 
     {/* One Platform Five Seamless Experiences Section */}
 {/* One Platform Five Seamless Experiences Section */}
-<section className="relative w-full max-w-[1400px] md:max-w-[1300px] sm:w-full sm:mx-auto px-4 overflow-hidden">
+<section className="relative w-full max-w-[1600px] md:max-w-[1300px] sm:w-full sm:mx-auto px-4 overflow-hidden">
 
   {/* Background Image Wrapper */}
   <div className="relative w-full h-[420px] sm:h-[500px] md:h-[520px] lg:h-[700px]">
