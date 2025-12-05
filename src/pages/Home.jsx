@@ -232,82 +232,102 @@ function Home() {
         </div>
       </section>
 
-      {/* Seamless Integrations Section */}
-      <section className="relative py-8 md:py-12 lg:py-16 overflow-hidden min-h-[500px] sm:min-h-[600px] md:min-h-[700px]" style={{ backgroundColor: '#fff8f2' }}>
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <img 
-            src="/images/ddesk.png" 
-            alt="Background" 
-            className="w-full h-full object-contain sm:object-cover md:object-fill"
-          />
-        </div>
+     {/* Seamless Integrations Section */}
+<section 
+  className="
+    relative 
+    py-8 md:py-12 lg:py-16 
+    overflow-hidden 
+    min-h-[500px] sm:min-h-[600px] md:min-h-[700px]
+  " 
+  style={{ backgroundColor: '#fff8f2' }}
+>
 
-        {/* Content Container */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-          {/* Title and Subtitle - Centered at Top */}
-          <div className="text-center mb-8 md:mb-12 lg:mb-16 xl:mb-20">
-            <h2 className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-bold leading-[105%] mb-3 md:mb-4 px-2" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
-              <span className="text-black">Seamless</span>{' '}
-              <span className="text-orange-500">Integrations for Restaurants</span>
-            </h2>
-            
-            <p className="text-[#282828] text-center font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal max-w-4xl mx-auto px-2" style={{ fontFamily: 'Poppins', fontStyle: 'normal', leadingTrim: 'both', textEdge: 'cap' }}>
-              Achieve instant operational efficiency. Choose a top-tier POS integration or deploy the Eatro Tablet to ensure your menus, orders, and inventory are automatically synchronized in real-time.
+  {/* Background Image */}
+  <div className="absolute inset-0 z-0 flex items-center justify-center">
+    <img 
+      src="/images/ddesk.png" 
+      alt="Background" 
+      className="
+        w-full h-full 
+        object-cover 
+        md:object-cover 
+        lg:object-contain 
+        xl:object-cover
+      "
+    />
+  </div>
+
+  {/* Content Wrapper (bigger max width for big screens) */}
+  <div className="relative z-10 w-full max-w-[1500px] mx-auto px-6 lg:px-12 xl:px-16">
+
+    {/* Title + Subtitle */}
+    <div className="text-center mb-8 md:mb-12 lg:mb-16 xl:mb-20">
+      <h2 
+        className="
+          text-[24px] sm:text-[28px] md:text-[32px] 
+          lg:text-[36px] xl:text-[42px] 
+          font-bold leading-[105%] mb-4 px-2
+        " 
+        style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}
+      >
+        <span className="text-black">Seamless</span>{' '}
+        <span className="text-orange-500">Integrations for Restaurants</span>
+      </h2>
+
+      <p 
+        className="
+          text-[#282828] 
+          text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] 
+          max-w-4xl mx-auto px-2
+        " 
+        style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
+      >
+        Achieve instant operational efficiency. Choose a top-tier POS integration or deploy the Eatro Tablet to ensure your menus, orders, and inventory are automatically synchronized in real-time.
+      </p>
+    </div>
+
+    {/* Two Column Layout with Larger Spacing on Big Screens */}
+    <div className="
+      grid grid-cols-1 md:grid-cols-2 
+      mb-8 md:mb-12 lg:mb-16 xl:mb-20 
+      gap-8 md:gap-10 lg:gap-14 xl:gap-20 
+      items-center
+    ">
+
+      {/* Left Side Feature List */}
+      <div className="space-y-4 md:space-y-5 lg:space-y-6">
+
+        {[
+          "Connect easily with POS providers",
+          "Keep menus & prices synced automatically",
+          "Track inventory and update in real time",
+          "Post orders and print receipts ensuring a unified and efficient workflow",
+          "Single Source of Truth For all Aggregator orders",
+          "Live Tracking for Deliveries",
+        ].map((text, i) => (
+          <div className="flex items-start gap-3 md:gap-4" key={i}>
+            <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+            <p 
+              className="
+                text-[#282828] 
+                text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+              " 
+              style={{ fontFamily: 'Poppins' }}
+            >
+              {text}
             </p>
           </div>
+        ))}
 
-          {/* Two Column Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 mb-8 md:mb-12 lg:mb-16 xl:mb-20 gap-6 md:gap-8 lg:gap-12 items-center">
-            {/* Left Content - Features List */}
-            <div className="space-y-3 md:space-y-4">
-              <div className="flex items-start gap-2 md:gap-3">
-                <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                <p className="text-[#282828] font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                  Connect easily with POS providers
-                </p>
-              </div>
+      </div>
 
-              <div className="flex items-start gap-2 md:gap-3">
-                <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                <p className="text-[#282828] font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                  Keep menus & prices synced automatically
-                </p>
-              </div>
+      {/* RIGHT COLUMN CONTENT (your image or other content will remain untouched) */}
 
-              <div className="flex items-start gap-2 md:gap-3">
-                <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                <p className="text-[#282828] font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                  Track inventory and update in real time
-                </p>
-              </div>
+    </div>
+  </div>
+</section>
 
-              <div className="flex items-start gap-2 md:gap-3">
-                <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                <p className="text-[#282828] font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                  Post orders and print receipts ensuring a unified and efficient workflow
-                </p>
-              </div>
-
-              <div className="flex items-start gap-2 md:gap-3">
-                <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                <p className="text-[#282828] font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                  Single Source of Truth For all Aggregator orders
-                </p>
-              </div>
-
-              <div className="flex items-start gap-2 md:gap-3">
-                <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
-                <p className="text-[#282828] font-weight-400 text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                  Live Tracking for Deliveries
-                </p>
-              </div>
-            </div>
-
-           
-          </div>
-        </div>
-      </section>
 
       {/* Row Images Section */}
       <section id="how-it-works" className="max-w-7xl mx-auto py-20">
@@ -385,110 +405,128 @@ function Home() {
         </div>
       </section> */}
 
-      {/* One Platform Total Control Section */}
-      <section id="features" className="relative py-20 overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/group12.png" 
-            alt="Background" 
-            className="w-full h-full object-fill"
-          />
-        </div>
+    {/* One Platform Total Control Section */}
+<section id="features" className="relative py-20 overflow-hidden">
+  
+  {/* Background Image */}
+  <div className="absolute inset-0 z-0">
+    <img 
+      src="/images/group12.png" 
+      alt="Background" 
+      className="w-full h-full object-cover md:object-center lg:object-fill"
+    />
+  </div>
 
-        {/* Content Container */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div className="space-y-8">
-              <h2 className="text-[50px] leading-tight" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
-                <span className="text-white font-weight-500 font-normal">One Platform,</span>
-                <br />
-                <span className="text-orange-500 font-bold">Total Control</span>
-              </h2>
-              
-              <p className="text-[#ffffff] font-weight-400 text-[16px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                Reclaim control by running all operations from one place. Our platform delivers the centralized visibility you need to manage your business effectively.
-              </p>
+  {/* Content Container */}
+  <div className="relative z-10 w-full max-w-[1500px] mx-auto px-6 lg:px-12">
 
-              {/* Feature Icons Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {/* Feature 1 */}
-                <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
-                    <img 
-                      src="/images/gr1.png" 
-                      alt="Manage menus" 
-                      className="w-16 h-16 object-contain"
-                    />
-                  </div>
-                  <p className="text-white text-[14px] font-normal font-weight-400" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                    Manage menus & inventory
-                  </p>
+    <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      {/* Left Content */}
+      <div className="space-y-8">
+        <h2 
+          className="text-[32px] sm:text-[42px] md:text-[50px] lg:text-[56px] leading-tight" 
+          style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}
+        >
+          <span className="text-white font-weight-500 font-normal">One Platform,</span>
+          <br />
+          <span className="text-orange-500 font-bold">Total Control</span>
+        </h2>
+        
+        <p 
+          className="text-[#ffffff] font-weight-400 text-[16px] font-normal" 
+          style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
+        >
+          Reclaim control by running all operations from one place. Our platform delivers the centralized visibility you need to manage your business effectively.
+        </p>
+
+        {/* Feature Icons Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+          {/* Feature 1 */}
+          <div className="flex flex-col items-center text-center space-y-3">
+            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
+              <img 
+                src="/images/gr1.png" 
+                alt="Manage menus" 
+                className="w-14 h-14 md:w-16 md:h-16 object-contain"
+              />
             </div>
-
-                {/* Feature 2 */}
-                <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
-                    <img 
-                      src="/images/gr2.png" 
-                      alt="Track incoming orders" 
-                      className="w-16 h-16 object-contain"
-                    />
-                  </div>
-                  <p className="text-white text-[14px] font-normal font-weight-400" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                    Track incoming orders in real-time
-                  </p>
-                </div>
-
-                {/* Feature 3 */}
-                <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
-                    <img 
-                      src="/images/gr3.png" 
-                      alt="Analyze revenue" 
-                      className="w-16 h-16 object-contain"
-                    />
-                  </div>
-                  <p className="text-white text-[14px] font-normal font-weight-400" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                    Analyze revenue & payouts
-                  </p>
-                </div>
-
-                {/* Feature 4 */}
-                <div className="flex flex-col items-center text-center space-y-3">
-                  <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
-                    <img 
-                      src="/images/gr4.png" 
-                      alt="Offer discounts" 
-                      className="w-16 h-16 object-contain"
-                    />
-                  </div>
-                  <p className="text-white text-[14px] font-normal font-weight-400" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                    Offer discounts & promotions
-                  </p>
-                </div>
-              </div>
-
-              {/* CTA Button */}
-              <button onClick={scrollToContactForm} className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-base transition-colors">
-                Book A Demo
-              </button>
-            </div>
-
-            {/* Right Image - Dashboard Mockup */}
-            {/* <div className="relative flex justify-center items-center">
-              <div className="relative">
-                <img 
-                  src="/images/ii.png" 
-                  alt="Dashboard Preview" 
-                  className="w-full h-auto rounded-2xl shadow-2xl"
-                />
-              </div>
-            </div> */}
+            <p 
+              className="text-white text-[14px] font-normal font-weight-400" 
+              style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
+            >
+              Manage menus & inventory
+            </p>
           </div>
+
+          {/* Feature 2 */}
+          <div className="flex flex-col items-center text-center space-y-3">
+            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
+              <img 
+                src="/images/gr2.png" 
+                alt="Track incoming orders" 
+                className="w-14 h-14 md:w-16 md:h-16 object-contain"
+              />
+            </div>
+            <p 
+              className="text-white text-[14px] font-normal font-weight-400" 
+              style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
+            >
+              Track incoming orders in real-time
+            </p>
+          </div>
+
+          {/* Feature 3 */}
+          <div className="flex flex-col items-center text-center space-y-3">
+            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
+              <img 
+                src="/images/gr3.png" 
+                alt="Analyze revenue" 
+                className="w-14 h-14 md:w-16 md:h-16 object-contain"
+              />
+            </div>
+            <p 
+              className="text-white text-[14px] font-normal font-weight-400" 
+              style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
+            >
+              Analyze revenue & payouts
+            </p>
+          </div>
+
+          {/* Feature 4 */}
+          <div className="flex flex-col items-center text-center space-y-3">
+            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
+              <img 
+                src="/images/gr4.png" 
+                alt="Offer discounts" 
+                className="w-14 h-14 md:w-16 md:h-16 object-contain"
+              />
+            </div>
+            <p 
+              className="text-white text-[14px] font-normal font-weight-400" 
+              style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
+            >
+              Offer discounts & promotions
+            </p>
+          </div>
+
         </div>
-      </section>
+
+        {/* CTA Button */}
+        <button 
+          onClick={scrollToContactForm} 
+          className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-base transition-colors"
+        >
+          Book A Demo
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
 
       {/* Loyalty Tastes Better Direct Section */}
       <section className="max-w-7xl mx-auto">
