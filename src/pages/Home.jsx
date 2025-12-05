@@ -155,59 +155,59 @@ function Home() {
       </section>
 
     {/* One Platform Five Seamless Experiences Section */}
-<section className="relative w-[1400px] md:max-w-[1300px] sm:w-full sm:mx-auto overflow-hidden">
+{/* One Platform Five Seamless Experiences Section */}
+<section className="relative w-full max-w-[1400px] md:max-w-[1300px] sm:w-full sm:mx-auto px-4 overflow-hidden">
 
-{/* Background Image */}
-<div className="relative w-full sm:mr-10 h-[520px] md:h-[620px]">
-  <img 
-    src="/images/qq.png" 
-    alt="Background"
-    className="
-      absolute inset-0 w-full h-full 
-      object-fill md:object-fill
-    "
-  />
+  {/* Background Image Wrapper */}
+  <div className="relative w-full h-[420px] sm:h-[500px] md:h-[520px] lg:h-[700px]">
 
-  {/* TEXT & BUTTON INSIDE IMAGE */}
-  <div className="absolute top-[20%] md:top-[20%] left-[14%] md:left-[10%] z-10">
-
-    {/* Title */}
-    <h2 
+    <img 
+      src="/images/qq.png" 
+      alt="Background"
       className="
-        text-white 
-        text-[10px] sm:ml-28 md:ml-0 leading-[110%]
-        md:text-[40px] md:leading-[100%]
-        font-semibold
+        absolute inset-0 w-full h-full 
+        object-cover md:object-contain
       "
-      style={{ fontFamily: 'Chillax' }}
-    >
-      One Platform,<br />
-      Five Seamless<br />
-      Experiences
-    </h2>
+    />
 
-    {/* Button */}
-    <button 
-      onClick={scrollToContactForm}
-      className="
-        mt-4
-        bg-white text-black
-        px-4 md:px-8 
-        py-2 md:py-4 
-        rounded-lg 
-        font-semibold 
-        text-[8px] sm:text-[10px] md:text-base
-        shadow-lg
-        hover:bg-gray-100
-      "
-    >
-      Book A Demo
-    </button>
+    {/* TEXT + BUTTON */}
+    <div className="absolute top-[18%] sm:top-[20%] left-[10%] md:left-[8%] lg:left-[10%] z-10">
 
+      {/* Title */}
+      <h2 
+        className="
+          text-white
+          text-[22px] sm:text-[32px] md:text-[20px] lg:text-[40px]
+          leading-tight font-semibold
+        "
+        style={{ fontFamily: 'Chillax' }}
+      >
+        One Platform,<br />
+        Five Seamless<br />
+        Experiences
+      </h2>
+
+      {/* Button */}
+      <button 
+        onClick={scrollToContactForm}
+        className="
+          mt-4
+          bg-white text-black
+          px-4 sm:px-6 md:px-8 
+          py-2 sm:py-3 md:py-4
+          rounded-lg font-semibold 
+          text-xs sm:text-sm md:text-base
+          shadow-lg hover:bg-gray-100
+        "
+      >
+        Book A Demo
+      </button>
+
+    </div>
   </div>
-</div>
 
 </section>
+
 
 
         {/* Integrated Partners Section */}
