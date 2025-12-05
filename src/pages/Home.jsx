@@ -267,7 +267,7 @@ function Home() {
         className="
           text-[24px] sm:text-[28px] md:text-[32px] 
           lg:text-[36px] xl:text-[42px] 
-          font-bold leading-[105%] mb-4 px-2
+          font-bold leading-[105%] mb-2 px-2
         " 
         style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}
       >
