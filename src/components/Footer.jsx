@@ -7,7 +7,7 @@ function Footer() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/foots.png" 
+          src="/images/foott.png" 
           alt="Footer Background" 
           className="w-full h-full object-fill"
         />
@@ -18,8 +18,12 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Left Section - Logo and Info */}
           <div className="space-y-6 mt-6 ml-12">
-           
-            <p className="text-white text-[12px] leading-relaxed mt-10 mb-6" style={{ color: '#FFF', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 400 }}>
+            <img
+              src="/images/elogo.png"
+              alt="Eatro logo"
+              className="w-[100px] md:w-[100px]"
+            />
+            <p className="text-white text-[12px] leading-relaxed mt-6 md:mt-10 mb-6" style={{ color: '#FFF', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 400 }}>
             The All In One Solution To Build Back Loyalty <br />and Maximize Margins
             </p>
             <p className="text-white text-xs" style={{ color: '#FFF', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 400 }}>
@@ -47,7 +51,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/#contact" className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <a href="/#contact-form" className="text-white text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   Contact
                 </a>
               </li>

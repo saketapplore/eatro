@@ -12,7 +12,7 @@ function Header({ scrollToContactForm }) {
   }
 
   return (
-    <header className="relative">
+    <header id="about" className="relative">
       <div className="bg-black max-w-full text-white rounded-b-3xl overflow-hidden clip-custom">
         <div className="container px-4 py-4 relative">
           <div className="flex items-center justify-between">
