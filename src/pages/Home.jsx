@@ -266,7 +266,7 @@ function Home() {
 <section 
   className="
     relative 
-    py-8 md:py-12 lg:py-16 
+    pt-4 pb-8 md:pt-6 md:pb-12 lg:pt-8 lg:pb-16 min-[1700px]:pt-4 min-[1700px]:pb-16 min-[2100px]:pt-6 min-[2100px]:pb-20
     overflow-hidden 
     min-h-[500px] sm:min-h-[600px] md:min-h-[700px]
   " 
@@ -292,12 +292,12 @@ function Home() {
   <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto px-6 lg:px-12 xl:px-16 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32">
 
     {/* Title + Subtitle */}
-    <div className="text-center mb-8 md:mb-12 lg:mb-16 xl:mb-20">
+    <div className="text-center mb-8 md:mb-10 lg:mb-12 xl:mb-14 min-[1700px]:mb-10 min-[2100px]:mb-12">
       <h2 
         className="
           text-[24px] sm:text-[28px] md:text-[28px] 
           lg:text-[28px] xl:text-[42px] min-[1700px]:text-[44px] min-[2100px]:text-[48px]
-          font-bold leading-[105%] mb-2 px-2
+          font-bold leading-[105%] mb-2 md:mb-3 px-2
         " 
         style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}
       >
@@ -308,8 +308,8 @@ function Home() {
       <p 
         className="
           text-[#282828] 
-          text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] min-[1700px]:text-[18px] min-[2100px]:text-[19px]
-          max-w-4xl min-[1700px]:max-w-5xl min-[2100px]:max-w-6xl mx-auto px-2
+          text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] min-[1700px]:text-[17px] min-[2100px]:text-[18px]
+          max-w-4xl min-[1700px]:max-w-4xl min-[2100px]:max-w-5xl mx-auto px-2
         " 
         style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
       >
@@ -624,63 +624,63 @@ function Home() {
 
 
       {/* Loyalty Tastes Better Direct Section */}
-      <section className="w-full max-w-7xl min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] mx-auto">
-        <div className="px-4 py-8 md:py-12 lg:py-16 min-[1800px]:py-20 min-[2100px]:py-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-24 min-[1800px]:gap-32 min-[2100px]:gap-40 items-center">
+      <section className="w-full max-w-7xl min-[1800px]:max-w-[1400px] min-[2100px]:max-w-[1600px] mx-auto">
+        <div className="px-4 md:px-8 lg:px-12 min-[1800px]:px-16 min-[2100px]:px-20 py-8 md:py-12 lg:py-16 min-[1800px]:py-20 min-[2100px]:py-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-20 min-[1800px]:gap-20 min-[2100px]:gap-24 items-center justify-items-center">
             {/* Left Image */}
-            <div className="flex justify-center mt-0 md:mt-12 lg:mt-24 min-[1800px]:mt-32 min-[2100px]:mt-40 items-center order-2 md:order-1">
+            <div className="flex justify-center mt-0 md:mt-8 lg:mt-12 min-[1800px]:mt-16 min-[2100px]:mt-20 items-center order-2 md:order-1">
               <img 
                 src="/images/scooty.png" 
                 alt="Loyalty Tastes Better Direct" 
-                className="w-full h-auto md:h-[450px] lg:h-[550px] min-[1800px]:h-[550px] min-[2100px]:h-[800px] rounded-lg object-cover"
+                className="w-full h-auto md:h-[450px] lg:h-[500px] min-[1800px]:h-[550px] min-[2100px]:h-[650px] rounded-lg object-cover"
               />
             </div>
 
             {/* Right Content */}
-            <div className="space-y-4 md:space-y-6 min-[1800px]:space-y-8 min-[2100px]:space-y-10 order-1 md:order-2">
-              <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl min-[1800px]:text-6xl min-[2100px]:text-7xl font-normal font-weight-500 leading-tight" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+            <div className="space-y-4 md:space-y-6 min-[1800px]:space-y-7 min-[2100px]:space-y-8 order-1 md:order-2">
+              <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl min-[1800px]:text-5xl min-[2100px]:text-6xl font-normal font-weight-500 leading-tight" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
                 <span className="text-black font-weight-500 font-normal">Loyalty Tastes</span>
                 <br />
                 <span className="text-orange-500 font-bold">Better Direct</span>
               </h2>
               
-              <p className="text-[#282828] max-w-lg font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+              <p className="text-[#282828] max-w-lg min-[1800px]:max-w-xl min-[2100px]:max-w-2xl font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[17px] min-[2100px]:text-[18px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                 A seamless experience that makes food ordering effortless
               </p>
 
               {/* Feature List */}
-              <div className="space-y-3 md:space-y-4 min-[1800px]:space-y-5 min-[2100px]:space-y-6">
-                <div className="flex items-start gap-2 md:gap-3 min-[1800px]:gap-4 min-[2100px]:gap-5">
-                  <div className="w-2 h-2 min-[1800px]:w-2.5 min-[1800px]:h-2.5 min-[2100px]:w-3 min-[2100px]:h-3 bg-orange-500 mt-2 min-[1800px]:mt-2.5 min-[2100px]:mt-3 flex-shrink-0"></div>
-                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+              <div className="space-y-3 md:space-y-4 min-[1800px]:space-y-4 min-[2100px]:space-y-5">
+                <div className="flex items-start gap-2 md:gap-3 min-[1800px]:gap-3 min-[2100px]:gap-4">
+                  <div className="w-2 h-2 min-[1800px]:w-2.5 min-[1800px]:h-2.5 min-[2100px]:w-2.5 min-[2100px]:h-2.5 bg-orange-500 mt-2 min-[1800px]:mt-2 min-[2100px]:mt-2.5 flex-shrink-0"></div>
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[17px] min-[2100px]:text-[18px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Order favourites directly with the restaurant
                   </p>
                 </div>
 
-                <div className="flex items-start gap-2 md:gap-3 min-[1800px]:gap-4 min-[2100px]:gap-5">
-                  <div className="w-2 h-2 min-[1800px]:w-2.5 min-[1800px]:h-2.5 min-[2100px]:w-3 min-[2100px]:h-3 bg-orange-500 mt-2 min-[1800px]:mt-2.5 min-[2100px]:mt-3 flex-shrink-0"></div>
-                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <div className="flex items-start gap-2 md:gap-3 min-[1800px]:gap-3 min-[2100px]:gap-4">
+                  <div className="w-2 h-2 min-[1800px]:w-2.5 min-[1800px]:h-2.5 min-[2100px]:w-2.5 min-[2100px]:h-2.5 bg-orange-500 mt-2 min-[1800px]:mt-2 min-[2100px]:mt-2.5 flex-shrink-0"></div>
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[17px] min-[2100px]:text-[18px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Track orders live with real-time GPS tracking
                   </p>
                 </div>
 
-                <div className="flex items-start gap-2 md:gap-3 min-[1800px]:gap-4 min-[2100px]:gap-5">
-                  <div className="w-2 h-2 min-[1800px]:w-2.5 min-[1800px]:h-2.5 min-[2100px]:w-3 min-[2100px]:h-3 bg-orange-500 mt-2 min-[1800px]:mt-2.5 min-[2100px]:mt-3 flex-shrink-0"></div>
-                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <div className="flex items-start gap-2 md:gap-3 min-[1800px]:gap-3 min-[2100px]:gap-4">
+                  <div className="w-2 h-2 min-[1800px]:w-2.5 min-[1800px]:h-2.5 min-[2100px]:w-2.5 min-[2100px]:h-2.5 bg-orange-500 mt-2 min-[1800px]:mt-2 min-[2100px]:mt-2.5 flex-shrink-0"></div>
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[17px] min-[2100px]:text-[18px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Secure checkout with Apple pay and Google pay
                   </p>
                 </div>
 
-                <div className="flex items-start gap-2 md:gap-3 min-[1800px]:gap-4 min-[2100px]:gap-5">
-                  <div className="w-2 h-2 min-[1800px]:w-2.5 min-[1800px]:h-2.5 min-[2100px]:w-3 min-[2100px]:h-3 bg-orange-500 mt-2 min-[1800px]:mt-2.5 min-[2100px]:mt-3 flex-shrink-0"></div>
-                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <div className="flex items-start gap-2 md:gap-3 min-[1800px]:gap-3 min-[2100px]:gap-4">
+                  <div className="w-2 h-2 min-[1800px]:w-2.5 min-[1800px]:h-2.5 min-[2100px]:w-2.5 min-[2100px]:h-2.5 bg-orange-500 mt-2 min-[1800px]:mt-2 min-[2100px]:mt-2.5 flex-shrink-0"></div>
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[17px] min-[2100px]:text-[18px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Reorder and accumulate loyalty points
                   </p>
                 </div>
 
-                <div className="flex items-start gap-2 md:gap-3 min-[1800px]:gap-4 min-[2100px]:gap-5">
-                  <div className="w-2 h-2 min-[1800px]:w-2.5 min-[1800px]:h-2.5 min-[2100px]:w-3 min-[2100px]:h-3 bg-orange-500 mt-2 min-[1800px]:mt-2.5 min-[2100px]:mt-3 flex-shrink-0"></div>
-                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <div className="flex items-start gap-2 md:gap-3 min-[1800px]:gap-3 min-[2100px]:gap-4">
+                  <div className="w-2 h-2 min-[1800px]:w-2.5 min-[1800px]:h-2.5 min-[2100px]:w-2.5 min-[2100px]:h-2.5 bg-orange-500 mt-2 min-[1800px]:mt-2 min-[2100px]:mt-2.5 flex-shrink-0"></div>
+                  <p className="text-[#282828] font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[17px] min-[2100px]:text-[18px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     Rate and review your experience
                   </p>
                 </div>
