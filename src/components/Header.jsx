@@ -14,7 +14,8 @@ function Header({ scrollToContactForm }) {
   return (
     <header id="about" className="relative">
       <div className="bg-black max-w-full text-white rounded-b-3xl overflow-hidden clip-custom">
-        <div className="container px-4 py-4 relative">
+      <div className="px-4 py-4 relative w-full max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] mx-auto">
+
           <div className="flex items-center justify-between">
             
             {/* Logo */}

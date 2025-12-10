@@ -64,7 +64,15 @@ function Home() {
 
 
       {/* Hero Section */}
-      <section className="w-full max-w-7xl min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] mx-auto">
+      <section className="
+  w-full 
+  max-w-6xl              
+  lg:max-w-7xl           
+  min-[1800px]:max-w-[1600px] 
+  min-[2100px]:max-w-[1800px] 
+  mx-auto
+">
+
         <div className="px-4 py-8 md:py-16 lg:py-20 min-[1800px]:py-28 min-[2100px]:py-32">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 min-[1800px]:gap-24 min-[2100px]:gap-28 items-center">
             {/* Left Content */}
@@ -156,29 +164,33 @@ function Home() {
 
     {/* One Platform Five Seamless Experiences Section */}
 {/* One Platform Five Seamless Experiences Section */}
-<section className="relative w-full max-w-[1600px] md:max-w-[1300px] min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] sm:w-full sm:mx-auto px-4 overflow-hidden">
+<section className="relative w-full max-w-[1600px] md:max-w-[1300px] min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] sm:w-full sm:mx-auto px-4 overflow-hidden bg-[#fff8f2]">
 
   {/* Background Image Wrapper */}
-  <div className="relative w-full h-[420px] sm:h-[500px] md:h-[520px] lg:h-[700px] min-[1800px]:h-[850px] min-[2100px]:h-[1000px]">
+  <div className="relative w-full h-auto min-h-[420px] sm:h-[500px] md:h-[520px] lg:h-[700px] min-[1800px]:h-[850px] min-[2100px]:h-[1000px] pt-6 md:pt-0 pb-10 sm:pb-0 flex flex-col gap-4 md:block">
+    {/* Mobile overlay for readability */}
+    <div className="absolute inset-0 md:hidden z-10"></div>
 
     <img 
       src="/images/qq.png" 
       alt="Background"
       className="
-        absolute inset-0 w-full h-full 
-        object-cover md:object-contain
+        relative md:absolute md:inset-0 w-full h-full 
+        object-contain
+        p-4 md:p-0
       "
     />
 
     {/* TEXT + BUTTON */}
-    <div className="absolute top-[18%] sm:top-[20%] left-[10%] md:left-[8%] lg:left-[10%] min-[1800px]:left-[12%] z-10">
+    <div className="relative md:absolute top-0 sm:top-[18%] md:top-[20%] left-0 sm:left-[8%] md:left-[8%] lg:left-[10%] min-[1800px]:left-[12%] z-20 w-full sm:w-[84%] md:w-auto px-0">
 
       {/* Title */}
       <h2 
         className="
           text-white
-          text-[22px] sm:text-[32px] md:text-[20px] lg:text-[40px] min-[1800px]:text-[45px] min-[2100px]:text-[40px]
-          leading-tight font-semibold
+          text-[18px] sm:text-[22px] md:text-[24px] lg:text-[32px] min-[1800px]:text-[45px] min-[2100px]:text-[40px]
+          leading-[1.2] sm:leading-tight font-semibold
+          bg-orange-500 md:bg-transparent rounded-xl md:rounded-none px-4 py-3 md:px-0 md:py-0 shadow-md md:shadow-none max-w-full sm:max-w-[90%] md:max-w-none
         "
         style={{ fontFamily: 'Chillax' }}
       >
@@ -187,22 +199,40 @@ function Home() {
         Experiences
       </h2>
 
-      {/* Button */}
-      <button 
+      {/* Desktop Button (hidden on mobile) */}
+      <div className="hidden md:block">
+        <button 
+          onClick={scrollToContactForm}
+          className="
+            mt-3 sm:mt-4 min-[1800px]:mt-6 min-[2100px]:mt-8
+            bg-white text-black
+            px-3 py-2 sm:px-4 sm:py-2 md:px-8 min-[1800px]:px-10 min-[2100px]:px-12
+            md:py-4 min-[1800px]:py-5 min-[2100px]:py-6
+            rounded-lg font-semibold 
+            text-[11px] sm:text-[13px] md:text-base min-[1800px]:text-lg min-[2100px]:text-xl
+            shadow-lg hover:bg-gray-100
+            w-auto
+          "
+        >
+          Book A Demo
+        </button>
+      </div>
+
+    </div>
+    {/* Mobile-only button inside the section, below image */}
+    <div className="md:hidden px-0 pt-2">
+      <button
         onClick={scrollToContactForm}
         className="
-          mt-4 min-[1800px]:mt-6 min-[2100px]:mt-8
-          bg-white text-black
-          px-4 sm:px-6 md:px-8 min-[1800px]:px-10 min-[2100px]:px-12
-          py-2 sm:py-3 md:py-4 min-[1800px]:py-5 min-[2100px]:py-6
-          rounded-lg font-semibold 
-          text-xs sm:text-sm md:text-base min-[1800px]:text-lg min-[2100px]:text-xl
-          shadow-lg hover:bg-gray-100
+          w-full
+          bg-orange-600 text-white
+          px-4 py-3
+          rounded-lg font-semibold text-[13px]
+          shadow-lg hover:bg-orange-700
         "
       >
         Book A Demo
       </button>
-
     </div>
   </div>
 
@@ -259,14 +289,14 @@ function Home() {
   </div>
 
   {/* Content Wrapper (bigger max width for big screens) */}
-  <div className="relative z-10 w-full max-w-[1500px] mx-auto px-6 lg:px-12 xl:px-16">
+  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto px-6 lg:px-12 xl:px-16 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32">
 
     {/* Title + Subtitle */}
     <div className="text-center mb-8 md:mb-12 lg:mb-16 xl:mb-20">
       <h2 
         className="
-          text-[24px] sm:text-[28px] md:text-[32px] 
-          lg:text-[36px] xl:text-[42px] 
+          text-[24px] sm:text-[28px] md:text-[28px] 
+          lg:text-[28px] xl:text-[42px] min-[1700px]:text-[44px] min-[2100px]:text-[48px]
           font-bold leading-[105%] mb-2 px-2
         " 
         style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}
@@ -278,8 +308,8 @@ function Home() {
       <p 
         className="
           text-[#282828] 
-          text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] 
-          max-w-4xl mx-auto px-2
+          text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] min-[1700px]:text-[18px] min-[2100px]:text-[19px]
+          max-w-4xl min-[1700px]:max-w-5xl min-[2100px]:max-w-6xl mx-auto px-2
         " 
         style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
       >
@@ -291,12 +321,13 @@ function Home() {
     <div className="
       grid grid-cols-1 md:grid-cols-2 
       mb-8 md:mb-12 lg:mb-16 xl:mb-20 
-      gap-8 md:gap-10 lg:gap-14 xl:gap-20 
+      gap-8 md:gap-10 lg:gap-14 xl:gap-20 min-[1700px]:gap-24 min-[2100px]:gap-32
       items-center
+      min-[1700px]:justify-items-start
     ">
 
       {/* Left Side Feature List */}
-      <div className="space-y-4 md:space-y-5 lg:space-y-6">
+      <div className="space-y-4 md:space-y-5 lg:space-y-6 min-[1700px]:space-y-7 min-[2100px]:space-y-8 min-[1700px]:ml-0 min-[1700px]:pl-0 min-[2100px]:ml-0 min-[2100px]:pl-0">
 
         {[
           "Connect easily with POS providers",
@@ -306,12 +337,12 @@ function Home() {
           "Single Source of Truth For all Aggregator orders",
           "Live Tracking for Deliveries",
         ].map((text, i) => (
-          <div className="flex items-start gap-3 md:gap-4" key={i}>
-            <div className="w-2 h-2 bg-orange-500 mt-2 flex-shrink-0"></div>
+          <div className="flex items-start gap-3 md:gap-4 min-[1700px]:gap-5 min-[2100px]:gap-6" key={i}>
+            <div className="w-2 h-2 min-[1700px]:w-2.5 min-[1700px]:h-2.5 min-[2100px]:w-3 min-[2100px]:h-3 bg-orange-500 mt-2 min-[1700px]:mt-2.5 min-[2100px]:mt-3 flex-shrink-0"></div>
             <p 
               className="
                 text-[#282828] 
-                text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+                text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] min-[1700px]:text-[18px] min-[2100px]:text-[20px]
               " 
               style={{ fontFamily: 'Poppins' }}
             >
@@ -470,7 +501,7 @@ function Home() {
       </section> */}
 
     {/* One Platform Total Control Section */}
-<section id="features" className="relative py-20 overflow-hidden">
+<section id="features" className="relative py-20 min-[1700px]:py-24 min-[2100px]:py-28 overflow-hidden">
   
   {/* Background Image */}
   <div className="absolute inset-0 z-0">
@@ -482,14 +513,14 @@ function Home() {
   </div>
 
   {/* Content Container */}
-  <div className="relative z-10 w-full max-w-[1500px] mx-auto px-6 lg:px-12">
+  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto px-6 lg:px-12 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32">
 
-    <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+    <div className="grid md:grid-cols-2 gap-12 lg:gap-20 min-[1700px]:gap-24 min-[2100px]:gap-32 items-center">
 
       {/* Left Content */}
-      <div className="space-y-8">
+      <div className="space-y-6 md:space-y-8 min-[1700px]:space-y-10 min-[2100px]:space-y-12">
         <h2 
-          className="text-[32px] sm:text-[42px] md:text-[50px] lg:text-[56px] leading-tight" 
+          className="text-[32px] sm:text-[42px] md:text-[50px] lg:text-[56px] min-[1700px]:text-[60px] min-[2100px]:text-[64px] leading-tight" 
           style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}
         >
           <span className="text-white font-weight-500 font-normal">One Platform,</span>
@@ -498,26 +529,26 @@ function Home() {
         </h2>
         
         <p 
-          className="text-[#ffffff] font-weight-400 text-[16px] font-normal" 
+          className="text-[#ffffff] font-weight-400 text-[16px] min-[1700px]:text-[17px] min-[2100px]:text-[18px] font-normal" 
           style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
         >
           Reclaim control by running all operations from one place. Our platform delivers the centralized visibility you need to manage your business effectively.
         </p>
 
         {/* Feature Icons Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 min-[1700px]:gap-7 min-[2100px]:gap-8">
 
           {/* Feature 1 */}
-          <div className="flex flex-col items-center text-center space-y-3">
-            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
+          <div className="flex flex-col items-center text-center space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5">
+            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 min-[1700px]:p-7 min-[2100px]:p-8 flex items-center justify-center hover:border-orange-500 transition-all">
               <img 
                 src="/images/gr1.png" 
                 alt="Manage menus" 
-                className="w-14 h-14 md:w-16 md:h-16 object-contain"
+                className="w-14 h-14 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 object-contain"
               />
             </div>
             <p 
-              className="text-white text-[14px] font-normal font-weight-400" 
+              className="text-white text-[14px] min-[1700px]:text-[15px] min-[2100px]:text-[16px] font-normal font-weight-400" 
               style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
             >
               Manage menus & inventory
@@ -525,16 +556,16 @@ function Home() {
           </div>
 
           {/* Feature 2 */}
-          <div className="flex flex-col items-center text-center space-y-3">
-            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
+          <div className="flex flex-col items-center text-center space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5">
+            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 min-[1700px]:p-7 min-[2100px]:p-8 flex items-center justify-center hover:border-orange-500 transition-all">
               <img 
                 src="/images/gr2.png" 
                 alt="Track incoming orders" 
-                className="w-14 h-14 md:w-16 md:h-16 object-contain"
+                className="w-14 h-14 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 object-contain"
               />
             </div>
             <p 
-              className="text-white text-[14px] font-normal font-weight-400" 
+              className="text-white text-[14px] min-[1700px]:text-[15px] min-[2100px]:text-[16px] font-normal font-weight-400" 
               style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
             >
               Track incoming orders in real-time
@@ -542,16 +573,16 @@ function Home() {
           </div>
 
           {/* Feature 3 */}
-          <div className="flex flex-col items-center text-center space-y-3">
-            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
+          <div className="flex flex-col items-center text-center space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5">
+            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 min-[1700px]:p-7 min-[2100px]:p-8 flex items-center justify-center hover:border-orange-500 transition-all">
               <img 
                 src="/images/gr3.png" 
                 alt="Analyze revenue" 
-                className="w-14 h-14 md:w-16 md:h-16 object-contain"
+                className="w-14 h-14 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 object-contain"
               />
             </div>
             <p 
-              className="text-white text-[14px] font-normal font-weight-400" 
+              className="text-white text-[14px] min-[1700px]:text-[15px] min-[2100px]:text-[16px] font-normal font-weight-400" 
               style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
             >
               Analyze revenue & payouts
@@ -559,16 +590,16 @@ function Home() {
           </div>
 
           {/* Feature 4 */}
-          <div className="flex flex-col items-center text-center space-y-3">
-            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 flex items-center justify-center hover:border-orange-500 transition-all">
+          <div className="flex flex-col items-center text-center space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5">
+            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 min-[1700px]:p-7 min-[2100px]:p-8 flex items-center justify-center hover:border-orange-500 transition-all">
               <img 
                 src="/images/gr4.png" 
                 alt="Offer discounts" 
-                className="w-14 h-14 md:w-16 md:h-16 object-contain"
+                className="w-14 h-14 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 object-contain"
               />
             </div>
             <p 
-              className="text-white text-[14px] font-normal font-weight-400" 
+              className="text-white text-[14px] min-[1700px]:text-[15px] min-[2100px]:text-[16px] font-normal font-weight-400" 
               style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
             >
               Offer discounts & promotions
@@ -580,7 +611,7 @@ function Home() {
         {/* CTA Button */}
         <button 
           onClick={scrollToContactForm} 
-          className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-base transition-colors"
+          className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 min-[1700px]:px-10 min-[1700px]:py-5 min-[2100px]:px-12 min-[2100px]:py-6 rounded-lg font-semibold text-base min-[1700px]:text-[17px] min-[2100px]:text-lg transition-colors"
         >
           Book A Demo
         </button>
@@ -923,9 +954,9 @@ function Home() {
       </section>
 
       {/* Ready To Launch Section */}
-      <section className="relative max-w-7xl mx-auto py-8 overflow-hidden">
+      <section className="relative max-w-7xl mx-auto py-8 overflow-hidden bg-black md:bg-transparent">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 hidden md:block">
           <img 
             src="/images/blackbg.png" 
             alt="Background" 
@@ -935,10 +966,10 @@ function Home() {
 
         {/* Content Container */}
         <div className="relative z-10 max-w-7xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {/* Left Content */}
-            <div className="flex-1 ml-8">
-              <h2 className="text-white text-[35px] font-semibold leading-tight mb-3 capitalize" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+            <div className="flex-1 w-full md:w-auto md:ml-8 text-center md:text-left">
+              <h2 className="text-white text-[30px] sm:text-[32px] md:text-[35px] font-semibold leading-tight mb-3 capitalize" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
                 <span>Ready To Launch Your</span>
                 <br />
                 <span className="text-orange-500">Direct Ordering Sales </span>
@@ -951,12 +982,12 @@ function Home() {
             </div>
 
             {/* Right Orange Section with Buttons */}
-            <div className="relative mr-36">
-              <div className=" rounded-3xl px-12 py-8 flex flex-col items-center justify-center space-y-4">
+            <div className="relative w-full md:w-auto md:mr-36">
+              <div className="bg-orange-500 md:bg-transparent rounded-3xl px-8 py-6 md:px-12 md:py-8 flex flex-col items-center justify-center space-y-4 shadow-lg md:shadow-none">
                 {/* App Store Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                <div className="flex flex-col sm:flex-row gap-4 mt-4 md:mt-6 w-full md:w-auto">
                   {/* App Store Button */}
-                  <button className="bg-white rounded-full px-6 py-3 flex items-center gap-3 hover:bg-gray-100 transition-colors">
+                  <button className="bg-white rounded-full px-6 py-3 flex items-center gap-3 hover:bg-gray-100 transition-colors w-full sm:w-auto justify-center sm:justify-start">
                     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                     </svg>
@@ -967,7 +998,7 @@ function Home() {
                   </button>
 
                   {/* Google Play Button */}
-                  <button className="bg-white rounded-full px-6 py-3 flex items-center gap-3 hover:bg-gray-100 transition-colors">
+                  <button className="bg-white rounded-full px-6 py-3 flex items-center gap-3 hover:bg-gray-100 transition-colors w-full sm:w-auto justify-center sm:justify-start">
                     <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                     </svg>
@@ -979,7 +1010,7 @@ function Home() {
                 </div>
 
                 {/* One Platform Text */}
-                <p className="text-white text-sm font-medium">
+                <p className="text-white text-sm font-medium text-center md:text-left">
                   One Platform, Total Control
                 </p>
               </div>
