@@ -13,22 +13,22 @@ function CookiePolicy() {
       <Header scrollToContactForm={scrollToContactForm} />
 
       {/* Cookie Policy Content */}
-      <section className="max-w-7xl mx-auto pt-2">
-        <div className="bg-[#faf8f5] rounded-lg py-8 md:py-2 max-w-7xl">
+      <section className="max-w-7xl mx-auto min-[1700px]:max-w-[1400px] min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:max-w-[1600px] min-[2100px]:ml-32 min-[2100px]:mr-auto pt-2 px-4 min-[1700px]:px-12 min-[2100px]:px-16">
+        <div className="bg-[#faf8f5] rounded-lg py-8 md:py-2 min-[1700px]:py-20 min-[2100px]:py-24 px-6 min-[1700px]:px-16 min-[2100px]:px-20 max-w-full">
           {/* Title */}
-          <div className="mb-12">
+          <div className="mb-12 min-[1700px]:mb-14 min-[2100px]:mb-16">
             <img 
               src="/images/cookiepolicy.png" 
               alt="Eatro Cookie Policy" 
-              className="w-[600px] h-[120px] max-w-full"
+              className="w-[600px] min-[1700px]:w-[700px] min-[2100px]:w-[800px] h-[120px] max-w-full"
             />
           </div>
 
           {/* Content */}
-          <div className="space-y-8 text-[#282828] max-w-full" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontSize: '16px', lineHeight: '1.8' }}>
+          <div className="space-y-8 min-[1700px]:space-y-9 min-[2100px]:space-y-10 text-[#282828] max-w-full" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontSize: '16px', lineHeight: '1.8' }}>
             
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>1. What Are Cookies?</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>1. What Are Cookies?</h2>
               <p className="mb-4">
                 Cookies are small text files that are downloaded to your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide reporting information and personalized experiences.
               </p>
@@ -38,12 +38,12 @@ function CookiePolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>2. How Eatro Uses Cookies</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>2. How Eatro Uses Cookies</h2>
               <p className="mb-4">
                 Eatro Tech FZ-LLC uses cookies for two primary purposes:
               </p>
               
-              <h3 className="text-xl font-semibold mb-3 mt-6" style={{ fontFamily: 'Poppins', fontWeight: 600 }}>A. On the Eatro Corporate Website (eatrotech.ae)</h3>
+              <h3 className="text-xl min-[1700px]:text-[21px] min-[2100px]:text-[22px] font-semibold mb-3 mt-6" style={{ fontFamily: 'Poppins', fontWeight: 600 }}>A. On the Eatro Corporate Website (eatrotech.ae)</h3>
               <p className="mb-4">
                 We use cookies to manage our own corporate website, primarily for:
               </p>
@@ -53,7 +53,7 @@ function CookiePolicy() {
                 <li><strong>Marketing & Advertising:</strong> To track the effectiveness of our campaigns and serve relevant advertisements to potential Merchants.</li>
               </ul>
 
-              <h3 className="text-xl font-semibold mb-3 mt-6" style={{ fontFamily: 'Poppins', fontWeight: 600 }}>B. On Merchant Ordering Channels (e.g., yourrestaurant.eatrotech.ae)</h3>
+              <h3 className="text-xl min-[1700px]:text-[21px] min-[2100px]:text-[22px] font-semibold mb-3 mt-6" style={{ fontFamily: 'Poppins', fontWeight: 600 }}>B. On Merchant Ordering Channels (e.g., yourrestaurant.eatrotech.ae)</h3>
               <p className="mb-4">
                 When an End Customer places an order through a Merchant's branded website or app powered by Eatro, we use cookies <b> on behalf of that Merchant </b> for essential operational purposes:
               </p>
@@ -65,7 +65,7 @@ function CookiePolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>3. Types of Cookies We Use</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>3. Types of Cookies We Use</h2>
               <p className="mb-4">
                 We use first-party cookies (set by us) and third-party cookies (set by a different domain). The cookies used on our corporate site and on the Merchant ordering channels fall into the following categories:
               </p>
@@ -98,7 +98,7 @@ function CookiePolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>4. Data Ownership and Third-Party Cookies</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>4. Data Ownership and Third-Party Cookies</h2>
               <p className="mb-4">
               <span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span>  <strong>Merchant Sites:</strong> For cookies dropped on the Merchant's branded ordering channels, any data collected that tracks an End Customer's ordering behavior is owned by the <strong>Merchant (Data Controller)</strong> and processed by Eatro.
               </p>
@@ -108,7 +108,7 @@ function CookiePolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>5. Your Choices and Consent (UAE PDPL Compliant)</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>5. Your Choices and Consent (UAE PDPL Compliant)</h2>
               <p className="mb-4">
                 In line with the principles of the UAE PDPL, we are committed to obtaining your clear consent for non-essential cookies.
               </p>
@@ -137,14 +137,14 @@ function CookiePolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>6. Changes to This Policy</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>6. Changes to This Policy</h2>
               <p className="mb-4">
                 We may update this Cookie Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any changes by posting the new Cookie Policy on this page and updating the "Effective Date."
               </p>
             </div>
 
             <div className=''>
-              <h2 className="mb-4 " style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>7. Contact Us</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>7. Contact Us</h2>
               <p className="mb-4">
                 If you have any questions about our use of cookies, please contact us:
               </p>

@@ -130,7 +130,7 @@ function Home() {
 
       {/* Benefits Cards Section */}
       <section className="w-full max-w-7xl min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] mx-auto">
-        <div className="px-4 py-8 md:py-12 lg:py-16 min-[1800px]:py-20 min-[2100px]:py-24">
+        <div className="px-4 py-8 md:py-12 lg:pt-16 lg:pb-0 min-[1800px]:py-20 min-[2100px]:py-24">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 min-[1800px]:gap-10 min-[2100px]:gap-12">
             {/* Card 1 - Save Delivery Fees */}
             <div className="relative">
@@ -424,7 +424,7 @@ function Home() {
                 {/* Card 3: In Transit */}
                 <div className="relative p-5 min-[1800px]:p-6 min-[2100px]:p-8 shadow-sm" style={{ borderRadius: '20px', opacity:1,background: '#EBE4DC' }}>
                   <div className="flex items-start gap-3 min-[1800px]:gap-4 min-[2100px]:gap-5">
-                    <img src="/images/l3.png" alt="In transit icon" className="w-10 h-14 min-[1800px]:w-12 min-[1800px]:h-16 min-[2100px]:w-14 min-[2100px]:h-20 object-contain flex-shrink-0" />
+                    <img src="/images/group13.png" alt="In transit icon" className="w-10 h-14 min-[1800px]:w-12 min-[1800px]:h-16 min-[2100px]:w-14 min-[2100px]:h-20 object-contain flex-shrink-0" />
                     <div className="flex flex-col">
                       <h3 className="min-[1800px]:text-[24px] min-[2100px]:text-[28px]" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '20px', fontStyle: 'normal', fontWeight: 700, margin: 0 }}>In Transit</h3>
                       <p className="min-[1800px]:text-[17px] min-[2100px]:text-[19px]" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '15px', fontStyle: 'normal', fontWeight: 400, margin: 0 }}>An Eatro network rider receives the order, begins the journey to your location, and then heads out for delivery</p>
@@ -753,26 +753,6 @@ function Home() {
                       className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm"
                     />
                   </div>
-                  <div>
-                    <input
-                      type="text"
-                      name="companyName"
-                      value={formData.companyName}
-                      onChange={handleInputChange}
-                      placeholder="Company Name"
-                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="text"
-                      name="numberOfLocations"
-                      value={formData.numberOfLocations}
-                      onChange={handleInputChange}
-                      placeholder="Number of Locations"
-                      className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm"
-                    />
-                  </div>
                 </div>
 
                 {/* Right Column */}
@@ -797,6 +777,30 @@ function Home() {
                       className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm"
                     />
                   </div>
+                </div>
+              </div>
+
+              {/* Full Width Fields */}
+              <div className="space-y-4">
+                <div>
+                  <input
+                    type="text"
+                    name="companyName"
+                    value={formData.companyName}
+                    onChange={handleInputChange}
+                    placeholder="Company Name"
+                    className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="numberOfLocations"
+                    value={formData.numberOfLocations}
+                    onChange={handleInputChange}
+                    placeholder="Number of Locations"
+                    className="w-full px-4 py-2 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm"
+                  />
                 </div>
               </div>
 
@@ -831,7 +835,7 @@ function Home() {
           {/* FAQ Items */}
           <div className="max-w-4xl mx-auto space-y-3 md:space-y-4 min-[1800px]:space-y-5 min-[2100px]:space-y-6">
             {/* FAQ Item 1 */}
-            <div className="relative bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+            <div className="relative bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border-l-4 border-orange-500">
               <div className="p-4 md:p-5 min-[1800px]:p-6 min-[2100px]:p-7 flex items-center justify-between gap-3 min-[1800px]:gap-4 min-[2100px]:gap-5">
                 <p className="text-[#282828] text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] min-[1800px]:text-[22px] min-[2100px]:text-[24px] font-normal font-weight-400 flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   How does Eatro help me maximize the value of my customer data?
@@ -855,7 +859,7 @@ function Home() {
             </div>
 
             {/* FAQ Item 2 */}
-            <div className="bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+            <div className="bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border-l-4 border-orange-500">
               <div className="p-4 md:p-5 min-[1800px]:p-6 min-[2100px]:p-7 flex items-center justify-between gap-3 min-[1800px]:gap-4 min-[2100px]:gap-5">
                 <p className="text-[#282828] font-weight-400 text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] min-[1800px]:text-[22px] min-[2100px]:text-[24px] font-normal flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   How does Eatro integrate with my existing restaurant technology?
@@ -879,7 +883,7 @@ function Home() {
             </div>
 
             {/* FAQ Item 3 */}
-            <div className="bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+            <div className="bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border-l-4 border-orange-500">
               <div className="p-4 md:p-5 min-[1800px]:p-6 min-[2100px]:p-7 flex items-center justify-between gap-3 min-[1800px]:gap-4 min-[2100px]:gap-5">
                 <p className="text-[#282828] font-weight-400 text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] min-[1800px]:text-[22px] min-[2100px]:text-[24px] font-normal flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   What payment methods are supported, and how does Eatro manage the transactions?
@@ -903,7 +907,7 @@ function Home() {
             </div>
 
             {/* FAQ Item 4 */}
-            <div className="bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+            <div className="bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border-l-4 border-orange-500">
               <div className="p-4 md:p-5 min-[1800px]:p-6 min-[2100px]:p-7 flex items-center justify-between gap-3 min-[1800px]:gap-4 min-[2100px]:gap-5">
                 <p className="text-[#282828] font-weight-400 text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] min-[1800px]:text-[22px] min-[2100px]:text-[24px] font-normal flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   What is the onboarding process and how quickly can I launch my branded ordering channels?
@@ -927,7 +931,7 @@ function Home() {
             </div>
 
             {/* FAQ Item 5 */}
-            <div className="bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+            <div className="bg-[#faf8f5] rounded-lg md:rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden border-l-4 border-orange-500">
               <div className="p-4 md:p-5 min-[1800px]:p-6 min-[2100px]:p-7 flex items-center justify-between gap-3 min-[1800px]:gap-4 min-[2100px]:gap-5">
                 <p className="text-[#282828] font-weight-400 text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] min-[1800px]:text-[22px] min-[2100px]:text-[24px] font-normal flex-1" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   How are deliveries fulfilled for orders placed on my Eatro channels?

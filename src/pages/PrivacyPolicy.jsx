@@ -13,22 +13,22 @@ function PrivacyPolicy() {
       <Header scrollToContactForm={scrollToContactForm} />
 
       {/* Privacy Policy Content */}
-      <section className="max-w-7xl mx-auto pt-2">
-        <div className="bg-[#faf8f5] rounded-lg py-8 md:py-2 max-w-7xl">
+      <section className="max-w-7xl mx-auto min-[1700px]:max-w-[1400px] min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:max-w-[1600px] min-[2100px]:ml-32 min-[2100px]:mr-auto pt-2 px-4 min-[1700px]:px-12 min-[2100px]:px-16">
+        <div className="bg-[#faf8f5] rounded-lg py-8 md:py-2 min-[1700px]:py-20 min-[2100px]:py-24 px-6 min-[1700px]:px-16 min-[2100px]:px-20 max-w-full">
           {/* Title */}
-          <div className="mb-12">
+          <div className="mb-12 min-[1700px]:mb-14 min-[2100px]:mb-16">
             <img 
               src="/images/policylogo.png" 
               alt="Eatro Privacy Policy" 
-              className="w-[600px] h-[120px] max-w-full"
+              className="w-[600px] min-[1700px]:w-[700px] min-[2100px]:w-[800px] h-[120px] max-w-full"
             />
           </div>
 
           {/* Content */}
-          <div className="space-y-8 text-[#282828] max-w-full" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontSize: '16px', lineHeight: '1.8' }}>
+          <div className="space-y-8 min-[1700px]:space-y-9 min-[2100px]:space-y-10 text-[#282828] max-w-full" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontSize: '16px', lineHeight: '1.8' }}>
             
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>1. Introduction and Scope</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>1. Introduction and Scope</h2>
               <p className="mb-4">
                 Eatro Tech FZ-LLC ("we," "us," or "our") operates an all-in-one ordering, delivery, and loyalty Platform designed for Quick Service Restaurants (QSRs) and other merchants <b>(our "Merchants")</b>.
               </p>
@@ -45,7 +45,7 @@ function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>2. Legal Basis for Processing</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>2. Legal Basis for Processing</h2>
               <p className="mb-4">
               We process your Personal Data only when we have a legal basis to do so, as recognized under the UAE PDPL:
               </p>
@@ -58,9 +58,9 @@ function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>3. Information We Collect</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>3. Information We Collect</h2>
               
-              <h3 className="mb-3 mt-6" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>A. Merchant Data (Data Controller: Eatro Tech FZ-LLC)</h3>
+              <h3 className="mb-3 mt-6 min-[1700px]:text-[21px] min-[2100px]:text-[22px]" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>A. Merchant Data (Data Controller: Eatro Tech FZ-LLC)</h3>
               <p className="mb-4">
               We collect and process this data for account management and service delivery:
               </p>
@@ -70,7 +70,7 @@ function PrivacyPolicy() {
                 <p className="mb-2"><span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span><strong>Operational Data:</strong> Restaurant details, POS system integration keys, and delivery service configurations.                </p>
               </div>
 
-              <h3 className="mb-3 mt-6" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>B. End Customer Data (Data Controller: The Merchant)</h3>
+              <h3 className="mb-3 mt-6 min-[1700px]:text-[21px] min-[2100px]:text-[22px]" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>B. End Customer Data (Data Controller: The Merchant)</h3>
               <p className="mb-4">
               When an order is placed through an Eatro-powered channel, we collect and process data <b> as a Data Processor on behalf of the Merchant (the Data Controller).
               </b>              </p>
@@ -81,18 +81,18 @@ function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>4. How We Use the Information</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>4. How We Use the Information</h2>
               
-              <h3 className="mb-3 mt-6" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>A. For Merchants</h3>
-              <p className="mb-4">We use Merchant Data to:</p>
+              <h3 className="mb-3 mt-6 min-[1700px]:text-[21px] min-[2100px]:text-[22px]" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>A. For Merchants</h3>
+              <p className="mb-4 font-semibold">We use Merchant Data to:</p>
               <div className="space-y-2 mb-4">
                 <p className="mb-2"><span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span>Provide and maintain the Platform services, ensuring continuous order management and functionality.</p>
                 <p className="mb-2"><span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span>Manage billing and collect subscription and transaction fees.</p>
                 <p className="mb-2"><span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span>Communicate updates, support notices, and essential service information.</p>
               </div>
 
-              <h3 className="mb-3 mt-6" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>B. For End Customers (Processing on behalf of the Merchant)</h3>
-              <p className="mb-4">We process End Customer Data strictly under the instructions of the Merchant to:</p>
+              <h3 className="mb-3 mt-6 min-[1700px]:text-[21px] min-[2100px]:text-[22px]" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>B. For End Customers (Processing on behalf of the Merchant)</h3>
+              <p className="mb-4 font-semibold">We process End Customer Data strictly under the instructions of the Merchant to:</p>
               <div className="space-y-2 mb-4">
                 <p className="mb-2"><span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span>Fulfill the customer's order (e.g., passing address to the delivery partner).</p>
                 <p className="mb-2"><span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span>Facilitate order communication (confirmation, tracking) via SMS or email.</p>
@@ -101,14 +101,14 @@ function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>5. Data Ownership and Disclosure</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>5. Data Ownership and Disclosure</h2>
               
-              <h3 className="mb-3 mt-6" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>A. Ownership and Control</h3>
+              <h3 className="mb-3 mt-6 min-[1700px]:text-[21px] min-[2100px]:text-[22px]" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>A. Ownership and Control</h3>
               <p className="mb-4">
-                The Merchant retains full ownership and control over all End Customer Data. Eatro Tech FZ-LLC acts only as a processor and will not use, sell, or disclose this data for our own marketing or business purposes without the Merchant's express permission.
+               <b> The Merchant retains full ownership and control over all End Customer Data. Eatro Tech FZ-LLC </b> acts only as a processor and will not use, sell, or disclose this data for our own marketing or business purposes without the Merchant's express permission.
               </p>
 
-              <h3 className="mb-3 mt-6" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>B. Disclosure (Sharing Data)</h3>
+              <h3 className="mb-3 mt-6 min-[1700px]:text-[21px] min-[2100px]:text-[22px]" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>B. Disclosure (Sharing Data)</h3>
               <p className="mb-4">We may share your Personal Data (Merchant and End Customer, where relevant) with third parties who are necessary for service delivery:</p>
               <div className="space-y-2 mb-4">
                 <p className="mb-2"><span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span><strong>Service Providers:</strong> Entities providing essential functions like cloud hosting (data stored within the UAE or compliant jurisdictions), payment gateways (e.g., Eatro Pay partners), and communication services.</p>
@@ -118,27 +118,27 @@ function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>6. Data Transfer (Cross-Border)</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>6. Data Transfer (Cross-Border)</h2>
               <p className="mb-4">
                 We may store or process Personal Data outside the UAE only to the extent permitted by the PDPL and its Executive Regulations. When transferring data internationally, we ensure adequate protection through legally recognized mechanisms, such as contracts or approved data transfer protocols, to safeguard your data.
               </p>
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>7. Your Data Subject Rights (UAE PDPL)</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>7. Your Data Subject Rights (UAE PDPL)</h2>
               <p className="mb-4">
                 Under the <b> UAE Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data (PDPL), </b> you have specific rights concerning your Personal Data:
               </p>
               
               <div className="space-y-4 mb-4">
                 <div>
-                  <p className="mb-2" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>a. Right to Access</p>
+                  <p className="mb-2 min-[1700px]:text-[21px] min-[2100px]:text-[22px]" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>a. Right to Access</p>
                   <p className="mb-2"><span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span><strong>Description:</strong> You have the right to obtain confirmation about the processing of your Personal Data and to access the data being held.</p>
                   <p className="mb-2"><span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span><strong>Action:</strong> Contact us/the Merchant to request details.</p>
                 </div>
 
                 <div>
-                  <p className="mb-2" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>b. Right to Request Correction/Deletion</p>
+                  <p className="mb-2 min-[1700px]:text-[21px] min-[2100px]:text-[22px]" style={{ fontFamily: 'Chillax', fontSize: '20px', fontStyle: 'normal', fontWeight: 600, color: '#282828' }}>b. Right to Request Correction/Deletion</p>
                   <p className="mb-2"><span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span><strong>Description:</strong> You can request that inaccurate data be corrected or that your data be deleted when it is no longer necessary for the purpose for which it was collected.</p>
                   <p className="mb-2"><span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span><strong>Action:</strong> Contact us/the Merchant to request changes or deletion.</p>
                 </div>
@@ -171,7 +171,7 @@ function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>8. Data Security and Breach Notification</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>8. Data Security and Breach Notification</h2>
               <p className="mb-4">
                 We implement robust technical and organizational measures to protect Personal Data against unauthorized access, loss, or misuse, in compliance with PDPL standards.
               </p>
@@ -181,7 +181,7 @@ function PrivacyPolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>9. Contact Information</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>9. Contact Information</h2>
               <p className="mb-4">
                 For questions regarding this policy or to exercise your rights:
               </p>

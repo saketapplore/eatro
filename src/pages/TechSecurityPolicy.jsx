@@ -13,19 +13,19 @@ function TechSecurityPolicy() {
       <Header scrollToContactForm={scrollToContactForm} />
 
       {/* Tech Security Policy Content */}
-      <section className="max-w-7xl mx-auto pt-2">
-        <div className="bg-[#faf8f5] rounded-lg py-8 md:py-2 max-w-7xl">
+      <section className="max-w-7xl mx-auto min-[1700px]:max-w-[1400px] min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:max-w-[1600px] min-[2100px]:ml-32 min-[2100px]:mr-auto pt-2 px-4 min-[1700px]:px-12 min-[2100px]:px-16">
+        <div className="bg-[#faf8f5] rounded-lg py-8 md:py-2 min-[1700px]:py-20 min-[2100px]:py-24 px-6 min-[1700px]:px-16 min-[2100px]:px-20 max-w-full">
           {/* Title */}
-          <div className="mb-12">
+          <div className="mb-12 min-[1700px]:mb-14 min-[2100px]:mb-16">
             <img 
               src="/images/techpolicy.png" 
               alt="Eatro Tech FZ-LLC Security Policy" 
-              className="w-[950px] h-[120px] max-w-full"
+              className="w-[950px] min-[1700px]:w-[1050px] min-[2100px]:w-[1150px] h-[120px] max-w-full"
             />
           </div>
 
           {/* Content */}
-          <div className="space-y-8 text-[#282828] max-w-full" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontSize: '16px', lineHeight: '1.8' }}>
+          <div className="space-y-8 min-[1700px]:space-y-9 min-[2100px]:space-y-10 text-[#282828] max-w-full" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontSize: '16px', lineHeight: '1.8' }}>
             
             <div>
               <p className="mb-4">
@@ -34,7 +34,7 @@ function TechSecurityPolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>Infrastructure and Cloud Security</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>Infrastructure and Cloud Security</h2>
               <p className="mb-4">
              <b> Eatro Tech FZ-LLC's </b> entire platform and data are hosted within <b> Amazon Web Services (AWS),</b> leveraging their globally recognized security and compliance framework.
 
@@ -46,7 +46,7 @@ function TechSecurityPolicy() {
                 </li>
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
-                  <span><strong>Regional Isolation:</strong> We host our services in secure AWS Regions, allowing for isolation and compliance with regional data residency requirements where applicable.</span>
+                  <span><strong>Regional Isolation:</strong> We host our services in <b>secure AWS Regions</b>, allowing for isolation and compliance with regional data residency requirements where applicable.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
@@ -54,42 +54,44 @@ function TechSecurityPolicy() {
                 </li>
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
-                  <span><strong>Scalable Defense:</strong> AWS security services (like Security Hub, GuardDuty, and Shield) provide real-time threat detection, continuous monitoring, and scalable protection against DDoS attacks.</span>
+                  <span><strong>Scalable Defense:</strong> AWS security services (like <b>Security Hub, GuardDuty, and Shield</b>) provide real-time threat detection, continuous monitoring, and scalable protection against DDoS attacks.</span>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>Application and Network Security</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>Application and Network Security</h2>
               <p className="mb-4">
-              We maintain security controls at every layer of the Eatro Tech FZ-LLC application and network architecture.
+              We maintain security controls at every layer of the <b>Eatro Tech FZ-LLC </b>application and network architecture.
               </p>
               
-              <h3 className="mb-3 mt-6" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>1. Data Encryption</h3>
+              <h3 className="mb-3 mt-6 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>1. Data Encryption</h3>
               <p className="mb-4">
-                All sensitive data is encrypted both in transit and at rest to prevent unauthorized access:
+              All sensitive data, including customer records, payment tokens, and operational logs, is protected:
               </p>
               <ul className="list-none pl-6 space-y-2 mb-4">
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
-                  <span><strong>Encryption In Transit (TLS/SSL):</strong> All data transmitted between users, Merchants, and our Platform is encrypted using industry-standard TLS 1.2 or higher protocols.</span>
+                  <span><strong>Encryption In Transit (TLS/SSL):</strong> All communication between our Merchants, their customers,<b> Eatro Tech FZ-LLC's</b> servers, and integrated partners is secured using <b> Transport Layer Security (TLS 1.2 or higher)</b>, ensuring data is encrypted during transmission.
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
-                  <span><strong>Encryption At Rest:</strong> Sensitive data stored in our databases is encrypted using AES-256 encryption, ensuring that data remains protected even if storage media is compromised.</span>
+                  <span><strong>Encryption At Rest (AES-256):</strong> All data stored in our databases and file storage (AWS S3, RDS) is encrypted using industry-standard <b> AES-256 encryption keys.</b>
+                  </span>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>2. Access Control</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>2. Access Control</h2>
               <p className="mb-4">
-              Access to the Eatro Tech FZ-LLC platform and internal systems is strictly managed:
+              Access to the <b>Eatro Tech FZ-LLC </b>platform and internal systems is strictly managed:
               </p>
               <ul className="list-none pl-6 space-y-2 mb-4">
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
-                  <span><strong>Least Privilege:</strong> Access rights are granted only on a need-to-know basis, adhering to the principle of <b>Least Privilege.</b></span>
+                  <span><strong>Least Privilege:</strong> Access rights are granted only on a need-to-know basis (the principle of <b> Least Privilege</b>).</span>
                 </li>
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
@@ -104,28 +106,28 @@ function TechSecurityPolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>3. Network Security</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>3. Network Security</h2>
               <ul className="list-none pl-6 space-y-2 mb-4">
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
-                  <span><strong>Firewalls and VPCs:</strong> We use AWS Virtual Private Clouds (VPCs) and strict network security groups to logically isolate our systems from the public internet. Access is restricted only to necessary ports and protocols.</span>
+                  <span><strong>Firewalls and VPCs:</strong> We use AWS <b> Virtual Private Clouds (VPCs)</b> and strict network security groups to logically isolate our systems from the public internet. Access is restricted only to necessary ports and protocols.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
-                  <span><strong>API Security:</strong> All integrated APIs (for POS, Delivery Partners) are secured using OAuth 2.0 or robust API keys and rate-limiting to prevent abuse.</span>
+                  <span><strong>API Security:</strong> All integrated APIs (for POS, Delivery Partners) are secured using <b> OAuth 2.0</b> or robust API keys and rate-limiting to prevent abuse.</span>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>Operational Security and Development</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>Operational Security and Development</h2>
               <p className="mb-4">
                 Security is integrated into daily operations and the development lifecycle.
               </p>
               <ul className="list-none pl-6 space-y-2 mb-4">
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
-                  <span><strong>Vulnerability Management:</strong> We utilize automated tools and conduct regular vulnerability scanning and penetration testing of our applications and infrastructure to proactively identify and patch potential weaknesses.</span>
+                  <span><strong>Vulnerability Management:</strong> We utilize automated tools and conduct regular <b>vulnerability scanning</b> and <b>penetration testing</b> of our applications and infrastructure to proactively identify and patch potential weaknesses.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
@@ -134,14 +136,14 @@ function TechSecurityPolicy() {
                 </li>
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
-                  <span><strong>Incident Response:</strong> We maintain a formal Security Incident Response Plan (SIRP). In the event of an incident, we have clear protocols for detection, containment, eradication, and recovery, with timely notification to affected parties as required by law (e.g., UAE PDPL).
+                  <span><strong>Incident Response:</strong> We maintain a formal <b> Security Incident Response Plan (SIRP)</b>. In the event of an incident, we have clear protocols for detection, containment, eradication, and recovery, with timely notification to affected parties as required by law (e.g., UAE PDPL).
                   </span>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h2 className="mb-4" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>Data Privacy and Compliance</h2>
+              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>Data Privacy and Compliance</h2>
               <p className="mb-4">
                 We treat data privacy as a critical component of security, adhering to best practices and regional laws.
               </p>
@@ -156,13 +158,13 @@ function TechSecurityPolicy() {
                 </li>
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 bg-orange-500 mr-2 mt-2 flex-shrink-0"></span>
-                  <span><strong>Zero Commission, Full Data Ownership:</strong> We guarantee that End Customer data collected via your branded <strong>Eatro Tech FZ-LLC</strong> channels will never be sold or used by <strong>Eatro Tech FZ-LLC</strong> for our own marketing purposes.</span>
+                  <span><strong>Zero Commission, Full Data Ownership:</strong> We guarantee that End Customer data collected via your branded <strong>Eatro Tech FZ-LLC</strong> channels will <strong> never be sold or used by Eatro Tech FZ-LLC</strong> for our own marketing purposes.</span>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h2 className="" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>Need to Know More?</h2>
+              <h2 className="min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>Need to Know More?</h2>
               <p className="mb-4">
                 For technical questions or to report a potential security vulnerability, please contact our security team:
               </p>
