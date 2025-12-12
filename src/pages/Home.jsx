@@ -74,7 +74,7 @@ function Home() {
   mx-auto
 ">
 
-        <div className="px-4 py-8 md:py-16 lg:py-20 min-[1800px]:py-28 min-[2100px]:py-32 min-[2560px]:py-36 min-[2560px]:px-8">
+        <div className="px-4 md:px-6 lg:px-8 py-8 md:py-16 lg:py-20 min-[1800px]:py-28 min-[2100px]:py-32 min-[2560px]:py-36 min-[2560px]:px-8">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 min-[1800px]:gap-24 min-[2100px]:gap-28 min-[2560px]:gap-32 items-center">
             {/* Left Content */}
             <div className="space-y-6 md:space-y-8 lg:space-y-10 min-[1800px]:space-y-12 min-[2100px]:space-y-14 min-[2560px]:space-y-16">
@@ -131,7 +131,7 @@ function Home() {
 
       {/* Benefits Cards Section */}
       <section className="w-full max-w-7xl min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2000px] mx-auto">
-        <div className="px-4 py-8 md:py-12 lg:pt-16 lg:pb-0 min-[1800px]:py-20 min-[2100px]:py-24 min-[2560px]:py-28 min-[2560px]:px-8">
+        <div className="px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:pt-16 lg:pb-0 min-[1800px]:py-20 min-[2100px]:py-24 min-[2560px]:py-28 min-[2560px]:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4 min-[1800px]:gap-5 min-[2100px]:gap-6 min-[2560px]:gap-8">
             {/* Card 1 - Save Delivery Fees */}
             <div className="relative">
@@ -165,7 +165,7 @@ function Home() {
 
     {/* One Platform Five Seamless Experiences Section */}
 {/* One Platform Five Seamless Experiences Section */}
-<section className="relative w-full max-w-[1600px] md:max-w-[1300px] min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] sm:w-full sm:mx-auto px-4 overflow-hidden bg-[#fff8f2]">
+<section className="relative w-full max-w-[1600px] md:max-w-[1300px] min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] sm:w-full sm:mx-auto px-4 md:px-6 lg:px-8 overflow-hidden bg-[#fff8f2]">
 
   {/* Background Image Wrapper */}
   <div className="relative w-full h-auto min-h-[420px] sm:h-[500px] md:h-[520px] lg:h-[700px] min-[1800px]:h-[850px] min-[2100px]:h-[1000px] pt-6 md:pt-0 pb-10 sm:pb-0 flex flex-col gap-4 md:block">
@@ -243,7 +243,7 @@ function Home() {
 
         {/* Integrated Partners Section */}
         <section className="max-w-7xl min-[2560px]:max-w-[2000px] mx-auto">
-        <div className="container mx-auto px-4 mb-16 min-[2560px]:mb-20 min-[2560px]:px-8">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 mb-16 min-[2560px]:mb-20 min-[2560px]:px-8">
           <div className="flex flex-col items-center space-y-8 min-[2560px]:space-y-10">
             {/* Heading */}
             <h2 className="text-[40px] min-[2560px]:text-[56px] font-bold leading-[105%] text-center" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
@@ -290,7 +290,7 @@ function Home() {
   </div>
 
   {/* Content Wrapper (bigger max width for big screens) */}
-  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-6 lg:px-12 xl:px-16 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32">
+  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-6 md:px-8 lg:px-12 xl:px-16 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32">
 
     {/* Title + Subtitle */}
     <div className="text-center mb-8 md:mb-10 lg:mb-12 xl:mb-14 min-[1700px]:mb-10 min-[2100px]:mb-12 min-[2560px]:mb-16">
@@ -364,7 +364,7 @@ function Home() {
       {/* Row Images Section */}
       <section id="how-it-works" className="w-full max-w-7xl min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2000px] mx-auto py-20 min-[1800px]:py-28 min-[2100px]:py-32 min-[2560px]:py-36">
         {/* Title and Subtitle - Centered at Top */}
-        <div className="text-center mb-12 min-[1800px]:mb-16 min-[2100px]:mb-20 min-[2560px]:mb-24 px-4 min-[2560px]:px-8">
+        <div className="text-center mb-12 min-[1800px]:mb-16 min-[2100px]:mb-20 min-[2560px]:mb-24 px-4 md:px-6 lg:px-8 min-[2560px]:px-8">
           <h2 className="text-[40px] min-[1800px]:text-[50px] min-[2100px]:text-[60px] min-[2560px]:text-[70px] font-bold leading-[105%] mb-4 min-[2560px]:mb-6" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
             <span className="text-black">How</span>{' '}
             <span className="text-orange-500">It Works</span>
@@ -375,7 +375,7 @@ function Home() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 min-[1800px]:gap-10 min-[2100px]:gap-12 min-[2560px]:gap-16 px-4 min-[2560px]:px-8">
+        <div className="grid md:grid-cols-2 gap-6 min-[1800px]:gap-10 min-[2100px]:gap-12 min-[2560px]:gap-16 px-4 md:px-6 lg:px-8 min-[2560px]:px-8">
           {/* Left Image */}
           <div className="flex items-center justify-center">
             <img 
@@ -524,7 +524,7 @@ function Home() {
   </div>
 
   {/* Content Container */}
-  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-6 lg:px-12 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32">
+  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-6 md:px-8 lg:px-12 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32">
 
     <div className="grid md:grid-cols-2 gap-12 lg:gap-20 min-[1700px]:gap-24 min-[2100px]:gap-32 min-[2560px]:gap-40 items-center">
 
@@ -713,7 +713,7 @@ function Home() {
         </div>
 
         {/* Form Container */}
-        <div className="relative z-10 max-w-5xl min-[2560px]:max-w-6xl mx-auto mt-16 min-[2560px]:mt-20 px-4" style={{ perspective: '1500px' }}>
+        <div className="relative z-10 max-w-5xl min-[2560px]:max-w-6xl mx-auto mt-16 min-[2560px]:mt-20 px-4 md:px-6 lg:px-8" style={{ perspective: '1500px' }}>
           <div className="bg-[#faf8f5] rounded-2xl p-8 md:p-10 min-[2560px]:p-14 shadow-lg" style={{ transform: 'rotateY(-16deg)' }}>
             {/* Title */}
             <div className="text-center mb-3 min-[2560px]:mb-5">
@@ -836,7 +836,7 @@ function Home() {
 
       {/* FAQ Section */}
       <section className="w-full max-w-7xl min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2000px] mx-auto">
-        <div className="px-4 py-8 md:py-12 lg:py-16 min-[1800px]:py-20 min-[2100px]:py-24 min-[2560px]:py-28">
+        <div className="px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16 min-[1800px]:py-20 min-[2100px]:py-24 min-[2560px]:py-28">
           {/* Heading */}
           <div className="text-center mb-8 md:mb-10 lg:mb-12 min-[1800px]:mb-16 min-[2100px]:mb-20 min-[2560px]:mb-24">
             <h2 className="text-[28px] sm:text-[32px] md:text-[38px] lg:text-[45px] min-[1800px]:text-[55px] min-[2100px]:text-[65px] min-[2560px]:text-[75px] font-semibold mb-2 md:mb-3 min-[2560px]:mb-4" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
@@ -985,7 +985,7 @@ function Home() {
         </div>
 
         {/* Content Container */}
-        <div className="relative z-10 max-w-7xl min-[2560px]:max-w-[1900px] mx-auto px-4 min-[2560px]:px-8">
+        <div className="relative z-10 max-w-7xl min-[2560px]:max-w-[1900px] mx-auto px-4 md:px-6 lg:px-8 min-[2560px]:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 min-[2560px]:gap-12">
             {/* Left Content */}
             <div className="flex-1 w-full md:w-auto md:ml-8 min-[2560px]:ml-12 text-center md:text-left">
