@@ -35,21 +35,23 @@ function Footer() {
           <div className='ml-0 md:ml-20 lg:ml-40'>
             <h3 className="text-white font-semibold underline text-base md:text-md mb-3 md:mb-4" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Quick Links</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="/#features" className="text-white text-[13px] sm:text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                  Features
-                </a>
-              </li>
-              <li>
-                <a href="/#how-it-works" className="text-white text-[13px] sm:text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
-                  How It Work
-                </a>
-              </li>
+             
               <li>
                 <a href="/#about" className="text-white text-[13px] sm:text-[14px] font-weight-400 font-normal hover:text-orange-400 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   About
                 </a>
               </li>
+              <li>
+                <a href="/#how-it-works" className="text-white text-[13px] sm:text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  How It Works
+                </a>
+              </li>
+              <li>
+                <a href="/#features" className="text-white text-[13px] sm:text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                  Features
+                </a>
+              </li>
+              
               <li>
                 <a href="/#contact-form" className="text-white text-[13px] sm:text-[14px] font-weight-400 font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                   Contact
