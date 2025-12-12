@@ -290,7 +290,7 @@ function Home() {
   </div>
 
   {/* Content Wrapper (bigger max width for big screens) */}
-  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:ml-40 min-[2560px]:mr-auto px-6 lg:px-12 xl:px-16 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:pl-32 min-[2560px]:pr-40">
+  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-6 lg:px-12 xl:px-16 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32">
 
     {/* Title + Subtitle */}
     <div className="text-center mb-8 md:mb-10 lg:mb-12 xl:mb-14 min-[1700px]:mb-10 min-[2100px]:mb-12 min-[2560px]:mb-16">
@@ -524,7 +524,7 @@ function Home() {
   </div>
 
   {/* Content Container */}
-  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:ml-40 min-[2560px]:mr-auto px-6 lg:px-12 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:pl-32 min-[2560px]:pr-40">
+  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-6 lg:px-12 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32">
 
     <div className="grid md:grid-cols-2 gap-12 lg:gap-20 min-[1700px]:gap-24 min-[2100px]:gap-32 min-[2560px]:gap-40 items-center">
 
