@@ -74,51 +74,51 @@ function Home() {
   mx-auto
 ">
 
-        <div className="px-4 md:px-6 lg:px-8 py-8 md:py-16 lg:py-20 min-[1800px]:py-28 min-[2100px]:py-32 min-[2560px]:py-36 min-[2560px]:px-8">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 min-[1800px]:gap-24 min-[2100px]:gap-28 min-[2560px]:gap-32 items-center">
+        <div className="px-4 md:px-6 lg:px-8 py-6 sm:py-8 md:py-16 lg:py-20 min-[1800px]:py-28 min-[2100px]:py-32 min-[2560px]:py-36 min-[2560px]:px-8">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 lg:gap-16 min-[1800px]:gap-24 min-[2100px]:gap-28 min-[2560px]:gap-32 items-center">
             {/* Left Content */}
-            <div className="space-y-6 md:space-y-8 lg:space-y-10 min-[1800px]:space-y-12 min-[2100px]:space-y-14 min-[2560px]:space-y-16">
-              <div className="relative">
-                <img src="/images/own.png" alt="Own Your Growth" className="w-auto h-12 sm:h-14 md:h-16 lg:h-20 min-[1800px]:h-28 min-[2100px]:h-32 min-[2560px]:h-36 -ml-3 sm:-ml-4 md:-ml-6 relative z-10 inline-block" />
-                <p className="text-[#000] text-[20px] sm:text-[24px] md:text-[28px] lg:text-[26px] min-[1800px]:text-[42px] min-[2100px]:text-[48px] min-[2560px]:text-[56px] font-medium leading-tight -mt-3 md:-mt-4 relative z-0" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+            <div className="space-y-5 sm:space-y-6 md:space-y-8 lg:space-y-10 min-[1800px]:space-y-12 min-[2100px]:space-y-14 min-[2560px]:space-y-16">
+              <div className="relative flex flex-col items-center text-center md:text-left md:items-start">
+                <img src="/images/own.png" alt="Own Your Growth" className="w-full max-w-[260px] sm:max-w-[300px] h-14 sm:h-16 md:h-20 lg:h-20 min-[1800px]:h-28 min-[2100px]:h-32 min-[2560px]:h-36 sm:-ml-1 md:-ml-6 relative z-10 inline-block object-contain" />
+                <p className="text-[#000] text-[19px] sm:text-[21px] md:text-[28px] lg:text-[26px] min-[1800px]:text-[42px] min-[2100px]:text-[48px] min-[2560px]:text-[56px] font-medium leading-[1.25] mt-1 sm:-mt-1 md:-mt-4 relative z-0" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
                   Manage Orders, Power Direct Sales, 
                 </p>
                 <br />
-                <p className="text-[#000] text-[20px] sm:text-[24px] md:text-[28px] lg:text-[26px] min-[1800px]:text-[42px] min-[2100px]:text-[48px] min-[2560px]:text-[56px] font-medium leading-tight -mt-6 md:-mt-8 relative z-0" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Ensure Seamless Delivery, Build Loyalty.</p>
+                <p className="text-[#000] text-[19px] sm:text-[21px] md:text-[28px] lg:text-[26px] min-[1800px]:text-[42px] min-[2100px]:text-[48px] min-[2560px]:text-[56px] font-medium leading-[1.25] -mt-3 sm:-mt-4 md:-mt-6 relative z-0" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Ensure Seamless Delivery, Build Loyalty.</p>
               </div>
 
               {/* Feature List */}
-              <div className="space-y-4 md:space-y-6 lg:space-y-7 min-[1800px]:space-y-8 min-[2100px]:space-y-9 min-[2560px]:space-y-10">
+              <div className="space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-7 min-[1800px]:space-y-8 min-[2100px]:space-y-9 min-[2560px]:space-y-10">
                 <div className="flex items-start gap-2 md:gap-3 lg:gap-4 min-[1800px]:gap-5 min-[2100px]:gap-6 min-[2560px]:gap-7">
-                  <div className="w-2 h-2 lg:w-2.5 lg:h-2.5 min-[1800px]:w-3 min-[1800px]:h-3 min-[2100px]:w-3.5 min-[2100px]:h-3.5 min-[2560px]:w-4 min-[2560px]:h-4 bg-orange-500 rounded-full mt-[8px] md:mt-[10px] lg:mt-[11px] min-[1800px]:mt-[13px] min-[2100px]:mt-[15px] min-[2560px]:mt-[17px] flex-shrink-0"></div>
-                  <p className="text-sm md:text-base lg:text-lg leading-relaxed">
-                    <span className="font-bold text-orange-500 min-[1800px]:text-xl min-[2100px]:text-2xl min-[2560px]:text-3xl">Reduced Delivery Fees:</span> <span className="text-black text-[13px] md:text-[14px] lg:text-[14px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] min-[2560px]:text-[24px]" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 500 }}>Own your Sales Channel with your branded online store and application to accept direct orders</span>
+                  <div className="w-2 h-2 lg:w-2.5 lg:h-2.5 min-[1800px]:w-3 min-[1800px]:h-3 min-[2100px]:w-3.5 min-[2100px]:h-3.5 min-[2560px]:w-4 min-[2560px]:h-4 bg-orange-500 rounded-full mt-[6px] sm:mt-[8px] md:mt-[10px] lg:mt-[11px] min-[1800px]:mt-[13px] min-[2100px]:mt-[15px] min-[2560px]:mt-[17px] flex-shrink-0"></div>
+                  <p className="text-sm md:text-base lg:text-lg leading-snug sm:leading-relaxed">
+                    <span className="font-bold text-orange-500 text-[13px] sm:text-sm min-[1800px]:text-xl min-[2100px]:text-2xl min-[2560px]:text-3xl">Reduced Delivery Fees:</span> <span className="text-black text-[12px] sm:text-[13px] md:text-[14px] lg:text-[14px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] min-[2560px]:text-[24px]" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 500 }}>Own your Sales Channel with your branded online store and application to accept direct orders</span>
                   </p>
                 </div>
 
                 <div className="flex items-start gap-2 md:gap-3 lg:gap-4 min-[1800px]:gap-5 min-[2100px]:gap-6 min-[2560px]:gap-7">
-                  <div className="w-2 h-2 lg:w-2.5 lg:h-2.5 min-[1800px]:w-3 min-[1800px]:h-3 min-[2100px]:w-3.5 min-[2100px]:h-3.5 min-[2560px]:w-4 min-[2560px]:h-4 bg-orange-500 rounded-full mt-[8px] md:mt-[10px] lg:mt-[11px] min-[1800px]:mt-[13px] min-[2100px]:mt-[15px] min-[2560px]:mt-[17px] flex-shrink-0"></div>
-                  <p className="text-sm md:text-base lg:text-lg leading-relaxed">
-                    <span className="font-bold text-orange-500 min-[1800px]:text-xl min-[2100px]:text-2xl min-[2560px]:text-3xl">Operational Peace of Mind:</span> <span className="text-black text-[13px] md:text-[14px] lg:text-[14px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] min-[2560px]:text-[24px]" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 500 }}>Stop juggling screens. Consolidate every order channel from direct site, app, and all aggregators for a single, seamless flow, optimizing your kitchen and courier efficiency.</span>
+                  <div className="w-2 h-2 lg:w-2.5 lg:h-2.5 min-[1800px]:w-3 min-[1800px]:h-3 min-[2100px]:w-3.5 min-[2100px]:h-3.5 min-[2560px]:w-4 min-[2560px]:h-4 bg-orange-500 rounded-full mt-[6px] sm:mt-[8px] md:mt-[10px] lg:mt-[11px] min-[1800px]:mt-[13px] min-[2100px]:mt-[15px] min-[2560px]:mt-[17px] flex-shrink-0"></div>
+                  <p className="text-sm md:text-base lg:text-lg leading-snug sm:leading-relaxed">
+                    <span className="font-bold text-orange-500 text-[13px] sm:text-sm min-[1800px]:text-xl min-[2100px]:text-2xl min-[2560px]:text-3xl">Operational Peace of Mind:</span> <span className="text-black text-[12px] sm:text-[13px] md:text-[14px] lg:text-[14px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] min-[2560px]:text-[24px]" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 500 }}>Stop juggling screens. Consolidate every order channel from direct site, app, and all aggregators for a single, seamless flow, optimizing your kitchen and courier efficiency.</span>
                   </p>
                 </div>
 
                 <div className="flex items-start gap-2 md:gap-3 lg:gap-4 min-[1800px]:gap-5 min-[2100px]:gap-6 min-[2560px]:gap-7">
-                  <div className="w-2 h-2 lg:w-2.5 lg:h-2.5 min-[1800px]:w-3 min-[1800px]:h-3 min-[2100px]:w-3.5 min-[2100px]:h-3.5 min-[2560px]:w-4 min-[2560px]:h-4 bg-orange-500 rounded-full mt-[8px] md:mt-[10px] lg:mt-[11px] min-[1800px]:mt-[13px] min-[2100px]:mt-[15px] min-[2560px]:mt-[17px] flex-shrink-0"></div>
-                  <p className="text-sm md:text-base lg:text-lg leading-relaxed">
-                    <span className="font-bold text-orange-500 min-[1800px]:text-xl min-[2100px]:text-2xl min-[2560px]:text-3xl">The Blind Spot is Gone. Welcome to Full Customer Insights:</span> <span className="text-black text-[13px] md:text-[14px] lg:text-[14px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] min-[2560px]:text-[24px]" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 500 }}>For the first time, know the names and order history of your best customers. Track which campaigns drive specific orders and measure the real cost of acquiring and retaining a customer, moving beyond guesswork.</span>
+                  <div className="w-2 h-2 lg:w-2.5 lg:h-2.5 min-[1800px]:w-3 min-[1800px]:h-3 min-[2100px]:w-3.5 min-[2100px]:h-3.5 min-[2560px]:w-4 min-[2560px]:h-4 bg-orange-500 rounded-full mt-[6px] sm:mt-[8px] md:mt-[10px] lg:mt-[11px] min-[1800px]:mt-[13px] min-[2100px]:mt-[15px] min-[2560px]:mt-[17px] flex-shrink-0"></div>
+                  <p className="text-sm md:text-base lg:text-lg leading-snug sm:leading-relaxed">
+                    <span className="font-bold text-orange-500 text-[13px] sm:text-sm min-[1800px]:text-xl min-[2100px]:text-2xl min-[2560px]:text-3xl">The Blind Spot is Gone. Welcome to Full Customer Insights:</span> <span className="text-black text-[12px] sm:text-[13px] md:text-[14px] lg:text-[14px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] min-[2560px]:text-[24px]" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 500 }}>For the first time, know the names and order history of your best customers. Track which campaigns drive specific orders and measure the real cost of acquiring and retaining a customer, moving beyond guesswork.</span>
                   </p>
                 </div>
               </div>
 
               {/* CTA Button */}
-              <button onClick={scrollToContactForm} className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-7 md:px-8 lg:px-8 min-[1800px]:px-14 min-[2100px]:px-16 min-[2560px]:px-20 py-3 md:py-4 lg:py-5 min-[1800px]:py-6 min-[2100px]:py-7 min-[2560px]:py-8 rounded-lg font-semibold text-base md:text-lg lg:text-xl min-[1800px]:text-2xl min-[2100px]:text-3xl min-[2560px]:text-4xl transition-colors w-full sm:w-auto">
+              <button onClick={scrollToContactForm} className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-7 md:px-8 lg:px-8 min-[1800px]:px-14 min-[2100px]:px-16 min-[2560px]:px-20 py-3 sm:py-3 md:py-4 lg:py-5 min-[1800px]:py-6 min-[2100px]:py-7 min-[2560px]:py-8 rounded-lg font-semibold text-[15px] sm:text-base md:text-lg lg:text-xl min-[1800px]:text-2xl min-[2100px]:text-3xl min-[2560px]:text-4xl transition-colors w-full sm:w-auto">
                 Book A Demo
               </button>
             </div>
 
             {/* Right Image */}
-            <div className="flex justify-center items-center mt-8 md:mt-0">
+            <div className="flex justify-center items-center mt-6 sm:mt-8 md:mt-0">
               <img 
                 src="/images/Header.png" 
                 alt="Eatro Dashboard" 
@@ -135,28 +135,49 @@ function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4 min-[1800px]:gap-5 min-[2100px]:gap-6 min-[2560px]:gap-8">
             {/* Card 1 - Save Delivery Fees */}
             <div className="relative">
+              {/* Mobile Image */}
+              <img 
+                src="/images/save1.png" 
+                alt="Save Delivery Fees" 
+                className="sm:hidden w-full h-auto rounded-lg"
+              />
+              {/* Desktop Image */}
               <img 
                 src="/images/box1.png" 
                 alt="Save Delivery Fees" 
-                className="w-full h-auto rounded-lg"
+                className="hidden sm:block w-full h-auto rounded-lg"
               />
             </div>
 
             {/* Card 2 - Increase Order Frequency */}
             <div className="relative">
+              {/* Mobile Image */}
+              <img 
+                src="/images/save2.png" 
+                alt="Increase Order Frequency" 
+                className="sm:hidden w-full h-auto rounded-lg"
+              />
+              {/* Desktop Image */}
               <img 
                 src="/images/box2.png" 
                 alt="Increase Order Frequency" 
-                className="w-full h-auto rounded-lg"
+                className="hidden sm:block w-full h-auto rounded-lg"
               />
             </div>
 
             {/* Card 3 - Increase Staff Productivity */}
             <div className="relative sm:col-span-2 md:col-span-1">
+              {/* Mobile Image */}
+              <img 
+                src="/images/save3.png" 
+                alt="Increase Staff Productivity" 
+                className="sm:hidden w-full h-auto rounded-lg"
+              />
+              {/* Desktop Image */}
               <img 
                 src="/images/box3.png" 
                 alt="Increase Staff Productivity" 
-                className="w-full h-auto rounded-lg"
+                className="hidden sm:block w-full h-auto rounded-lg"
               />
             </div>
           </div>
@@ -172,26 +193,40 @@ function Home() {
     {/* Mobile overlay for readability */}
     <div className="absolute inset-0 md:hidden z-10"></div>
 
+    {/* Mobile Image */}
+    <img 
+      src="/images/book.png" 
+      alt="Background"
+      className="
+        md:hidden relative w-full h-full 
+        object-contain
+        p-4
+        order-2 md:order-none
+      "
+    />
+
+    {/* Desktop Image */}
     <img 
       src="/images/qq.png" 
       alt="Background"
       className="
-        relative md:absolute md:inset-0 w-full h-full 
+        hidden md:block md:absolute md:inset-0 w-full h-full 
         object-contain
-        p-4 md:p-0
+        md:p-0
+        order-2 md:order-none
       "
     />
 
     {/* TEXT + BUTTON */}
-    <div className="relative md:absolute top-0 sm:top-[18%] md:top-[20%] left-0 sm:left-[8%] md:left-[8%] lg:left-[10%] min-[1800px]:left-[12%] z-20 w-full sm:w-[84%] md:w-auto px-0">
+    <div className="absolute top-0 left-0 right-0 md:top-[20%] md:left-[8%] md:right-auto lg:left-[10%] min-[1800px]:left-[12%] z-20 w-full md:w-auto px-4 pt-6 md:px-0 md:pt-0 order-1 md:order-none flex flex-col items-center md:items-start">
 
       {/* Title */}
       <h2 
         className="
           text-white
           text-[18px] sm:text-[22px] md:text-[24px] lg:text-[32px] min-[1800px]:text-[45px] min-[2100px]:text-[40px]
-          leading-[1.2] sm:leading-tight font-semibold
-          bg-orange-500 md:bg-transparent rounded-xl md:rounded-none px-4 py-3 md:px-0 md:py-0 shadow-md md:shadow-none max-w-full sm:max-w-[90%] md:max-w-none
+          leading-[1.2] sm:leading-tight font-semibold text-center md:text-left
+          bg-transparent rounded-xl md:rounded-none px-4 py-3 md:px-0 md:py-0 max-w-full md:max-w-none
         "
         style={{ fontFamily: 'Chillax' }}
       >
@@ -200,17 +235,16 @@ function Home() {
         Experiences
       </h2>
 
-      {/* Desktop Button (hidden on mobile) */}
-      <div className="hidden md:block">
+      {/* Button */}
+      <div className="mt-3 sm:mt-4 min-[1800px]:mt-6 min-[2100px]:mt-8">
         <button 
           onClick={scrollToContactForm}
           className="
-            mt-3 sm:mt-4 min-[1800px]:mt-6 min-[2100px]:mt-8
             bg-white text-black
-            px-3 py-2 sm:px-4 sm:py-2 md:px-8 min-[1800px]:px-10 min-[2100px]:px-12
+            px-6 py-3 md:px-8 min-[1800px]:px-10 min-[2100px]:px-12
             md:py-4 min-[1800px]:py-5 min-[2100px]:py-6
             rounded-lg font-semibold 
-            text-[11px] sm:text-[13px] md:text-base min-[1800px]:text-lg min-[2100px]:text-xl
+            text-[14px] md:text-base min-[1800px]:text-lg min-[2100px]:text-xl
             shadow-lg hover:bg-gray-100
             w-auto
           "
@@ -219,21 +253,6 @@ function Home() {
         </button>
       </div>
 
-    </div>
-    {/* Mobile-only button inside the section, below image */}
-    <div className="md:hidden px-0 pt-2">
-      <button
-        onClick={scrollToContactForm}
-        className="
-          w-full
-          bg-orange-600 text-white
-          px-4 py-3
-          rounded-lg font-semibold text-[13px]
-          shadow-lg hover:bg-orange-700
-        "
-      >
-        Book A Demo
-      </button>
     </div>
   </div>
 
@@ -246,7 +265,7 @@ function Home() {
         <div className="container mx-auto px-4 md:px-6 lg:px-8 mb-16 min-[2560px]:mb-20 min-[2560px]:px-8">
           <div className="flex flex-col items-center space-y-8 min-[2560px]:space-y-10">
             {/* Heading */}
-            <h2 className="text-[40px] min-[2560px]:text-[56px] font-bold leading-[105%] text-center" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+            <h2 className="text-[26px] md:text-[40px] min-[2560px]:text-[56px] font-bold leading-[105%] text-center" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
               <span className="text-black" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 500 }}>Our</span>{' '}
               <span className="text-orange-500">Integrated Partners</span>
             </h2>
@@ -269,17 +288,29 @@ function Home() {
     relative 
     pt-4 pb-8 md:pt-6 md:pb-12 lg:pt-8 lg:pb-16 min-[1700px]:pt-4 min-[1700px]:pb-16 min-[2100px]:pt-6 min-[2100px]:pb-20 min-[2560px]:pt-8 min-[2560px]:pb-24
     overflow-hidden 
-    min-h-[500px] sm:min-h-[600px] md:min-h-[700px] min-[2560px]:min-h-[900px]
+    min-h-[700px] sm:min-h-[850px] md:min-h-[700px] lg:min-h-[750px] xl:min-h-[800px] min-[2560px]:min-h-[900px]
   " 
   style={{ backgroundColor: '#fff8f2' }}
 >
 
   {/* Background Image */}
   <div className="absolute inset-0 z-0 flex items-center justify-center">
+    {/* Mobile Background Image - deck11.png */}
+    <img 
+      src="/images/deck11.png" 
+      alt="Background" 
+      className="
+        md:hidden
+        w-full h-full 
+        object-cover
+      "
+    />
+    {/* Desktop Background Image - ddesk.png */}
     <img 
       src="/images/ddesk.png" 
       alt="Background" 
       className="
+        hidden md:block
         w-full h-full 
         object-cover 
         md:object-cover 
@@ -290,13 +321,13 @@ function Home() {
   </div>
 
   {/* Content Wrapper (bigger max width for big screens) */}
-  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-6 md:px-8 lg:px-12 xl:px-16 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32">
+  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-4 md:px-8 lg:px-12 xl:px-16 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32">
 
     {/* Title + Subtitle */}
-    <div className="text-center mb-8 md:mb-10 lg:mb-12 xl:mb-14 min-[1700px]:mb-10 min-[2100px]:mb-12 min-[2560px]:mb-16">
+    <div className="text-center mb-6 md:mb-10 lg:mb-12 xl:mb-14 min-[1700px]:mb-10 min-[2100px]:mb-12 min-[2560px]:mb-16">
       <h2 
         className="
-          text-[24px] sm:text-[28px] md:text-[28px] 
+          text-[20px] sm:text-[24px] md:text-[28px] 
           lg:text-[28px] xl:text-[42px] min-[1700px]:text-[44px] min-[2100px]:text-[48px] min-[2560px]:text-[56px]
           font-bold leading-[105%] mb-2 md:mb-3 min-[2560px]:mb-4 px-2
         " 
@@ -309,7 +340,7 @@ function Home() {
       <p 
         className="
           text-[#282828] 
-          text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] min-[1700px]:text-[17px] min-[2100px]:text-[18px] min-[2560px]:text-[22px]
+          text-[11px] sm:text-[12px] md:text-[15px] lg:text-[16px] min-[1700px]:text-[17px] min-[2100px]:text-[18px] min-[2560px]:text-[22px]
           max-w-4xl min-[1700px]:max-w-4xl min-[2100px]:max-w-5xl min-[2560px]:max-w-6xl mx-auto px-2
         " 
         style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
@@ -328,7 +359,7 @@ function Home() {
     ">
 
       {/* Left Side Feature List */}
-      <div className="space-y-4 md:space-y-5 lg:space-y-6 min-[1700px]:space-y-7 min-[2100px]:space-y-8 min-[2560px]:space-y-10 min-[1700px]:ml-0 min-[1700px]:pl-0 min-[2100px]:ml-0 min-[2100px]:pl-0">
+      <div className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 min-[1700px]:space-y-7 min-[2100px]:space-y-8 min-[2560px]:space-y-10 min-[1700px]:ml-0 min-[1700px]:pl-0 min-[2100px]:ml-0 min-[2100px]:pl-0">
 
         {[
           "Connect easily with POS providers",
@@ -338,12 +369,13 @@ function Home() {
           "Single Source of Truth For all Aggregator orders",
           "Live Tracking for Deliveries",
         ].map((text, i) => (
-          <div className="flex items-start gap-3 md:gap-4 min-[1700px]:gap-5 min-[2100px]:gap-6 min-[2560px]:gap-7" key={i}>
-            <div className="w-2 h-2 min-[1700px]:w-2.5 min-[1700px]:h-2.5 min-[2100px]:w-3 min-[2100px]:h-3 min-[2560px]:w-4 min-[2560px]:h-4 bg-orange-500 mt-2 min-[1700px]:mt-2.5 min-[2100px]:mt-3 min-[2560px]:mt-3.5 flex-shrink-0"></div>
+          <div className="flex items-start gap-2 sm:gap-3 md:gap-4 min-[1700px]:gap-5 min-[2100px]:gap-6 min-[2560px]:gap-7" key={i}>
+            <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 min-[1700px]:w-2.5 min-[1700px]:h-2.5 min-[2100px]:w-3 min-[2100px]:h-3 min-[2560px]:w-4 min-[2560px]:h-4 bg-orange-500 mt-1.5 sm:mt-2 min-[1700px]:mt-2.5 min-[2100px]:mt-3 min-[2560px]:mt-3.5 flex-shrink-0"></div>
             <p 
               className="
                 text-[#282828] 
-                text-[13px] sm:text-[14px] md:text-[15px] lg:text-[17px] min-[1700px]:text-[18px] min-[2100px]:text-[20px] min-[2560px]:text-[24px]
+                text-[11px] sm:text-[13px] md:text-[15px] lg:text-[17px] min-[1700px]:text-[18px] min-[2100px]:text-[20px] min-[2560px]:text-[24px]
+                leading-tight sm:leading-normal
               " 
               style={{ fontFamily: 'Poppins' }}
             >
@@ -354,7 +386,8 @@ function Home() {
 
       </div>
 
-      {/* RIGHT COLUMN CONTENT (your image or other content will remain untouched) */}
+      {/* RIGHT COLUMN - Empty on desktop, hidden on mobile since content is over background */}
+      <div className="hidden md:block"></div>
 
     </div>
   </div>
@@ -377,7 +410,7 @@ function Home() {
 
         <div className="grid md:grid-cols-2 gap-6 min-[1800px]:gap-10 min-[2100px]:gap-12 min-[2560px]:gap-16 px-4 md:px-6 lg:px-8 min-[2560px]:px-8">
           {/* Left Image */}
-          <div className="flex items-center justify-center">
+          <div className="hidden md:flex items-center justify-center">
             <img 
               src="/images/row1.png" 
               alt="Girl scanning QR code" 
@@ -512,54 +545,60 @@ function Home() {
       </section> */}
 
     {/* One Platform Total Control Section */}
-<section id="features" className="relative py-20 min-[1700px]:py-24 min-[2100px]:py-28 min-[2560px]:py-32 overflow-hidden">
+<section id="features" className="relative py-6 md:py-20 min-[1700px]:py-24 min-[2100px]:py-28 min-[2560px]:py-32 overflow-hidden min-h-[600px] sm:min-h-[650px] md:min-h-0">
   
   {/* Background Image */}
   <div className="absolute inset-0 z-0">
+    {/* Mobile Background - deck12.png */}
+    <img 
+      src="/images/deck12.png" 
+      alt="Background" 
+      className="md:hidden w-full h-full object-cover"
+    />
+    {/* Desktop Background - frame.png */}
     <img 
       src="/images/frame.png" 
       alt="Background" 
-      className="w-full h-full object-cover md:object-center lg:object-fill"
+      className="hidden md:block w-full h-full object-cover md:object-center lg:object-fill"
     />
   </div>
 
   {/* Content Container */}
-  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-6 md:px-8 lg:px-12 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32">
+  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-4 md:px-8 lg:px-12 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32">
 
-    <div className="grid md:grid-cols-2 gap-12 lg:gap-20 min-[1700px]:gap-24 min-[2100px]:gap-32 min-[2560px]:gap-40 items-center">
+    <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 min-[1700px]:gap-24 min-[2100px]:gap-32 min-[2560px]:gap-40 items-center">
 
       {/* Left Content */}
-      <div className="space-y-6 md:space-y-8 min-[1700px]:space-y-10 min-[2100px]:space-y-12 min-[2560px]:space-y-14">
+      <div className="space-y-4 md:space-y-8 min-[1700px]:space-y-10 min-[2100px]:space-y-12 min-[2560px]:space-y-14 text-center md:text-left">
         <h2 
-          className="text-[32px] sm:text-[42px] md:text-[50px] lg:text-[56px] min-[1700px]:text-[60px] min-[2100px]:text-[64px] min-[2560px]:text-[72px] leading-tight" 
+          className="text-[20px] sm:text-[28px] md:text-[50px] lg:text-[56px] min-[1700px]:text-[60px] min-[2100px]:text-[64px] min-[2560px]:text-[72px] leading-tight" 
           style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}
         >
-          <span className="text-white font-weight-500 font-normal">One Platform,</span>
-          <br />
-          <span className="text-orange-500 font-bold">Total Control</span>
+          <span className="text-white font-weight-500 font-normal">One Platform, </span>
+          <span className="text-orange-500 font-bold md:block">Total Control</span>
         </h2>
         
         <p 
-          className="text-[#ffffff] font-weight-400 text-[16px] min-[1700px]:text-[17px] min-[2100px]:text-[18px] min-[2560px]:text-[22px] font-normal" 
+          className="text-[#ffffff] font-weight-400 text-[12px] sm:text-[13px] md:text-[16px] min-[1700px]:text-[17px] min-[2100px]:text-[18px] min-[2560px]:text-[22px] font-normal leading-relaxed" 
           style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
         >
           Reclaim control by running all operations from one place. Our platform delivers the centralized visibility you need to manage your business effectively.
         </p>
 
         {/* Feature Icons Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 min-[1700px]:gap-7 min-[2100px]:gap-8 min-[2560px]:gap-10">
+        <div className="grid grid-cols-4 gap-2 sm:gap-3 md:gap-6 min-[1700px]:gap-7 min-[2100px]:gap-8 min-[2560px]:gap-10">
 
           {/* Feature 1 */}
-          <div className="flex flex-col items-center text-center space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5 min-[2560px]:space-y-6">
-            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all">
+          <div className="flex flex-col items-center text-center space-y-1 sm:space-y-2 md:space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5 min-[2560px]:space-y-6">
+            <div className="bg-black/50 border border-gray-700 rounded-lg md:rounded-xl p-2 sm:p-3 md:p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all">
               <img 
                 src="/images/gr1.png" 
                 alt="Manage menus" 
-                className="w-14 h-14 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
+                className="w-6 h-6 sm:w-8 sm:h-8 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
               />
             </div>
             <p 
-              className="text-white text-[14px] min-[1700px]:text-[15px] min-[2100px]:text-[16px] min-[2560px]:text-[18px] font-normal font-weight-400" 
+              className="text-white text-[8px] sm:text-[10px] md:text-[14px] min-[1700px]:text-[15px] min-[2100px]:text-[16px] min-[2560px]:text-[18px] font-normal font-weight-400 leading-tight" 
               style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
             >
               Manage menus & inventory
@@ -567,16 +606,16 @@ function Home() {
           </div>
 
           {/* Feature 2 */}
-          <div className="flex flex-col items-center text-center space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5 min-[2560px]:space-y-6">
-            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all">
+          <div className="flex flex-col items-center text-center space-y-1 sm:space-y-2 md:space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5 min-[2560px]:space-y-6">
+            <div className="bg-black/50 border border-gray-700 rounded-lg md:rounded-xl p-2 sm:p-3 md:p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all">
               <img 
                 src="/images/gr2.png" 
                 alt="Track incoming orders" 
-                className="w-14 h-14 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
+                className="w-6 h-6 sm:w-8 sm:h-8 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
               />
             </div>
             <p 
-              className="text-white text-[14px] min-[1700px]:text-[15px] min-[2100px]:text-[16px] min-[2560px]:text-[18px] font-normal font-weight-400" 
+              className="text-white text-[8px] sm:text-[10px] md:text-[14px] min-[1700px]:text-[15px] min-[2100px]:text-[16px] min-[2560px]:text-[18px] font-normal font-weight-400 leading-tight" 
               style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
             >
               Track incoming orders in real-time
@@ -584,16 +623,16 @@ function Home() {
           </div>
 
           {/* Feature 3 */}
-          <div className="flex flex-col items-center text-center space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5 min-[2560px]:space-y-6">
-            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all">
+          <div className="flex flex-col items-center text-center space-y-1 sm:space-y-2 md:space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5 min-[2560px]:space-y-6">
+            <div className="bg-black/50 border border-gray-700 rounded-lg md:rounded-xl p-2 sm:p-3 md:p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all">
               <img 
                 src="/images/gr3.png" 
                 alt="Analyze revenue" 
-                className="w-14 h-14 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
+                className="w-6 h-6 sm:w-8 sm:h-8 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
               />
             </div>
             <p 
-              className="text-white text-[14px] min-[1700px]:text-[15px] min-[2100px]:text-[16px] min-[2560px]:text-[18px] font-normal font-weight-400" 
+              className="text-white text-[8px] sm:text-[10px] md:text-[14px] min-[1700px]:text-[15px] min-[2100px]:text-[16px] min-[2560px]:text-[18px] font-normal font-weight-400 leading-tight" 
               style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
             >
               Analyze revenue & payouts
@@ -601,16 +640,16 @@ function Home() {
           </div>
 
           {/* Feature 4 */}
-          <div className="flex flex-col items-center text-center space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5 min-[2560px]:space-y-6">
-            <div className="bg-black/50 border border-gray-700 rounded-xl p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all">
+          <div className="flex flex-col items-center text-center space-y-1 sm:space-y-2 md:space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5 min-[2560px]:space-y-6">
+            <div className="bg-black/50 border border-gray-700 rounded-lg md:rounded-xl p-2 sm:p-3 md:p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all">
               <img 
                 src="/images/gr4.png" 
                 alt="Offer discounts" 
-                className="w-14 h-14 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
+                className="w-6 h-6 sm:w-8 sm:h-8 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
               />
             </div>
             <p 
-              className="text-white text-[14px] min-[1700px]:text-[15px] min-[2100px]:text-[16px] min-[2560px]:text-[18px] font-normal font-weight-400" 
+              className="text-white text-[8px] sm:text-[10px] md:text-[14px] min-[1700px]:text-[15px] min-[2100px]:text-[16px] min-[2560px]:text-[18px] font-normal font-weight-400 leading-tight" 
               style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}
             >
               Offer discounts & promotions
@@ -620,12 +659,14 @@ function Home() {
         </div>
 
         {/* CTA Button */}
-        <button 
-          onClick={scrollToContactForm} 
-          className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 min-[1700px]:px-10 min-[1700px]:py-5 min-[2100px]:px-12 min-[2100px]:py-6 min-[2560px]:px-16 min-[2560px]:py-8 rounded-lg font-semibold text-base min-[1700px]:text-[17px] min-[2100px]:text-lg min-[2560px]:text-2xl transition-colors"
-        >
-          Book A Demo
-        </button>
+        <div className="flex justify-center md:justify-start">
+          <button 
+            onClick={scrollToContactForm} 
+            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 md:px-8 md:py-4 min-[1700px]:px-10 min-[1700px]:py-5 min-[2100px]:px-12 min-[2100px]:py-6 min-[2560px]:px-16 min-[2560px]:py-8 rounded-lg font-semibold text-sm md:text-base min-[1700px]:text-[17px] min-[2100px]:text-lg min-[2560px]:text-2xl transition-colors"
+          >
+            Book A Demo
+          </button>
+        </div>
       </div>
 
     </div>
@@ -649,13 +690,12 @@ function Home() {
 
             {/* Right Content */}
             <div className="space-y-4 md:space-y-6 min-[1800px]:space-y-7 min-[2100px]:space-y-8 min-[2560px]:space-y-10 order-1 md:order-2">
-              <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl min-[1800px]:text-5xl min-[2100px]:text-6xl min-[2560px]:text-7xl font-normal font-weight-500 leading-tight" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
-                <span className="text-black font-weight-500 font-normal">Loyalty Tastes</span>
-                <br />
-                <span className="text-orange-500 font-bold">Better Direct</span>
+              <h2 className="text-[22px] sm:text-3xl md:text-4xl lg:text-5xl min-[1800px]:text-5xl min-[2100px]:text-6xl min-[2560px]:text-7xl font-normal font-weight-500 leading-tight" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+                <span className="text-black font-weight-500 font-normal">Loyalty Tastes </span>
+                <span className="text-orange-500 font-bold md:block">Better Direct</span>
               </h2>
               
-              <p className="text-[#282828] max-w-lg min-[1800px]:max-w-xl min-[2100px]:max-w-2xl min-[2560px]:max-w-3xl font-weight-400 text-[14px] sm:text-[15px] md:text-[16px] min-[1800px]:text-[17px] min-[2100px]:text-[18px] min-[2560px]:text-[20px] font-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+              <p className="text-[#282828] max-w-lg min-[1800px]:max-w-xl min-[2100px]:max-w-2xl min-[2560px]:max-w-3xl font-weight-400 text-[11px] sm:text-[13px] md:text-[16px] min-[1800px]:text-[17px] min-[2100px]:text-[18px] min-[2560px]:text-[20px] font-normal leading-tight sm:leading-normal" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                 A seamless experience that makes food ordering effortless
               </p>
 
@@ -705,10 +745,17 @@ function Home() {
       <section id="contact-form" className="relative py-16 min-[2560px]:py-20">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
+          {/* Mobile Background - orangebgs.png */}
+          <img 
+            src="/images/orangebgs.png" 
+            alt="Background" 
+            className="md:hidden w-full h-full object-cover"
+          />
+          {/* Desktop Background - orangebg.png */}
           <img 
             src="/images/orangebg.png" 
             alt="Background" 
-            className="w-full h-full object-fill"
+            className="hidden md:block w-full h-full object-fill"
           />
         </div>
 
