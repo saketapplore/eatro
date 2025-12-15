@@ -153,7 +153,7 @@ function Home() {
             <div className="relative">
               {/* Mobile Image */}
               <img 
-                src="/images/save2.png" 
+                src="/images/save5.png" 
                 alt="Increase Order Frequency" 
                 className="sm:hidden w-full h-auto rounded-lg"
               />
@@ -169,7 +169,7 @@ function Home() {
             <div className="relative sm:col-span-2 md:col-span-1">
               {/* Mobile Image */}
               <img 
-                src="/images/save3.png" 
+                src="/images/save6.png" 
                 alt="Increase Staff Productivity" 
                 className="sm:hidden w-full h-auto rounded-lg"
               />
