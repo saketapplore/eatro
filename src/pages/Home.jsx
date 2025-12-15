@@ -137,7 +137,7 @@ function Home() {
             <div className="relative">
               {/* Mobile Image */}
               <img 
-                src="/images/save1.png" 
+                src="/images/save4.png" 
                 alt="Save Delivery Fees" 
                 className="sm:hidden w-full h-auto rounded-lg"
               />
