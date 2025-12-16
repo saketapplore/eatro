@@ -79,13 +79,43 @@ function Home() {
             {/* Left Content */}
             <div className="space-y-5 sm:space-y-6 md:space-y-8 lg:space-y-10 min-[1800px]:space-y-12 min-[2100px]:space-y-14 min-[2560px]:space-y-16">
               <div className="relative flex flex-col items-center text-center md:text-left md:items-start">
-                <img src="/images/own.png" alt="Own Your Growth" className="w-full max-w-[260px] sm:max-w-[300px] h-14 sm:h-16 md:h-20 lg:h-20 min-[1800px]:h-28 min-[2100px]:h-32 min-[2560px]:h-36 sm:-ml-1 md:-ml-6 relative z-10 inline-block object-contain" />
-                <p className="text-[#000] text-[19px] sm:text-[21px] md:text-[28px] lg:text-[26px] min-[1800px]:text-[42px] min-[2100px]:text-[48px] min-[2560px]:text-[56px] font-medium leading-[1.25] mt-1 sm:-mt-1 md:-mt-4 relative z-0" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
-                  Manage Orders, Power Direct Sales, 
-                </p>
-                <br />
-                <p className="text-[#000] text-[19px] sm:text-[21px] md:text-[28px] lg:text-[26px] min-[1800px]:text-[42px] min-[2100px]:text-[48px] min-[2560px]:text-[56px] font-medium leading-[1.25] -mt-3 sm:-mt-4 md:-mt-6 relative z-0" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Ensure Seamless Delivery, Build Loyalty.</p>
-              </div>
+              <img
+  src="/images/own.png"
+  alt="Own Your Growth"
+  className="
+    w-full
+    max-w-[380px] sm:max-w-[420px]
+    md:max-w-[320px]
+    h-16 sm:h-20 md:h-20 lg:h-20
+    min-[1800px]:h-28 min-[2100px]:h-32 min-[2560px]:h-36
+    sm:-ml-1 md:-ml-6
+    relative z-10 inline-block object-contain
+  "
+/>
+
+
+<p
+  className="text-[#000] text-[19px] sm:text-[21px] md:text-[28px] lg:text-[26px]
+  min-[1800px]:text-[42px] min-[2100px]:text-[48px] min-[2560px]:text-[56px]
+  font-medium leading-tight md:leading-snug
+  mt-1 sm:-mt-1 md:mt-0
+  relative z-0"
+  style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}
+>
+  Manage Orders, Power Direct Sales,
+</p>
+
+<p
+  className="text-[#000] text-[19px] sm:text-[21px] md:text-[28px] lg:text-[26px]
+  min-[1800px]:text-[42px] min-[2100px]:text-[48px] min-[2560px]:text-[56px]
+  font-medium leading-tight md:leading-snug
+  mt-0 sm:-mt-1 md:mt-1
+  relative z-0"
+  style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}
+>
+  Ensure Seamless Delivery, Build Loyalty.
+</p>
+    </div>
 
               {/* Feature List */}
               <div className="space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-7 min-[1800px]:space-y-8 min-[2100px]:space-y-9 min-[2560px]:space-y-10">
@@ -112,9 +142,11 @@ function Home() {
               </div>
 
               {/* CTA Button */}
-              <button onClick={scrollToContactForm} className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-7 md:px-8 lg:px-8 min-[1800px]:px-14 min-[2100px]:px-16 min-[2560px]:px-20 py-3 sm:py-3 md:py-4 lg:py-5 min-[1800px]:py-6 min-[2100px]:py-7 min-[2560px]:py-8 rounded-lg font-semibold text-[15px] sm:text-base md:text-lg lg:text-xl min-[1800px]:text-2xl min-[2100px]:text-3xl min-[2560px]:text-4xl transition-colors w-full sm:w-auto">
-                Book A Demo
-              </button>
+              <div className="flex justify-center md:justify-start">
+                <button onClick={scrollToContactForm} className="bg-orange-500 hover:bg-orange-600 text-white px-8 sm:px-7 md:px-8 lg:px-8 min-[1800px]:px-14 min-[2100px]:px-16 min-[2560px]:px-20 py-3 sm:py-3 md:py-4 lg:py-5 min-[1800px]:py-6 min-[2100px]:py-7 min-[2560px]:py-8 rounded-lg font-semibold text-[15px] sm:text-base md:text-lg lg:text-xl min-[1800px]:text-2xl min-[2100px]:text-3xl min-[2560px]:text-4xl transition-colors w-auto">
+                  Book A Demo
+                </button>
+              </div>
             </div>
 
             {/* Right Image */}
@@ -217,43 +249,43 @@ function Home() {
       "
     />
 
-    {/* TEXT + BUTTON */}
-    <div className="absolute top-0 left-0 right-0 md:top-[20%] md:left-[8%] md:right-auto lg:left-[10%] min-[1800px]:left-[12%] z-20 w-full md:w-auto px-4 pt-6 md:px-0 md:pt-0 order-1 md:order-none flex flex-col items-center md:items-start">
-
-      {/* Title */}
-      <h2 
-        className="
-          text-white
-          text-[18px] sm:text-[22px] md:text-[24px] lg:text-[32px] min-[1800px]:text-[45px] min-[2100px]:text-[40px]
-          leading-[1.2] sm:leading-tight font-semibold text-center md:text-left
-          bg-transparent rounded-xl md:rounded-none px-4 py-3 md:px-0 md:py-0 max-w-full md:max-w-none
-        "
-        style={{ fontFamily: 'Chillax' }}
-      >
-        One Platform,<br />
-        Five Seamless<br />
-        Experiences
-      </h2>
-
-      {/* Button */}
-      <div className="mt-3 sm:mt-4 min-[1800px]:mt-6 min-[2100px]:mt-8">
-        <button 
-          onClick={scrollToContactForm}
-          className="
-            bg-white text-black
-            px-6 py-3 md:px-8 min-[1800px]:px-10 min-[2100px]:px-12
-            md:py-4 min-[1800px]:py-5 min-[2100px]:py-6
-            rounded-lg font-semibold 
-            text-[14px] md:text-base min-[1800px]:text-lg min-[2100px]:text-xl
-            shadow-lg hover:bg-gray-100
-            w-auto
-          "
-        >
-          Book A Demo
-        </button>
-      </div>
-
-    </div>
+     {/* TEXT + BUTTON */}
+     <div className="absolute top-8 left-0 right-0 md:top-[20%] md:left-[8%] md:right-auto lg:left-[10%] min-[1800px]:left-[12%] z-20 w-full md:w-auto px-4 pt-8 md:px-0 md:pt-0 order-1 md:order-none flex flex-col items-center md:items-start">
+ 
+       {/* Title */}
+       <h2 
+         className="
+           text-white
+           text-[18px] sm:text-[22px] md:text-[24px] lg:text-[32px] min-[1800px]:text-[45px] min-[2100px]:text-[40px]
+           leading-[1.2] sm:leading-tight font-semibold text-center md:text-left
+           bg-transparent rounded-xl md:rounded-none px-4 py-3 md:px-0 md:py-0 max-w-full md:max-w-none
+         "
+         style={{ fontFamily: 'Chillax' }}
+       >
+         <span className="block md:hidden">One Platform, Five Seamless</span>
+         <span className="block md:hidden">Experiences</span>
+         <span className="hidden md:block">One Platform,<br />Five Seamless<br />Experiences</span>
+       </h2>
+ 
+       {/* Button */}
+       <div className="mt-3 sm:mt-4 min-[1800px]:mt-6 min-[2100px]:mt-8">
+         <button 
+           onClick={scrollToContactForm}
+           className="
+             bg-white text-black
+             px-6 py-3 md:px-8 min-[1800px]:px-10 min-[2100px]:px-12
+             md:py-4 min-[1800px]:py-5 min-[2100px]:py-6
+             rounded-lg font-semibold 
+             text-[14px] md:text-base min-[1800px]:text-lg min-[2100px]:text-xl
+             shadow-lg hover:bg-gray-100
+             w-auto
+           "
+         >
+           Book A Demo
+         </button>
+       </div>
+ 
+     </div>
   </div>
 
 </section>
@@ -352,14 +384,14 @@ function Home() {
     {/* Two Column Layout with Larger Spacing on Big Screens */}
     <div className="
       grid grid-cols-1 md:grid-cols-2 
-      mb-8 md:mb-12 lg:mb-16 xl:mb-20 min-[2560px]:mb-24
+      mb-0 md:mb-12 lg:mb-16 xl:mb-20 min-[2560px]:mb-24
       gap-8 md:gap-10 lg:gap-14 xl:gap-20 min-[1700px]:gap-24 min-[2100px]:gap-32 min-[2560px]:gap-40
       items-center
       min-[1700px]:justify-items-start
     ">
 
       {/* Left Side Feature List */}
-      <div className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 min-[1700px]:space-y-7 min-[2100px]:space-y-8 min-[2560px]:space-y-10 min-[1700px]:ml-0 min-[1700px]:pl-0 min-[2100px]:ml-0 min-[2100px]:pl-0">
+      <div className="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 min-[1700px]:space-y-7 min-[2100px]:space-y-8 min-[2560px]:space-y-10 ml-4 md:ml-0 min-[1700px]:ml-0 min-[1700px]:pl-0 min-[2100px]:ml-0 min-[2100px]:pl-0">
 
         {[
           "Connect easily with POS providers",
@@ -398,12 +430,12 @@ function Home() {
       <section id="how-it-works" className="w-full max-w-7xl min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2000px] mx-auto py-20 min-[1800px]:py-28 min-[2100px]:py-32 min-[2560px]:py-36">
         {/* Title and Subtitle - Centered at Top */}
         <div className="text-center mb-12 min-[1800px]:mb-16 min-[2100px]:mb-20 min-[2560px]:mb-24 px-4 md:px-6 lg:px-8 min-[2560px]:px-8">
-          <h2 className="text-[40px] min-[1800px]:text-[50px] min-[2100px]:text-[60px] min-[2560px]:text-[70px] font-bold leading-[105%] mb-4 min-[2560px]:mb-6" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+          <h2 className="text-[28px] md:text-[40px] min-[1800px]:text-[50px] min-[2100px]:text-[60px] min-[2560px]:text-[70px] font-bold leading-[105%] mb-4 min-[2560px]:mb-6" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
             <span className="text-black">How</span>{' '}
             <span className="text-orange-500">It Works</span>
           </h2>
           
-          <p className="text-[#282828] text-center font-weight-400 text-[16px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] min-[2560px]:text-[24px] font-normal max-w-4xl min-[2560px]:max-w-5xl mx-auto" style={{ fontFamily: 'Poppins', fontStyle: 'normal', leadingTrim: 'both', textEdge: 'cap' }}>
+          <p className="text-[#282828] text-center font-weight-400 text-[13px] md:text-[16px] min-[1800px]:text-[18px] min-[2100px]:text-[20px] min-[2560px]:text-[24px] font-normal max-w-4xl min-[2560px]:max-w-5xl mx-auto" style={{ fontFamily: 'Poppins', fontStyle: 'normal', leadingTrim: 'both', textEdge: 'cap' }}>
             Seamless order flow from start to finish
           </p>
         </div>
@@ -423,7 +455,7 @@ function Home() {
             {/* Timeline Cards Container */}
             <div className="relative">
               {/* Timeline Line - slide.png positioned on the left */}
-              <div className="absolute left-0 top-0 bottom-0 flex items-center justify-center min-[1800px]:w-[75px] min-[2100px]:w-[90px]" style={{ width: '60px' }}>
+              <div className="absolute left-0 top-0 bottom-0 flex items-center justify-center min-[1800px]:w-[75px] min-[2100px]:w-[90px]" style={{ width: '50px' }}>
                 <img 
                   src="/images/slide.png" 
                   alt="Timeline" 
@@ -432,68 +464,68 @@ function Home() {
               </div>
               
               {/* Cards positioned to the right of timeline */}
-              <div className="ml-16 min-[1800px]:ml-20 min-[2100px]:ml-24 space-y-4 min-[1800px]:space-y-6 min-[2100px]:space-y-8">
+              <div className="ml-12 md:ml-16 min-[1800px]:ml-20 min-[2100px]:ml-24 space-y-3 md:space-y-4 min-[1800px]:space-y-6 min-[2100px]:space-y-8">
                 {/* Card 1: User places order */}
-                <div className="relative p-4 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[110px]" style={{ borderRadius: '20px',opacity:1 ,background: '#EBE4DC' }}>
-                  <div className="flex items-start gap-3 md:gap-4 lg:gap-5">
-                    <div className="w-12 h-12 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
-                      <img src="/images/l1.png" alt="Shopping basket icon" className="w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
+                <div className="relative p-3 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[90px] md:min-h-[110px]" style={{ borderRadius: '20px',opacity:1 ,background: '#EBE4DC' }}>
+                  <div className="flex items-start gap-2 md:gap-4 lg:gap-5">
+                    <div className="w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
+                      <img src="/images/l1.png" alt="Shopping basket icon" className="w-7 h-7 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
                     </div>
-                    <div className="flex flex-col">
-                      <h3 className="min-[1800px]:text-[24px] min-[2100px]:text-[28px]" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '20px', fontStyle: 'normal', fontWeight: 700, margin: 0 }}>User places order</h3>
-                      <p className="min-[1800px]:text-[17px] min-[2100px]:text-[19px]" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '15px', fontStyle: 'normal', fontWeight: 400, margin: 0 }}>Through branded restaurants website/application</p>
+                    <div className="flex flex-col flex-1 min-w-0">
+                      <h3 className="text-[14px] md:text-[20px] min-[1800px]:text-[24px] min-[2100px]:text-[28px]" style={{ color: '#282828', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 700, margin: 0 }}>User places order</h3>
+                      <p className="text-[11px] md:text-[15px] min-[1800px]:text-[17px] min-[2100px]:text-[19px] w-full" style={{ color: '#282828', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 400, margin: 0 }}>Though branded restaurant website/application</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Card 2: Restaurant confirms */}
-                <div className="relative p-4 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[110px]" style={{ borderRadius: '20px', opacity:1,background: '#EBE4DC' }}>
-                  <div className="flex items-start gap-3 md:gap-4 lg:gap-5">
-                    <div className="w-12 h-12 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
-                      <img src="/images/l2.png" alt="Restaurant confirmation icon" className="w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
+                <div className="relative p-3 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[90px] md:min-h-[110px]" style={{ borderRadius: '20px', opacity:1,background: '#EBE4DC' }}>
+                  <div className="flex items-start gap-2 md:gap-4 lg:gap-5">
+                    <div className="w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
+                      <img src="/images/l2.png" alt="Restaurant confirmation icon" className="w-7 h-7 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
                     </div>
-                    <div className="flex flex-col">
-                      <h3 className="min-[1800px]:text-[24px] min-[2100px]:text-[28px]" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '20px', fontStyle: 'normal', fontWeight: 700, margin: 0 }}>Restaurant confirms</h3>
-                      <p className="min-[1800px]:text-[17px] min-[2100px]:text-[19px]" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '15px', fontStyle: 'normal', fontWeight: 400, margin: 0 }}>Accepts orders and starts to prepare users meal for estimated pickup time</p>
+                    <div className="flex flex-col flex-1 min-w-0">
+                      <h3 className="text-[14px] md:text-[20px] min-[1800px]:text-[24px] min-[2100px]:text-[28px]" style={{ color: '#282828', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 700, margin: 0 }}>Restaurant confirms</h3>
+                      <p className="text-[11px] md:text-[15px] min-[1800px]:text-[17px] min-[2100px]:text-[19px] w-full" style={{ color: '#282828', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 400, margin: 0 }}>Accepts orders and starts to prepare users meal for estimated pickup time</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Card 3: In Transit */}
-                <div className="relative p-4 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[110px]" style={{ borderRadius: '20px', opacity:1,background: '#EBE4DC' }}>
-                  <div className="flex items-start gap-3 md:gap-4 lg:gap-5">
-                    <div className="w-12 h-12 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
-                      <img src="/images/group13.png" alt="In transit icon" className="w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
+                <div className="relative p-3 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[90px] md:min-h-[110px]" style={{ borderRadius: '20px', opacity:1,background: '#EBE4DC' }}>
+                  <div className="flex items-start gap-2 md:gap-4 lg:gap-5">
+                    <div className="w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
+                      <img src="/images/group13.png" alt="In transit icon" className="w-7 h-7 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
                     </div>
-                    <div className="flex flex-col">
-                      <h3 className="min-[1800px]:text-[24px] min-[2100px]:text-[28px]" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '20px', fontStyle: 'normal', fontWeight: 700, margin: 0 }}>In Transit</h3>
-                      <p className="min-[1800px]:text-[17px] min-[2100px]:text-[19px]" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '15px', fontStyle: 'normal', fontWeight: 400, margin: 0 }}>An Eatro network rider receives the order, begins the journey to your location, and then heads out for delivery</p>
+                    <div className="flex flex-col flex-1 min-w-0">
+                      <h3 className="text-[14px] md:text-[20px] min-[1800px]:text-[24px] min-[2100px]:text-[28px]" style={{ color: '#282828', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 700, margin: 0 }}>In Transit</h3>
+                      <p className="text-[11px] md:text-[15px] min-[1800px]:text-[17px] min-[2100px]:text-[19px] w-full" style={{ color: '#282828', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 400, margin: 0 }}>An Eatro network rider receives the order, begins the journey to your location, and then heads out for delivery</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Card 4: Delivery Complete */}
-                <div className="relative p-4 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[110px]" style={{ borderRadius: '20px', opacity:1,background: '#EBE4DC' }}>
-                  <div className="flex items-start gap-3 md:gap-4 lg:gap-5">
-                    <div className="w-12 h-12 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
-                      <img src="/images/l4.png" alt="Delivery complete icon" className="w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
+                <div className="relative p-3 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[90px] md:min-h-[110px]" style={{ borderRadius: '20px', opacity:1,background: '#EBE4DC' }}>
+                  <div className="flex items-start gap-2 md:gap-4 lg:gap-5">
+                    <div className="w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
+                      <img src="/images/l4.png" alt="Delivery complete icon" className="w-7 h-7 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
                     </div>
-                    <div className="flex flex-col">
-                      <h3 className="min-[1800px]:text-[24px] min-[2100px]:text-[28px]" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '20px', fontStyle: 'normal', fontWeight: 700, margin: 0 }}>Delivery Complete</h3>
-                      <p className="min-[1800px]:text-[17px] min-[2100px]:text-[19px]" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '15px', fontStyle: 'normal', fontWeight: 400, margin: 0 }}>Delivery is completed!</p>
+                    <div className="flex flex-col flex-1 min-w-0">
+                      <h3 className="text-[14px] md:text-[20px] min-[1800px]:text-[24px] min-[2100px]:text-[28px]" style={{ color: '#282828', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 700, margin: 0 }}>Delivery Complete</h3>
+                      <p className="text-[11px] md:text-[15px] min-[1800px]:text-[17px] min-[2100px]:text-[19px] w-full" style={{ color: '#282828', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 400, margin: 0 }}>Delivery is completed!</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Card 5: Loyalty */}
-                <div className="relative p-4 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[110px]" style={{ borderRadius: '20px',opacity:1, background: '#EBE4DC' }}>
-                  <div className="flex items-start gap-3 md:gap-4 lg:gap-5">
-                    <div className="w-12 h-12 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
-                      <img src="/images/l5.png" alt="Loyalty icon" className="w-10 h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
+                <div className="relative p-3 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[90px] md:min-h-[110px]" style={{ borderRadius: '20px',opacity:1, background: '#EBE4DC' }}>
+                  <div className="flex items-start gap-2 md:gap-4 lg:gap-5">
+                    <div className="w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
+                      <img src="/images/l5.png" alt="Loyalty icon" className="w-7 h-7 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
                     </div>
-                    <div className="flex flex-col">
-                      <h3 className="min-[1800px]:text-[24px] min-[2100px]:text-[28px]" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '20px', fontStyle: 'normal', fontWeight: 700, margin: 0 }}>Loyalty</h3>
-                      <p className="min-[1800px]:text-[17px] min-[2100px]:text-[19px]" style={{ color: '#282828', fontFamily: 'Poppins', fontSize: '15px', fontStyle: 'normal', fontWeight: 400, margin: 0 }}>Customer Receives Loyalty points via the restaurant program, which boosts reorders</p>
+                    <div className="flex flex-col flex-1 min-w-0">
+                      <h3 className="text-[14px] md:text-[20px] min-[1800px]:text-[24px] min-[2100px]:text-[28px]" style={{ color: '#282828', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 700, margin: 0 }}>Loyalty</h3>
+                      <p className="text-[11px] md:text-[15px] min-[1800px]:text-[17px] min-[2100px]:text-[19px] w-full" style={{ color: '#282828', fontFamily: 'Poppins', fontStyle: 'normal', fontWeight: 400, margin: 0 }}>Customer Receives Loyalty points via the restaurant program, which boosts reorders</p>
                     </div>
                   </div>
                 </div>
@@ -545,15 +577,15 @@ function Home() {
       </section> */}
 
     {/* One Platform Total Control Section */}
-<section id="features" className="relative py-6 md:py-20 min-[1700px]:py-24 min-[2100px]:py-28 min-[2560px]:py-32 overflow-hidden min-h-[600px] sm:min-h-[650px] md:min-h-0">
+<section id="features" className="relative w-full pt-6 pb-16 md:py-20 min-[1700px]:py-24 min-[2100px]:py-28 min-[2560px]:py-32 overflow-hidden min-h-[700px] sm:min-h-[750px] md:min-h-0">
   
   {/* Background Image */}
-  <div className="absolute inset-0 z-0">
+  <div className="absolute inset-0 z-0 w-full">
     {/* Mobile Background - deck12.png */}
     <img 
-      src="/images/deck12.png" 
+      src="/images/ss11.png" 
       alt="Background" 
-      className="md:hidden w-full h-full object-cover"
+      className="md:hidden w-full h-full object-fill"
     />
     {/* Desktop Background - frame.png */}
     <img 
@@ -564,12 +596,12 @@ function Home() {
   </div>
 
   {/* Content Container */}
-  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-4 md:px-8 lg:px-12 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32">
+  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-0 min-[2100px]:ml-32 min-[2100px]:mr-0 min-[2560px]:ml-32 min-[2560px]:mr-0 px-4 md:px-8 lg:px-12 min-[1700px]:pl-20 min-[1700px]:pr-0 min-[2100px]:pl-24 min-[2100px]:pr-0 min-[2560px]:pl-24 min-[2560px]:pr-0">
 
     <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 min-[1700px]:gap-24 min-[2100px]:gap-32 min-[2560px]:gap-40 items-center">
 
       {/* Left Content */}
-      <div className="space-y-4 md:space-y-8 min-[1700px]:space-y-10 min-[2100px]:space-y-12 min-[2560px]:space-y-14 text-center md:text-left">
+      <div className="space-y-4 md:space-y-8 min-[1700px]:space-y-10 min-[2100px]:space-y-12 min-[2560px]:space-y-14 text-center md:text-left w-full">
         <h2 
           className="text-[20px] sm:text-[28px] md:text-[50px] lg:text-[56px] min-[1700px]:text-[60px] min-[2100px]:text-[64px] min-[2560px]:text-[72px] leading-tight" 
           style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}
@@ -590,11 +622,11 @@ function Home() {
 
           {/* Feature 1 */}
           <div className="flex flex-col items-center text-center space-y-1 sm:space-y-2 md:space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5 min-[2560px]:space-y-6">
-            <div className="bg-black/50 border border-gray-700 rounded-lg md:rounded-xl p-2 sm:p-3 md:p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all">
+            <div className="bg-black/50 border border-gray-700 rounded-lg md:rounded-xl p-3 sm:p-4 md:p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all w-full aspect-square">
               <img 
                 src="/images/gr1.png" 
                 alt="Manage menus" 
-                className="w-6 h-6 sm:w-8 sm:h-8 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
+                className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
               />
             </div>
             <p 
@@ -607,11 +639,11 @@ function Home() {
 
           {/* Feature 2 */}
           <div className="flex flex-col items-center text-center space-y-1 sm:space-y-2 md:space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5 min-[2560px]:space-y-6">
-            <div className="bg-black/50 border border-gray-700 rounded-lg md:rounded-xl p-2 sm:p-3 md:p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all">
+            <div className="bg-black/50 border border-gray-700 rounded-lg md:rounded-xl p-3 sm:p-4 md:p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all w-full aspect-square">
               <img 
                 src="/images/gr2.png" 
                 alt="Track incoming orders" 
-                className="w-6 h-6 sm:w-8 sm:h-8 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
+                className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
               />
             </div>
             <p 
@@ -624,11 +656,11 @@ function Home() {
 
           {/* Feature 3 */}
           <div className="flex flex-col items-center text-center space-y-1 sm:space-y-2 md:space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5 min-[2560px]:space-y-6">
-            <div className="bg-black/50 border border-gray-700 rounded-lg md:rounded-xl p-2 sm:p-3 md:p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all">
+            <div className="bg-black/50 border border-gray-700 rounded-lg md:rounded-xl p-3 sm:p-4 md:p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all w-full aspect-square">
               <img 
                 src="/images/gr3.png" 
                 alt="Analyze revenue" 
-                className="w-6 h-6 sm:w-8 sm:h-8 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
+                className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
               />
             </div>
             <p 
@@ -641,11 +673,11 @@ function Home() {
 
           {/* Feature 4 */}
           <div className="flex flex-col items-center text-center space-y-1 sm:space-y-2 md:space-y-3 min-[1700px]:space-y-4 min-[2100px]:space-y-5 min-[2560px]:space-y-6">
-            <div className="bg-black/50 border border-gray-700 rounded-lg md:rounded-xl p-2 sm:p-3 md:p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all">
+            <div className="bg-black/50 border border-gray-700 rounded-lg md:rounded-xl p-3 sm:p-4 md:p-6 min-[1700px]:p-7 min-[2100px]:p-8 min-[2560px]:p-10 flex items-center justify-center hover:border-orange-500 transition-all w-full aspect-square">
               <img 
                 src="/images/gr4.png" 
                 alt="Offer discounts" 
-                className="w-6 h-6 sm:w-8 sm:h-8 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
+                className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 min-[1700px]:w-[72px] min-[1700px]:h-[72px] min-[2100px]:w-20 min-[2100px]:h-20 min-[2560px]:w-24 min-[2560px]:h-24 object-contain"
               />
             </div>
             <p 
@@ -659,7 +691,7 @@ function Home() {
         </div>
 
         {/* CTA Button */}
-        <div className="flex justify-center md:justify-start">
+        <div className="flex justify-center md:justify-start mb-12 md:mb-0">
           <button 
             onClick={scrollToContactForm} 
             className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 md:px-8 md:py-4 min-[1700px]:px-10 min-[1700px]:py-5 min-[2100px]:px-12 min-[2100px]:py-6 min-[2560px]:px-16 min-[2560px]:py-8 rounded-lg font-semibold text-sm md:text-base min-[1700px]:text-[17px] min-[2100px]:text-lg min-[2560px]:text-2xl transition-colors"
@@ -1021,63 +1053,71 @@ function Home() {
       </section>
 
       {/* Ready To Launch Section */}
-      <section className="relative max-w-7xl min-[2560px]:max-w-[1900px] mx-auto py-8 min-[2560px]:py-12 overflow-hidden bg-black md:bg-transparent">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0 hidden md:block">
+      <section className="relative max-w-7xl min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[1900px] mx-auto py-8 md:py-8 min-[2560px]:py-12 overflow-hidden">
+        {/* Background Image - blackbgs.png for mobile, blackbg.png for desktop */}
+        <div className="absolute inset-0 z-0">
+          {/* Mobile Background */}
+          <img 
+            src="/images/blackbgs.png" 
+            alt="Background" 
+            className="md:hidden w-full h-full object-fill"
+          />
+          {/* Desktop Background */}
           <img 
             src="/images/blackbg.png" 
             alt="Background" 
-            className="w-full h-full object-fill"
+            className="hidden md:block w-full h-full object-fill"
           />
         </div>
 
         {/* Content Container */}
-        <div className="relative z-10 max-w-7xl min-[2560px]:max-w-[1900px] mx-auto px-4 md:px-6 lg:px-8 min-[2560px]:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 min-[2560px]:gap-12">
+        <div className="relative z-10 max-w-7xl min-[1800px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[1900px] mx-auto px-4 md:px-6 lg:px-8 min-[2560px]:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 min-[2560px]:gap-12">
             {/* Left Content */}
-            <div className="flex-1 w-full md:w-auto md:ml-8 min-[2560px]:ml-12 text-center md:text-left">
-              <h2 className="text-white text-[30px] sm:text-[32px] md:text-[35px] min-[2560px]:text-[48px] font-semibold leading-tight mb-3 min-[2560px]:mb-5 capitalize" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
+            <div className="flex-1 w-full md:w-auto md:ml-8 min-[1800px]:ml-10 min-[2100px]:ml-12 min-[2560px]:ml-12 text-center md:text-left">
+              <h2 className="text-white text-[20px] sm:text-[24px] md:text-[35px] lg:text-[35px] min-[1800px]:text-[40px] min-[2100px]:text-[42px] min-[2560px]:text-[48px] font-semibold leading-tight mb-2 md:mb-3 min-[2560px]:mb-5" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>
                 <span>Ready To Launch Your</span>
                 <br />
-                <span className="text-orange-500">Direct Ordering Sales </span>
-                <br />
+                <span className="text-orange-500">Direct Ordering Sales</span>
+                {' '}
+                <br className="md:hidden" />
                 <span className="text-orange-500">Channels?</span>
               </h2>
-              <p className="text-white text-base min-[2560px]:text-xl">
+              <p className="text-white text-sm md:text-base min-[1800px]:text-lg min-[2100px]:text-lg min-[2560px]:text-xl">
                 Let's Talk! Book a Demo with us!
               </p>
             </div>
 
-            {/* Right Orange Section with Buttons */}
-            <div className="relative w-full md:w-auto md:mr-36 min-[2560px]:mr-48">
-              <div className="bg-orange-500 md:bg-transparent rounded-3xl px-8 py-6 md:px-12 md:py-8 min-[2560px]:px-16 min-[2560px]:py-12 flex flex-col items-center justify-center space-y-4 min-[2560px]:space-y-6 shadow-lg md:shadow-none">
+            {/* Right Section with Buttons */}
+            <div className="relative w-full md:mt-10 lg:mt-10 md:w-auto md:mr-24 lg:mr-32 min-[1800px]:mr-36 min-[2100px]:mr-40 min-[2560px]:mr-48">
+              <div className="md:bg-transparent px-6 py-6 md:px-12 md:py-8 min-[1800px]:px-14 min-[1800px]:py-10 min-[2100px]:px-14 min-[2100px]:py-10 min-[2560px]:px-16 min-[2560px]:py-12 flex flex-col items-center justify-center space-y-3 md:space-y-4 min-[2560px]:space-y-6">
                 {/* App Store Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 min-[2560px]:gap-6 mt-4 md:mt-6 min-[2560px]:mt-8 w-full md:w-auto">
+                <div className="flex gap-3 sm:flex-row md:flex-row md:gap-4 min-[1800px]:gap-5 min-[2100px]:gap-5 min-[2560px]:gap-6 w-full md:w-auto">
                   {/* App Store Button */}
-                  <button className="bg-white rounded-full px-6 py-3 min-[2560px]:px-8 min-[2560px]:py-4 flex items-center gap-3 min-[2560px]:gap-4 hover:bg-gray-100 transition-colors w-full sm:w-auto justify-center sm:justify-start">
-                    <svg className="w-8 h-8 min-[2560px]:w-10 min-[2560px]:h-10" viewBox="0 0 24 24" fill="currentColor">
+                  <button className="bg-white rounded-full px-5 py-3 md:px-6 md:py-3 min-[1800px]:px-7 min-[1800px]:py-3.5 min-[2100px]:px-7 min-[2100px]:py-3.5 min-[2560px]:px-8 min-[2560px]:py-4 flex items-center gap-2 md:gap-3 min-[2560px]:gap-4 hover:bg-gray-100 transition-colors w-full md:w-auto justify-center md:justify-start">
+                    <svg className="w-7 h-7 md:w-8 md:h-8 min-[1800px]:w-9 min-[1800px]:h-9 min-[2100px]:w-9 min-[2100px]:h-9 min-[2560px]:w-10 min-[2560px]:h-10" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                     </svg>
                     <div className="text-left">
-                      <p className="text-xs min-[2560px]:text-sm text-gray-600">Download on the</p>
-                      <p className="text-base min-[2560px]:text-lg font-semibold text-black">App Store</p>
+                      <p className="text-[10px] md:text-xs min-[1800px]:text-xs min-[2100px]:text-xs min-[2560px]:text-sm text-gray-600" style={{ fontFamily: 'Poppins' }}>Download on the</p>
+                      <p className="text-sm md:text-base min-[1800px]:text-base min-[2100px]:text-base min-[2560px]:text-lg font-semibold text-black" style={{ fontFamily: 'Poppins' }}>App Store</p>
                     </div>
                   </button>
 
                   {/* Google Play Button */}
-                  <button className="bg-white rounded-full px-6 py-3 min-[2560px]:px-8 min-[2560px]:py-4 flex items-center gap-3 min-[2560px]:gap-4 hover:bg-gray-100 transition-colors w-full sm:w-auto justify-center sm:justify-start">
-                    <svg className="w-8 h-8 min-[2560px]:w-10 min-[2560px]:h-10" viewBox="0 0 24 24" fill="currentColor">
+                  <button className="bg-white rounded-full px-5 py-3 md:px-6 md:py-3 min-[1800px]:px-7 min-[1800px]:py-3.5 min-[2100px]:px-7 min-[2100px]:py-3.5 min-[2560px]:px-8 min-[2560px]:py-4 flex items-center gap-2 md:gap-3 min-[2560px]:gap-4 hover:bg-gray-100 transition-colors w-full md:w-auto justify-center md:justify-start">
+                    <svg className="w-7 h-7 md:w-8 md:h-8 min-[1800px]:w-9 min-[1800px]:h-9 min-[2100px]:w-9 min-[2100px]:h-9 min-[2560px]:w-10 min-[2560px]:h-10" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                     </svg>
                     <div className="text-left">
-                      <p className="text-xs min-[2560px]:text-sm text-gray-600">GET IT ON</p>
-                      <p className="text-base min-[2560px]:text-lg font-semibold text-black">Google Play</p>
+                      <p className="text-[10px] md:text-xs min-[1800px]:text-xs min-[2100px]:text-xs min-[2560px]:text-sm text-gray-600" style={{ fontFamily: 'Poppins' }}>GET IT ON</p>
+                      <p className="text-sm md:text-base min-[1800px]:text-base min-[2100px]:text-base min-[2560px]:text-lg font-semibold text-black" style={{ fontFamily: 'Poppins' }}>Google Play</p>
                     </div>
                   </button>
                 </div>
 
                 {/* One Platform Text */}
-                <p className="text-white text-sm min-[2560px]:text-base font-medium text-center md:text-left">
+                <p className="text-white text-sm md:text-sm min-[1800px]:text-base min-[2100px]:text-base min-[2560px]:text-base font-medium text-center" style={{ fontFamily: 'Poppins' }}>
                   One Platform, Total Control
                 </p>
               </div>
