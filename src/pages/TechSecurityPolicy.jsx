@@ -20,7 +20,7 @@ function TechSecurityPolicy() {
             <img 
               src="/images/techpolicy.png" 
               alt="Eatro Tech FZ-LLC Security Policy" 
-              className="w-[950px] min-[1700px]:w-[1050px] min-[2100px]:w-[1150px] h-[120px] max-w-full"
+              className="w-[500px] sm:w-[550px] min-[1700px]:w-[600px] min-[2100px]:w-[650px] h-[70px] max-w-full"
             />
           </div>
 

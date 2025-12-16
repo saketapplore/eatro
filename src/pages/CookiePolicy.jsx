@@ -20,7 +20,7 @@ function CookiePolicy() {
             <img 
               src="/images/cookiepolicy.png" 
               alt="Eatro Cookie Policy" 
-              className="w-[600px] min-[1700px]:w-[700px] min-[2100px]:w-[800px] h-[120px] max-w-full"
+              className="w-[500px] sm:w-[550px] min-[1700px]:w-[600px] min-[2100px]:w-[650px] h-[70px] max-w-full"
             />
           </div>
 
