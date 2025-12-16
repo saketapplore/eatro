@@ -13,7 +13,12 @@ function Header({ scrollToContactForm }) {
 
   return (
     <header id="about" className="relative">
-      <div className="bg-black max-w-full text-white rounded-b-3xl overflow-hidden clip-custom">
+      <div
+  className={`bg-black max-w-full text-white rounded-b-3xl mx-4 md:mx-0 ${
+    mobileMenuOpen ? 'overflow-visible' : 'overflow-hidden clip-custom'
+  }`}
+>
+
       <div className="px-4 md:px-6 lg:px-8 py-4 relative w-full max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] min-[2560px]:max-w-[2200px] mx-auto">
 
           <div className="flex items-center justify-between">
@@ -113,7 +118,7 @@ function Header({ scrollToContactForm }) {
                       closeMobileMenu()
                       scrollToContactForm(e)
                     }} 
-                    className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors text-center"
+                    className="hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors text-center"
                   >
                     Book a Demo
                   </button>

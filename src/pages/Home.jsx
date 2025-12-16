@@ -84,14 +84,17 @@ function Home() {
   alt="Own Your Growth"
   className="
     w-full
-    max-w-[380px] sm:max-w-[420px]
-    md:max-w-[320px]
-    h-16 sm:h-20 md:h-20 lg:h-20
-    min-[1800px]:h-28 min-[2100px]:h-32 min-[2560px]:h-36
+    max-w-[520px] sm:max-w-[600px] md:max-w-[420px] lg:max-w-[480px]
+    min-[1800px]:max-w-[900px]
+    min-[2100px]:max-w-[1000px]
+    min-[2560px]:max-w-[1100px]
+    h-auto
     sm:-ml-1 md:-ml-6
-    relative z-10 inline-block object-contain
+    relative z-10
+    object-contain
   "
 />
+
 
 
 <p
@@ -256,7 +259,7 @@ function Home() {
        <h2 
          className="
            text-white
-           text-[18px] sm:text-[22px] md:text-[24px] lg:text-[32px] min-[1800px]:text-[45px] min-[2100px]:text-[40px]
+           text-[18px] sm:text-[16px] md:text-[24px] lg:text-[32px] min-[1800px]:text-[45px] min-[2100px]:text-[40px]
            leading-[1.2] sm:leading-tight font-semibold text-center md:text-left
            bg-transparent rounded-xl md:rounded-none px-4 py-3 md:px-0 md:py-0 max-w-full md:max-w-none
          "
@@ -277,7 +280,7 @@ function Home() {
              md:py-4 min-[1800px]:py-5 min-[2100px]:py-6
              rounded-lg font-semibold 
              text-[14px] md:text-base min-[1800px]:text-lg min-[2100px]:text-xl
-             shadow-lg hover:bg-gray-100
+             shadow-lg hover:bg-gray-100 sm:font-bold
              w-auto
            "
          >
@@ -353,7 +356,7 @@ function Home() {
   </div>
 
   {/* Content Wrapper (bigger max width for big screens) */}
-  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-4 md:px-8 lg:px-12 xl:px-16 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32">
+  <div className="relative z-10 w-full max-w-[1500px] min-[1700px]:max-w-[1600px] min-[2100px]:max-w-[1800px] min-[2560px]:max-w-[2100px] mx-auto min-[1700px]:ml-24 min-[1700px]:mr-auto min-[2100px]:ml-32 min-[2100px]:mr-auto min-[2560px]:mx-auto px-4 md:px-8 lg:px-12 xl:px-16 min-[1700px]:pl-20 min-[1700px]:pr-24 min-[2100px]:pl-24 min-[2100px]:pr-32 min-[2560px]:px-32 mt-8 md:mt-0">
 
     {/* Title + Subtitle */}
     <div className="text-center mb-6 md:mb-10 lg:mb-12 xl:mb-14 min-[1700px]:mb-10 min-[2100px]:mb-12 min-[2560px]:mb-16">
@@ -467,7 +470,7 @@ function Home() {
               <div className="ml-12 md:ml-16 min-[1800px]:ml-20 min-[2100px]:ml-24 space-y-3 md:space-y-4 min-[1800px]:space-y-6 min-[2100px]:space-y-8">
                 {/* Card 1: User places order */}
                 <div className="relative p-3 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[90px] md:min-h-[110px]" style={{ borderRadius: '20px',opacity:1 ,background: '#EBE4DC' }}>
-                  <div className="flex items-start gap-2 md:gap-4 lg:gap-5">
+                  <div className="flex items-center gap-2 md:gap-4 lg:gap-5">
                     <div className="w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
                       <img src="/images/l1.png" alt="Shopping basket icon" className="w-7 h-7 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
                     </div>
@@ -480,7 +483,7 @@ function Home() {
 
                 {/* Card 2: Restaurant confirms */}
                 <div className="relative p-3 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[90px] md:min-h-[110px]" style={{ borderRadius: '20px', opacity:1,background: '#EBE4DC' }}>
-                  <div className="flex items-start gap-2 md:gap-4 lg:gap-5">
+                  <div className="flex items-center gap-2 md:gap-4 lg:gap-5">
                     <div className="w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
                       <img src="/images/l2.png" alt="Restaurant confirmation icon" className="w-7 h-7 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
                     </div>
@@ -493,7 +496,7 @@ function Home() {
 
                 {/* Card 3: In Transit */}
                 <div className="relative p-3 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[90px] md:min-h-[110px]" style={{ borderRadius: '20px', opacity:1,background: '#EBE4DC' }}>
-                  <div className="flex items-start gap-2 md:gap-4 lg:gap-5">
+                  <div className="flex items-center gap-2 md:gap-4 lg:gap-5">
                     <div className="w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
                       <img src="/images/group13.png" alt="In transit icon" className="w-7 h-7 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
                     </div>
@@ -506,7 +509,7 @@ function Home() {
 
                 {/* Card 4: Delivery Complete */}
                 <div className="relative p-3 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[90px] md:min-h-[110px]" style={{ borderRadius: '20px', opacity:1,background: '#EBE4DC' }}>
-                  <div className="flex items-start gap-2 md:gap-4 lg:gap-5">
+                  <div className="flex items-center gap-2 md:gap-4 lg:gap-5">
                     <div className="w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
                       <img src="/images/l4.png" alt="Delivery complete icon" className="w-7 h-7 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
                     </div>
@@ -519,7 +522,7 @@ function Home() {
 
                 {/* Card 5: Loyalty */}
                 <div className="relative p-3 md:p-5 min-[1800px]:p-6 min-[2100px]:p-8 min-h-[90px] md:min-h-[110px]" style={{ borderRadius: '20px',opacity:1, background: '#EBE4DC' }}>
-                  <div className="flex items-start gap-2 md:gap-4 lg:gap-5">
+                  <div className="flex items-center gap-2 md:gap-4 lg:gap-5">
                     <div className="w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 min-[2100px]:w-16 min-[2100px]:h-16 flex items-center justify-center flex-shrink-0">
                       <img src="/images/l5.png" alt="Loyalty icon" className="w-7 h-7 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain" />
                     </div>
