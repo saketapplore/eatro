@@ -28,7 +28,7 @@ function CookiePolicy() {
           <div className="space-y-8 min-[1700px]:space-y-9 min-[2100px]:space-y-10 text-[#282828] max-w-full" style={{ fontFamily: 'Poppins', fontStyle: 'normal', fontSize: '16px', lineHeight: '1.8' }}>
             
             <div>
-              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>1. What Are Cookies?</h2>
+              <h2 className="mb-4 leading-tight min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>1. What Are Cookies?</h2>
               <p className="mb-4">
                 Cookies are small text files that are downloaded to your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide reporting information and personalized experiences.
               </p>
@@ -38,7 +38,7 @@ function CookiePolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>2. How Eatro Uses Cookies</h2>
+              <h2 className="mb-4 leading-tight min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>2. How Eatro Uses Cookies</h2>
               <p className="mb-4">
                 Eatro Tech FZ-LLC uses cookies for two primary purposes:
               </p>
@@ -65,7 +65,7 @@ function CookiePolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>3. Types of Cookies We Use</h2>
+              <h2 className="mb-4 leading-tight min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>3. Types of Cookies We Use</h2>
               <p className="mb-4">
                 We use first-party cookies (set by us) and third-party cookies (set by a different domain). The cookies used on our corporate site and on the Merchant ordering channels fall into the following categories:
               </p>
@@ -98,7 +98,7 @@ function CookiePolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>4. Data Ownership and Third-Party Cookies</h2>
+              <h2 className="mb-4 leading-tight min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>4. Data Ownership and Third-Party Cookies</h2>
               <p className="mb-4">
               <span className="inline-block w-2 h-2 bg-orange-500 mr-2"></span>  <strong>Merchant Sites:</strong> For cookies dropped on the Merchant's branded ordering channels, any data collected that tracks an End Customer's ordering behavior is owned by the <strong>Merchant (Data Controller)</strong> and processed by Eatro.
               </p>
@@ -108,7 +108,7 @@ function CookiePolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>5. Your Choices and Consent (UAE PDPL Compliant)</h2>
+              <h2 className="mb-4 leading-tight min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>5. Your Choices and Consent (UAE PDPL Compliant)</h2>
               <p className="mb-4">
                 In line with the principles of the UAE PDPL, we are committed to obtaining your clear consent for non-essential cookies.
               </p>
@@ -137,14 +137,14 @@ function CookiePolicy() {
             </div>
 
             <div>
-              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>6. Changes to This Policy</h2>
+              <h2 className="mb-4 leading-tight min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>6. Changes to This Policy</h2>
               <p className="mb-4">
                 We may update this Cookie Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any changes by posting the new Cookie Policy on this page and updating the "Effective Date."
               </p>
             </div>
 
             <div className=''>
-              <h2 className="mb-4 min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>7. Contact Us</h2>
+              <h2 className="mb-4 leading-tight min-[1700px]:text-[28px] min-[2100px]:text-[30px]" style={{ fontFamily: 'Chillax', fontSize: '26px', fontStyle: 'normal', fontWeight: 600, color: '#EF7714' }}>7. Contact Us</h2>
               <p className="mb-4">
                 If you have any questions about our use of cookies, please contact us:
               </p>

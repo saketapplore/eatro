@@ -53,7 +53,7 @@ function Footer() {
               <h3 className="text-white font-semibold underline text-base mb-3" style={{ fontFamily: 'Chillax', fontStyle: 'normal' }}>Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                <a href="/#how-it-works" className="text-white text-sm font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
+                <a href="/#about" className="text-white text-sm font-normal hover:text-orange-500 transition-colors" style={{ fontFamily: 'Poppins', fontStyle: 'normal' }}>
                     About
                   </a>
                 </li>
