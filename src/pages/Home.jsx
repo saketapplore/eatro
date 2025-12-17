@@ -586,7 +586,7 @@ function Home() {
   <div className="absolute inset-0 z-0 w-full">
     {/* Mobile Background - deck12.png */}
     <img 
-      src="/images/onep.png" 
+      src="/images/grop11.png" 
       alt="Background" 
       className="md:hidden w-full h-full object-fill"
     />
