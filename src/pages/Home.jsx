@@ -230,7 +230,7 @@ function Home() {
 
     {/* Mobile Image */}
     <img 
-      src="/images/book.png" 
+      src="/images/mplat.png" 
       alt="Background"
       className="
         md:hidden relative w-full h-full 
@@ -332,7 +332,7 @@ function Home() {
   <div className="absolute inset-0 z-0 flex items-center justify-center">
     {/* Mobile Background Image - deck11.png */}
     <img 
-      src="/images/deck11.png" 
+      src="/images/fsdk.png" 
       alt="Background" 
       className="
         md:hidden
@@ -586,7 +586,7 @@ function Home() {
   <div className="absolute inset-0 z-0 w-full">
     {/* Mobile Background - deck12.png */}
     <img 
-      src="/images/ss11.png" 
+      src="/images/onep.png" 
       alt="Background" 
       className="md:hidden w-full h-full object-fill"
     />
