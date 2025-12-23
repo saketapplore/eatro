@@ -843,25 +843,26 @@ function Home() {
                   </div>
                   <div>
                     <input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      placeholder="Phone Number"
-                      className="w-full px-4 py-2 min-[2560px]:px-6 min-[2560px]:py-3 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm min-[2560px]:text-base"
-                    />
-                  </div>
-                </div>
-
-                {/* Right Column */}
-                <div className="space-y-4">
-                  <div>
-                    <input
                       type="text"
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleInputChange}
                       placeholder="Last Name"
+                      className="w-full px-4 py-2 min-[2560px]:px-6 min-[2560px]:py-3 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm min-[2560px]:text-base"
+                    />
+                  </div>
+            
+                </div>
+
+                {/* Right Column */}
+                <div className="space-y-4">
+                <div>
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      placeholder="Phone Number"
                       className="w-full px-4 py-2 min-[2560px]:px-6 min-[2560px]:py-3 bg-[#f5f3f0] rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-orange-500 text-gray-800 text-sm min-[2560px]:text-base"
                     />
                   </div>
